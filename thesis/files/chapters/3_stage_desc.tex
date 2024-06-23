@@ -7,28 +7,121 @@
 
 \section{Introduzione al progetto}
 
-\begin{figure}[!ht] 
-    \centering 
-    \includegraphics[width=0.5\columnwidth]{pk_estate.jpg} 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{pk_estate.jpg}
     \caption{Caption}
 \end{figure}
 \lipsum[1]
 
 \section{Analisi preventiva dei rischi}
 
-Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi a cui si potrà andare incontro.
-Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.
+Durante la fase di analisi iniziale sono stati individuati alcuni possibili
+rischi a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle
+possibili soluzioni per far fronte a tali rischi.
 
 \begin{risk}{Performance del simulatore hardware}
     \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
     \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
-    \label{risk:hardware-simulator} 
+    \label{risk:hardware-simulator}
 \end{risk}
 
 \section{Requisiti e obiettivi}
+Gli obiettivi sono stati definiti in accordo con il tutor aziendale e si
+identificano nel seguente modo:
+\[
+    \text{[Priorità][Id]}
+\]
+\begin{itemize}
+    \item Priorità: indica la priorità dell'obiettivo, può essere obbligatorio o
+          desiderabile;
+    \item Id: identifica l'obiettivo in modo univoco rispetto alla priorità.
+\end{itemize}
+
+\begin{longtable}{|c|p{4cm}|p{10cm}|}
+    \hline
+    \textbf{ID}  & \textbf{Categoria}                                               & \textbf{Descrizione}                                       \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{ID}  & \textbf{Categoria}                                               & \textbf{Descrizione}                                       \\
+    \hline
+    \endhead
+
+    O01          & Obbligatorio                                                     & Analisi dei servizi AWS per l'addestramento dei modelli AI
+    \\ \hline O02 & Obbligatorio & Addestramento di un modello di apprendimento AI
+    utilizzando i servizi AWS                                                                                                                    \\ \hline O03 & Obbligatorio & Analisi requisiti
+    applicativi e tecnici per implementare la soluzione richiesta                                                                                \\ \hline O04   &
+    Obbligatorio & Implementare un modello di apprendimento automatico che analizzi
+       il contenuto delle \glsfirstoccur{PEC} importate e assegni loro categorie appropriate in base
+    al contenuto (mittente, destinatario, data e argomento)                                                                                      \\ \hline D01   &
+    Desiderabile & Implementare algoritmi di IA in grado di adattarsi e apprendere
+       continuamente dai dati per migliorare le prestazioni del sistema nel tempo. Ciò
+       include l'ottimizzazione dei modelli di apprendimento automatico in base
+    all'esperienza e ai feedback degli utenti                                                                                                    \\ \hline D02 & Desiderabile &
+       Integrazione con un sistema documentale per l’archiviazione delle PEC creando i
+       metadati necessari con le informazioni estratte e collocandole nella corretta
+    categoria di appartenenza                                                                                                                    \\ \hline
+\end{longtable}
 
 \section{Pianificazione}
-Lorem
+\subsection{Pianificazione settimanale}
+Il periodo di stage è stato suddiviso in 8 settimane, durante le quali sono
+previste le seguenti attività:
+\begin{longtable}{|c|c|c|p{8cm}|}
+    \hline
+    \textbf{Settimana} & \textbf{Dal} & \textbf{Al} & \textbf{Attività}                                          \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Settimana} & \textbf{Dal} & \textbf{Al} & \textbf{Attività}                                          \\
+    \hline
+    \endhead
+
+    1                  & 24-06-2024   & 28-06-2024  &
+    - Incontro con persone coinvolte nel progetto per discutere i requisiti e le richieste di implementazione \newline
+    - Ricerca, studio e documentazione per inquadramento progetto \newline
+    - Introduzione ai linguaggi di sviluppo \newline
+    - Introduzione agli ambienti di sviluppo \newline
+    - Introduzione dei servizi \glsfirstoccur{awsg}                                                                        \\
+    \hline
+    2                  & 01-07-2024   & 05-07-2024  &
+    - Analisi dei servizi AWS per l'addestramento di un modello di apprendimento \newline
+    - Addestramento di un modello di apprendimento utilizzando i servizi di AWS \newline
+    \textbf{Milestone:} Utilizzo dei servizi AWS per l'addestramento di un modello di apprendimento              \\
+    \hline
+    3                  & 08-07-2024   & 12-07-2024  &
+    - Studio della soluzione per definire i requisiti necessari per l’implementazione \newline
+    \textbf{Milestone:} Analisi dei requisiti applicativi e tecnici per implementare la soluzione                \\
+    \hline
+    4                  & 15-07-2024   & 19-07-2024  &
+    - Addestramento modello di apprendimento per catalogare le PEC in base al loro contenuto                     \\
+    \hline
+    5                  & 22-07-2024   & 26-07-2024  &
+    - Implementazioni per interfacciarsi con il modello di apprendimento addestrato e per poter catalogare le PEC importate \newline
+    \textbf{Milestone:} Completamento obiettivi minimi                                                           \\
+    \hline
+    6                  & 29-07-2024   & 02-08-2024  &
+    - Implementazione algoritmo di AI per l’autoapprendimento                                                    \\
+    \hline
+    7                  & 05-08-2024   & 09-08-2024  &
+    - Studio e documentazione sulle API messe a disposizione dal documentale per poter catalogare le mail PEC \newline
+    - Implementazione dell’integrazione con il documentale producendo i metadati necessari per catalogare le PEC \\
+    \hline
+    8                  & 12-08-2024   & 16-08-2024  &
+    - Verifica e test archiviazione PEC nel documentale \newline
+    \textbf{Milestone:} Completamento obiettivi massimi                                                          \\
+    \hline
+    9                  & 19-08-2024   & 23-08-2024  &
+    - Recupero eventuali ritardi                                                                                 \\
+    \hline
+    10                 & 26-08-2024   & 30-08-2024  &
+    - Recupero eventuali ritardi                                                                                 \\
+    \hline
+
+\end{longtable}
 
 \subsection{Ipsum}
 Dolor

@@ -5,12 +5,19 @@
 		\setentrycounter[]{page}\glsnumberformat{i}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{vii}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
+\glossentry{awsg}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{i}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{vii}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{pecg}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{i}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{vii}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sdkg}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{i}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{vii}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossentry{umlg}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{i}\delimN 
