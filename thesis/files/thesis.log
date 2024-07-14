@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  14 JUL 2024 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  14 JUL 2024 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1873,10 +1873,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39396 strings out of 475501
- 703898 string characters out of 5776863
- 1949908 words of memory out of 5000000
- 61252 multiletter control sequences out of 15000+600000
+ 39398 strings out of 475501
+ 703914 string characters out of 5776863
+ 1948908 words of memory out of 5000000
+ 61254 multiletter control sequences out of 15000+600000
  657323 words of font info for 80 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  99i,11n,125p,2501b,3573s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1887,7 +1887,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb>
-Output written on thesis.pdf (24 pages, 2754169 bytes).
+Output written on thesis.pdf (24 pages, 2755918 bytes).
 PDF statistics:
  504 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
