@@ -23,9 +23,7 @@
     \input{preface/4_abstract}
     \input{preface/5_table-of-contents}
 
-    \backmatter
-    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
-    \printglossary[type=main, title=Glossario, toctitle=Glossario]
+   
     
     \cleardoublepage
 
@@ -40,6 +38,8 @@
 
     \appendix
     \backmatter
+    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
+    \printglossary[type=main, title=Glossario, toctitle=Glossario]
     \input{appendix/bibliography}
 
     \input{appendix/glossary-entries.tex}
