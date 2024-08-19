@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  15 AUG 2024 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  15 AUG 2024 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,7 +1655,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [6
 
-]) (./chapters/1_introduction.tex
+]
+
+[7]) (./chapters/1_introduction.tex
 Capitolo 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 45.
@@ -1665,7 +1667,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 45
 (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<img/logo_sanmarco_informatica.png, id=146, 578.16pt x 87.32625pt>
+<img/logo_sanmarco_informatica.png, id=198, 578.16pt x 87.32625pt>
 File: img/logo_sanmarco_informatica.png Graphic file (type png)
 <use img/logo_sanmarco_informatica.png>
 Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 48.
@@ -1677,14 +1679,89 @@ Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 4
 
 
 
- <./img/logo_sanmarco_informatica.png>]) (./chapters/2_processes.tex
+ <./img/logo_sanmarco_informatica.png>]) (./chapters/tecnologie.tex
 
 [2]
 Capitolo 2.
+<img/tecnologie/python.png, id=220, 1876.00874pt x 2055.68pt>
+File: img/tecnologie/python.png Graphic file (type png)
+<use img/tecnologie/python.png>
+Package pdftex.def Info: img/tecnologie/python.png  used on input line 10.
+(pdftex.def)             Requested size: 90.5922pt x 99.24553pt.
+<img/tecnologie/comprehend.png, id=222, 301.125pt x 301.125pt>
+File: img/tecnologie/comprehend.png Graphic file (type png)
+<use img/tecnologie/comprehend.png>
+Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 25.
+(pdftex.def)             Requested size: 90.5922pt x 90.5909pt.
 
-LaTeX Warning: Citation 'article:spooky' on page 3 undefined on input line 8.
 
-<img/qubit.png, id=168, 1806.75pt x 1053.9375pt>
+[3
+
+ <./img/tecnologie/python.png>]
+<img/tecnologie/textract.png, id=228, 147.55125pt x 147.55125pt>
+File: img/tecnologie/textract.png Graphic file (type png)
+<use img/tecnologie/textract.png>
+Package pdftex.def Info: img/tecnologie/textract.png  used on input line 35.
+(pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
+<img/tecnologie/s3.png, id=229, 429.605pt x 513.92pt>
+File: img/tecnologie/s3.png Graphic file (type png)
+<use img/tecnologie/s3.png>
+Package pdftex.def Info: img/tecnologie/s3.png  used on input line 45.
+(pdftex.def)             Requested size: 90.5922pt x 108.36551pt.
+
+
+[4 <./img/tecnologie/comprehend.png> <./img/tecnologie/textract.png> <./img/tecnologie/s3.png>]
+<img/tecnologie/AWS_Lambda.png, id=237, 3748.0025pt x 3011.25pt>
+File: img/tecnologie/AWS_Lambda.png Graphic file (type png)
+<use img/tecnologie/AWS_Lambda.png>
+Package pdftex.def Info: img/tecnologie/AWS_Lambda.png  used on input line 55.
+(pdftex.def)             Requested size: 135.89174pt x 109.17224pt.
+<img/tecnologie/DynamoDB.png, id=238, 245.91875pt x 222.8325pt>
+File: img/tecnologie/DynamoDB.png Graphic file (type png)
+<use img/tecnologie/DynamoDB.png>
+Package pdftex.def Info: img/tecnologie/DynamoDB.png  used on input line 65.
+(pdftex.def)             Requested size: 135.89174pt x 123.13968pt.
+<img/tecnologie/stepfunctions.png, id=239, 301.125pt x 301.125pt>
+File: img/tecnologie/stepfunctions.png Graphic file (type png)
+<use img/tecnologie/stepfunctions.png>
+Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 75.
+(pdftex.def)             Requested size: 135.89174pt x 135.89554pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/tecnologie/vscode.png, id=240, 256.96pt x 256.96pt>
+File: img/tecnologie/vscode.png Graphic file (type png)
+<use img/tecnologie/vscode.png>
+Package pdftex.def Info: img/tecnologie/vscode.png  used on input line 86.
+(pdftex.def)             Requested size: 135.89174pt x 135.89407pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[5 <./img/tecnologie/AWS_Lambda.png> <./img/tecnologie/DynamoDB.png>]
+<img/tecnologie/git.png, id=248, 913.4125pt x 381.425pt>
+File: img/tecnologie/git.png Graphic file (type png)
+<use img/tecnologie/git.png>
+Package pdftex.def Info: img/tecnologie/git.png  used on input line 96.
+(pdftex.def)             Requested size: 135.89174pt x 56.74567pt.
+<img/tecnologie/bitbucket.png, id=249, 1927.2pt x 346.29375pt>
+File: img/tecnologie/bitbucket.png Graphic file (type png)
+<use img/tecnologie/bitbucket.png>
+Package pdftex.def Info: img/tecnologie/bitbucket.png  used on input line 106.
+(pdftex.def)             Requested size: 226.48395pt x 40.69215pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./chapters/2_processes.tex
+
+[6 <./img/tecnologie/stepfunctions.png> <./img/tecnologie/vscode.png> <./img/tecnologie/git.png>]
+
+[7 <./img/tecnologie/bitbucket.png>]
+Capitolo 3.
+<img/qubit.png, id=262, 1806.75pt x 1053.9375pt>
 File: img/qubit.png Graphic file (type png)
 <use img/qubit.png>
 Package pdftex.def Info: img/qubit.png  used on input line 12.
@@ -1695,18 +1772,18 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 
 ) (./chapters/3_stage_desc.tex
 
-[3
+[8
 
  <./img/qubit.png (PNG copy)>]
-Capitolo 3.
-<img/pk_estate.jpg, id=173, 2168.1pt x 2038.61626pt>
+Capitolo 4.
+<img/pk_estate.jpg, id=267, 2168.1pt x 2038.61626pt>
 File: img/pk_estate.jpg Graphic file (type jpg)
 <use img/pk_estate.jpg>
 Package pdftex.def Info: img/pk_estate.jpg  used on input line 12.
 (pdftex.def)             Requested size: 226.48395pt x 212.95674pt.
 
 
-[4
+[9
 
  <./img/pk_estate.jpg>]
 Overfull \hbox (0.74866pt too wide) in alignment at lines 41--45
@@ -1730,18 +1807,18 @@ Underfull \hbox (badness 1210) in paragraph at lines 100--101
 
 
 
-[5] [6]) (./chapters/4_requirement_analysis.tex
+[10] [11]) (./chapters/4_requirement_analysis.tex
 
-[7]
-Capitolo 4.
-<img/usecase/scenario-principale.png, id=195, 463.13025pt x 236.082pt>
+[12]
+Capitolo 5.
+<img/usecase/scenario-principale.png, id=289, 463.13025pt x 236.082pt>
 File: img/usecase/scenario-principale.png Graphic file (type png)
 <use img/usecase/scenario-principale.png>
 Package pdftex.def Info: img/usecase/scenario-principale.png  used on input line 15.
 (pdftex.def)             Requested size: 317.07614pt x 161.62872pt.
 
 
-[8
+[13
 
  <./img/usecase/scenario-principale.png>]
 
@@ -1752,62 +1829,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./chapters/5_design_coding.tex
 
-[9]
+[14]
 
-[10]
-Capitolo 5.
+[15]
+Capitolo 6.
 ) (./chapters/6_verify_validate.tex
 
-[11
+[16
 
 ]
-Capitolo 6.
-<img/quantum_superposition.png, id=221, 4215.75pt x 1053.9375pt>
+Capitolo 7.
+<img/quantum_superposition.png, id=314, 4215.75pt x 1053.9375pt>
 File: img/quantum_superposition.png Graphic file (type png)
 <use img/quantum_superposition.png>
 Package pdftex.def Info: img/quantum_superposition.png  used on input line 9.
 (pdftex.def)             Requested size: 452.9679pt x 113.23174pt.
 ) (./chapters/7_conclusions.tex
 
-[12
+[17
 
  <./img/quantum_superposition.png (PNG copy)>]
-Capitolo 7.
+Capitolo 8.
 )
 
-[13
+[18
 
 ] (./thesis.acr) (./thesis.gls
 
-[14
+[19
 
 
 
 ]) (./appendix/bibliography.tex
 
-[15
+[20
 
 
-]
-
-Package biblatex Warning: Type 'book' not found on input line 8.
-
-
-LaTeX Warning: Empty bibliography on input line 8.
-
-
-Package biblatex Warning: Type 'article' not found on input line 11.
-
-
-LaTeX Warning: Empty bibliography on input line 11.
-
-
-Package biblatex Warning: Type 'online' not found on input line 14.
-
-
-LaTeX Warning: Empty bibliography on input line 14.
-
-) (./appendix/glossary-entries.tex
+]) (./appendix/glossary-entries.tex
 \@gls@deffile=\write12
 \openout12 = `thesis.glsdefs'.
 
@@ -1844,41 +1902,32 @@ Package glossaries Warning: Entry `umlg' has already been defined in the preambl
 
 )
 
-[16
+[21
 
 ] (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39437 strings out of 475501
- 704584 string characters out of 5776863
- 1948908 words of memory out of 5000000
- 61292 multiletter control sequences out of 15000+600000
- 654649 words of font info for 80 fonts, out of 8000000 for 9000
+ 39618 strings out of 475501
+ 709024 string characters out of 5776863
+ 1949908 words of memory out of 5000000
+ 61436 multiletter control sequences out of 15000+600000
+ 654968 words of font info for 81 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  99i,11n,125p,2501b,3573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (23 pages, 2673284 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on thesis.pdf (29 pages, 3098152 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 513 words of extra memory for PDF output out of 10000 (max. 10000000)
 
