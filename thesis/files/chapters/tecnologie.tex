@@ -1,24 +1,20 @@
 \chapter{Tecnologie}
 \label{cap:tecnologie}
-In questo capitolo verranno presentate le tecnologie utilizzate durante lo stage.
-\section{Linguaggi di programmazione}
-\subsection{Python}
-Python è un linguaggio di programmazione ad alto livello, interpretato, adatto per lo sviluppo di applicazioni web, desktop e mobile. Python è stato utilizzato per la realizzazione del backend dell'applicazione.
+\emph{In questo capitolo verranno descritti i servizi e le tecnologie analizzate e pertinenti per il problema descritto, in quale modo possono essere impiegate e una panoramica finalizzata a chiarirne il constesto e il caso d'uso.}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.2\textwidth]{img/tecnologie/python.png}
-  \caption{Logo di Python}
-  \label{fig:python}
-\end{figure}
-
-
-
+Partendo da quella che è la richiesta dell'azienda ospitante (catalogazione ed elaborazione delle mail e dei documenti allegati), ho individuato diverse fasi per il processo di elaborazione dei documenti dalle email: 
+\begin{enumerate}
+  \item Estrazione degli allegati presenti in un'email
+  \item Classificazione dei documenti
+  \item Estrazione delle informazioni importanti dai documenti
+  \item  Revisione e valutazione umana delle informazioni estratte
+  \item Persistenza dei dati
+\end{enumerate}
 \section{Amazon Web Services}
-Amazon Web Services (AWS) è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di Intelligenza Artificiale (AI) e Machine Learning (ML). Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'archittettura scalabile e serverless. 
+Amazon Web Services (AWS) è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di Intelligenza Artificiale ({\gls{aig}}) e Machine Learning (\glsfirstoccur{\gls{mlg}}). Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'archittettura scalabile e serverless. 
 
 \subsection{Amazon Comprehend}
-Amazon Comprehend è un servizio di analisi del linguaggio naturale (NLP) che utilizza l'apprendimento automatico per identificare informazioni utili nei testi. Amazon Comprehend è stato utilizzato per analizzare i testi delle recensioni degli utenti dell'applicazione.
+Amazon Comprehend è un servizio di analisi del linguaggio naturale (\glsfirstoccur{\gls{nlpg}}) che utilizza l'apprendimento automatico per identificare informazioni utili nei testi. Amazon Comprehend è stato utilizzato per analizzare i testi delle recensioni degli utenti dell'applicazione.
 
 \begin{figure}[h]
   \centering
@@ -28,7 +24,7 @@ Amazon Comprehend è un servizio di analisi del linguaggio naturale (NLP) che ut
 \end{figure}
 
 \subsection{Amazon Textract}
-Amazon Textract è un servizio di OCR (Optical Character Recognition) che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati delle immagini. Amazon Textract è stato utilizzato per estrarre il testo dalle immagini delle ricette.
+Amazon Textract è un servizio di \glsfirstoccur{\gls{ocrg}} che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati delle immagini. Amazon Textract è stato utilizzato per estrarre il testo dalle immagini delle ricette.
 
 \begin{figure}[h]
   \centering
@@ -89,7 +85,7 @@ Visual Studio Code è un editor di codice sorgente sviluppato da Microsoft per W
 \end{figure}
 
 \subsection{Git}
-Git è un sistema di controllo di versione distribuito utilizzato per tenere traccia delle modifiche al codice sorgente durante lo sviluppo del software. Git è stato utilizzato per tenere traccia delle modifiche al codice sorgente dell'applicazione.
+\glsfirstoccur{\gls{gitg}} è un sistema di controllo di versione distribuito utilizzato per tenere traccia delle modifiche al codice sorgente durante lo sviluppo del software. Git è stato utilizzato per tenere traccia delle modifiche al codice sorgente dell'applicazione.
 
 \begin{figure}[h]
   \centering
@@ -99,11 +95,22 @@ Git è un sistema di controllo di versione distribuito utilizzato per tenere tra
 \end{figure}
 
 \subsection{Bitbucket}
-Bitbucket è un servizio di hosting di repository Git basato su cloud. Bitbucket è stato utilizzato per memorizzare il codice sorgente dell'applicazione.
+Bitbucket è un servizio di hosting di \glsfirstoccur{\gls{repositoryg}} Git basato su cloud. Bitbucket è stato utilizzato per memorizzare il codice sorgente dell'applicazione.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{img/tecnologie/bitbucket.png}
   \caption{Logo di Bitbucket}
   \label{fig:bitbucket}
+\end{figure}
+
+\section{Linguaggi di programmazione}
+\subsection{Python}
+Python è un linguaggio di programmazione ad alto livello, interpretato, adatto per lo sviluppo di applicazioni web, desktop e mobile. Python è stato utilizzato per la realizzazione del backend dell'applicazione.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{img/tecnologie/python.png}
+  \caption{Logo di Python}
+  \label{fig:python}
 \end{figure}

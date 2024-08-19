@@ -3,29 +3,43 @@
 \chapter{Descrizione dello stage}
 \label{cap:descrizione-stage}
 
+%\emph{In questo capitolo}
 %\intro{Breve introduzione al capitolo}\\
 
 \section{Introduzione al progetto}
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.5\columnwidth]{pk_estate.jpg}
-    \caption{Caption}
-\end{figure}
-\lipsum[1]
+L'elaborazione intelligente dei documenti (\glsfirstoccur{\gls{idpg}}) è una tecnologia che automatizza il processo di immissione manuale dei dati da documenti cartacei o immagini digitali, integrandoli con altri processi aziendali digitali. Ad esempio, in un flusso di lavoro aziendale automatizzato, come l'invio di ordini ai fornitori al momento del calo delle scorte, l'IDP può sostituire l'immissione manuale dei dati da parte del team contabile. Invece di inserire manualmente i dati di una fattura ricevuta via e-mail, i sistemi di IDP estraggono automaticamente queste informazioni e le integrano direttamente nel sistema contabile, eliminando ostacoli e riducendo gli errori.
 
-\section{Analisi preventiva dei rischi}
+L'IDP offre numerosi vantaggi alle aziende. In termini di \glsfirstoccur{\gls{scalabilitàg}}, permette di elaborare documenti su larga scala con precisione, evitando errori umani e aumentando l'efficienza operativa. Promuove una **cultura dell’efficienza dei costi**, automatizzando attività ripetitive e riducendo i costi associati all'elaborazione manuale dei dati. Migliora anche la **soddisfazione dei clienti** grazie alla gestione più rapida e automatizzata dei documenti, come l'onboarding, le prenotazioni e i pagamenti, consentendo di fornire risposte personalizzate e veloci ai clienti.
 
-Durante la fase di analisi iniziale sono stati individuati alcuni possibili
-rischi a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle
-possibili soluzioni per far fronte a tali rischi.
+Diversi settori traggono beneficio dall'IDP. Nel **settore sanitario**, facilita la gestione delle cartelle cliniche, migliorando l'estrazione e l'organizzazione dei dati dai documenti medici. Le **aziende finanziarie** lo utilizzano per automatizzare la gestione delle spese e l'elaborazione delle fatture, semplificando la gestione dei pagamenti. Nel **settore legale**, l'IDP analizza contratti e documenti legali, utilizzando tecnologie di elaborazione del linguaggio naturale (NLP) per estrarre informazioni chiave. Le aziende della **logistica** lo impiegano per tracciare spedizioni e documenti di transito, riducendo gli errori umani. Infine, nel settore delle **risorse umane**, l'IDP semplifica la selezione del personale, gestisce le buste paga e automatizza altre funzioni HR.
 
-\begin{risk}{Performance del simulatore hardware}
-    \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
-    \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
-    \label{risk:hardware-simulator}
-\end{risk}
+Le tecnologie alla base dell'IDP comprendono il **riconoscimento ottico dei caratteri (OCR)**, che converte immagini di testo in dati leggibili dalle macchine, e l'**elaborazione del linguaggio naturale (NLP)**, che analizza e comprende il linguaggio umano. L'**automazione robotica dei processi (RPA)** consente invece di automatizzare i flussi di lavoro aziendali ripetendo azioni umane predefinite.
 
+Il processo di IDP si articola in diverse fasi: acquisizione e **classificazione dei documenti**, **estrazione dei dati** rilevanti tramite OCR e NLP, **convalida e successiva elaborazione dei dati** nei sistemi aziendali, e **apprendimento continuo** attraverso algoritmi di machine learning per migliorare l'accuratezza nel tempo. Inoltre, i sistemi di IDP offrono **report e analisi** per ottimizzare ulteriormente i flussi di lavoro aziendali.
+
+Amazon Web Services (AWS) supporta l'implementazione dell'IDP attraverso servizi come **Amazon Textract**, che utilizza il machine learning per estrarre informazioni dai documenti senza interazioni manuali, e **Amazon Comprehend**, che sfrutta l'NLP per scoprire informazioni preziose nei testi. Entrambi i servizi consentono alle aziende di automatizzare la gestione dei documenti in modo efficiente e sicuro, integrandosi con altre piattaforme aziendali per un flusso di lavoro senza interruzioni.
+
+%\begin{figure}[!ht]
+%    \centering
+%    \includegraphics[width=0.5\columnwidth]{pk_estate.jpg}
+%    \caption{Caption}
+%\end{figure}
+%Digressione su idp.\\
+%\lipsum[1]
+
+%\section{Analisi preventiva dei rischi}
+%
+%Durante la fase di analisi iniziale sono stati individuati alcuni possibili
+%rischi a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle
+%possibili soluzioni per far fronte a tali rischi.
+%
+%\begin{risk}{Performance del simulatore hardware}
+%    \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
+%    \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
+%    \label{risk:hardware-simulator}
+%\end{risk}
+%
 \section{Requisiti e obiettivi}
 Gli obiettivi sono stati definiti in accordo con il tutor aziendale e si
 identificano nel seguente modo:
