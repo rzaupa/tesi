@@ -1,8 +1,9 @@
 \chapter{Progettazione e codifica}
 \label{cap:progettazione-codifica}
 
-Breve introduzione al capitolo
+\emph{Breve introduzione al capitolo}
 
+\section{Introduzione}
 
 Partendo da quella che è la richiesta dell'azienda ospitante (catalogazione ed elaborazione delle mail e dei documenti allegati), ho individuato diverse fasi per il processo di elaborazione dei documenti dalle email: 
 \begin{itemize}
@@ -19,14 +20,14 @@ In questa fase ,le indicazioni iniziali dell'azienda consistevano nell'analizzar
 Tale visione è supportata dal fatto che i documenti di interesse per l'azienda sono spesso allegati delle mail, quindi  tale estrazione determina un flusso di lavoro più chiaro e diretto, oltre al fatto che spesso il contenuto della mail non è rilevante o lo è solo in parte.
 Dunque, in questa fase il file di input è un file .eml , mentre l'output sono gli allegati presenti nella mail. Per progettare tutto ciò, ho pensato ai seguenti servizi:
 \begin{itemize}
-    \item Un bucket contenente i file .eml da analizzare
-    \item Un bucket contente gli allegati estratti dalle mail 
-    \item Una funzione lambda avente come trigger l'inserimento di un file .eml all'interno del bucket di input e che elaborasse tale file per ottenere degli allegati di output
+    \item Un \glsfirstoccur{\gls{bucketg}} contenente i file .eml da analizzare
+    \item Un \gls{bucketg} contente gli allegati estratti dalle mail 
+    \item Una funzione lambda avente come trigger l'inserimento di un file .eml all'interno del \gls{bucketg} di input e che elaborasse tale file per ottenere degli allegati di output
 \end{itemize}
 
 \section{Classificazione dei documenti}
 \label{sec:classificazione-documenti}
-Dovendo classificare le email in base al loro contenuto, ho analizzato diverse strade possibili , come quella di utilizzare modelli di machine learning proposti da Sagemaker per classificare le email. Tuttavia, con il chiarimento delle categorie prese in analisi durante lo stage ( ordini, fatture e contratti) , ho scelto di concentrarmi sull'estrazione degli allegati presenti nelle stessa piuttosto che sul contenuto della email. Questo cambio di prospettiva ha portato a una semplificazione del processo di classificazione, in quanto i metadati (denominati anche features nel campo del machine learning) si riducono al semplice testo estratto dagli allegati. Dunque, per poter classificare un documento in una delle categorie di interesse, ho pensato di utilizzare un modello di machine learning che prendesse in input il testo estratto e restituisse la categoria di appartenenza. In questo senso ,l'utilizzo di strumenti come Textract e Comprehend di AWS si è rivelato molto utile, in quanto permette di estrarre il testo dai documenti e di analizzarlo per ottenere informazioni utili.
+Dovendo classificare le email in base al loro contenuto, ho analizzato diverse strade possibili , come quella di utilizzare modelli di \gls{mlg} proposti da Sagemaker per classificare le email. Tuttavia, con il chiarimento delle categorie prese in analisi durante lo stage ( ordini, fatture e contratti) , ho scelto di concentrarmi sull'estrazione degli allegati presenti nelle stessa piuttosto che sul contenuto della email. Questo cambio di prospettiva ha portato a una semplificazione del processo di classificazione, in quanto i metadati (denominati anche features nel campo del machine learning) si riducono al semplice testo estratto dagli allegati. Dunque, per poter classificare un documento in una delle categorie di interesse, ho pensato di utilizzare un modello di machine learning che prendesse in input il testo estratto e restituisse la categoria di appartenenza. In questo senso ,l'utilizzo di strumenti come Textract e Comprehend di \gls{awsg} si è rivelato molto utile, in quanto permette di estrarre il testo dai documenti e di analizzarlo per ottenere informazioni utili.
  In questa fase è necessario distinguire due tipi di flusso di lavoro:
 \begin{itemize}
     \item Flusso di lavoro per il training del modello
@@ -34,7 +35,7 @@ Dovendo classificare le email in base al loro contenuto, ho analizzato diverse s
 \end{itemize}
 \subsection{Flusso di lavoro per il training del modello}
 \label{subsec:training-modello}
-In questa fase per poter addestrare un modello di Comprehend è necessario disporre di un dataset ampio ,significativo e bilanciato per poter distingure le categorie di interesse. Inoltre, è necessario disporre di un dataset etichettato, in cui ogni documento è associato alla sua categoria di appartenenza. Durante la fase di etichettatatura, sono emerse delle considerazioni importanti. Inanzitutto, i file da analizzare sono per lo piu file pdf (di documenti scansionati o meno), per tale motivo per la fase di training sono stati utilizzati unicamente file con tale estensione. Inoltre, si è scelto, in accordo con il tutor aziendale ,di utilizzare per il training unicamente le prime pagine di tali documenti per diversi motivi : spesso le prime pagine contengono le informazioni più importanti e rilevanti per la classificazione, inoltre, il costo di analizzare un documento è proporzionale al numero di pagine, quindi riducendo il numero di pagine si riducono i costi, assumendo anche il fatto che rispetto ai documenti incontrati il numero di pagine variava fino a 100 pagine. Queste due scelte (utilizzo di file pdf e utilizzo delle prime pagine) hanno portato a una riduzione della varietà dei dati e quindi a una riduzione della capacità del modello di generalizzare su nuovi dati ,creando dei potenziali bias (gergo del machine learning) nel modello. Di seguito vengono riportati i dati e il loro numero per trainare la prima versione del modello
+In questa fase per poter addestrare un modello di Comprehend è necessario disporre di un dataset ampio ,significativo e bilanciato per poter distingure le categorie di interesse. Inoltre, è necessario disporre di un dataset etichettato, in cui ogni documento è associato alla sua categoria di appartenenza. Durante la fase di etichettatatura, sono emerse delle considerazioni importanti. Inanzitutto, i file da analizzare sono per lo piu file pdf (di documenti scansionati o meno), per tale motivo per la fase di training sono stati utilizzati unicamente file con tale estensione. Inoltre, si è scelto, in accordo con il tutor aziendale ,di utilizzare per il training unicamente le prime pagine di tali documenti per diversi motivi : spesso le prime pagine contengono le informazioni più importanti e rilevanti per la classificazione, inoltre, il costo di analizzare un documento è proporzionale al numero di pagine, quindi riducendo il numero di pagine si riducono i costi, assumendo anche il fatto che rispetto ai documenti incontrati il numero di pagine variava fino a 100 pagine. Queste due scelte (utilizzo di file pdf e utilizzo delle prime pagine) hanno portato a una riduzione della varietà dei dati e quindi a una riduzione della capacità del modello di generalizzare su nuovi dati ,creando dei potenziali \glsfirstoccur{\gls{biasg}} nel modello. Di seguito vengono riportati i dati e il loro numero per trainare la prima versione del modello
 % da modificare
 \begin{itemize}
     \item 100 documenti per la categoria ordini
@@ -42,7 +43,7 @@ In questa fase per poter addestrare un modello di Comprehend è necessario dispo
     \item 100 documenti per la categoria contratti
     \item 100 documenti per la categoria non classificato
 \end{itemize}
-Per il processo chiamato active learning (gergo del machine learning) è stato scelto l'utilizzo di un servizio incluso in Comprehend introdotto recentemente da aws chiamato flywheel.
+Per il processo chiamato \glsfirstoccur{\gls{activelearningg}} è stato scelto l'utilizzo di un servizio incluso in Comprehend introdotto recentemente da aws chiamato flywheel.
 Tale processo segue i seguenti passi:
 \begin{itemize}
     \item Viene creato un dataset flywheel
@@ -55,7 +56,7 @@ Per tale fase, ho scelto di utilizzare i seguenti servizi:
 \begin{itemize}
     \item una funzione lambda che riceve in input un'allegato di qualsiasi tipo e (in base se è un pdf o meno) fa partire il processo di classificazione mediate il modello attivo di comprehend
     \item un modello attivo di comprehend che utilizza le funzionalità di textract per estrarre il testo in chiaro dal pdf ricevuto in input e restituisce la categoria di appartenenza con un certa confidenza
-    \item tramite un'ulteriore funzione lambda viene analizzata la confidenza e in base a questo viene scelto se salvare l'allegato in un bucket che contiene gli allegati non classificati oppure in un bucket con alto grado di confidenza
+    \item tramite un'ulteriore funzione lambda viene analizzata la confidenza e in base a questo viene scelto se salvare l'allegato in un \gls{bucketg} che contiene gli allegati non classificati oppure in un \gls{bucketg} con alto grado di confidenza
 \end{itemize}
 \section{Tecnologie e strumenti}
 \label{sec:tecnologie-strumenti}

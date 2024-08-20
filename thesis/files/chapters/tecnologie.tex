@@ -3,10 +3,10 @@
 \emph{In questo capitolo verranno descritti i servizi e le tecnologie analizzate e pertinenti per il problema descritto, in quale modo possono essere impiegate e una panoramica finalizzata a chiarirne il constesto e il caso d'uso.}
 
 \section{Amazon Web Services}
-Amazon Web Services (AWS) è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di Intelligenza Artificiale ({\gls{aig}}) e Machine Learning (\glsfirstoccur{\gls{mlg}}). Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'archittettura scalabile e serverless. 
+\gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \glsfirstoccur{\gls{ml}}. Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'archittettura scalabile e \gls{serverlessg}.
 
 \subsection{Amazon Comprehend}
-Amazon Comprehend è un servizio di analisi del linguaggio naturale (\glsfirstoccur{\gls{nlpg}}) che utilizza l'apprendimento automatico per identificare informazioni utili nei testi. Amazon Comprehend è stato utilizzato per analizzare i testi delle recensioni degli utenti dell'applicazione.
+Amazon Comprehend è un servizio di analisi del linguaggio naturale \gls{nlpg} che utilizza l'apprendimento automatico per identificare informazioni utili nei testi. Amazon Comprehend è stato utilizzato per analizzare i testi delle recensioni degli utenti dell'applicazione.
 
 \begin{figure}[h]
   \centering
@@ -16,7 +16,7 @@ Amazon Comprehend è un servizio di analisi del linguaggio naturale (\glsfirstoc
 \end{figure}
 
 \subsection{Amazon Textract}
-Amazon Textract è un servizio di \glsfirstoccur{\gls{ocrg}} che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati delle immagini. Amazon Textract è stato utilizzato per estrarre il testo dalle immagini delle ricette.
+Amazon Textract è un servizio di \gls{ocr} che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati delle immagini. Amazon Textract è stato utilizzato per estrarre il testo dalle immagini delle ricette.
 
 \begin{figure}[h]
   \centering
@@ -36,7 +36,7 @@ Amazon Simple Storage Service (Amazon S3) è un servizio di storage di oggetti c
 \end{figure}
 
 \subsection{AWS Lambda}
-AWS Lambda è un servizio di calcolo serverless che esegue il codice in risposta a eventi e gestisce automaticamente le risorse di calcolo richieste dal codice. AWS Lambda è stato utilizzato per implementare le funzioni di backend dell'applicazione. 
+AWS Lambda è un servizio di calcolo \gls{serverlessg} che esegue il codice in risposta a eventi e gestisce automaticamente le risorse di calcolo richieste dal codice. AWS Lambda è stato utilizzato per implementare le funzioni di backend dell'applicazione. 
 
 \begin{figure}[h]
   \centering
@@ -56,7 +56,7 @@ Amazon DynamoDB è un servizio di database NoSQL completamente gestito che offre
 \end{figure}
 
 \subsection{Amazon Step Functions}
-AWS Step Functions è un servizio di orchestrazione di serverless che consente di coordinare facilmente i componenti di applicazioni distribuite e microservizi utilizzando logica visuale. 
+AWS Step Functions è un servizio di orchestrazione di \gls{serverlessg} che consente di coordinare facilmente i componenti di applicazioni distribuite e microservizi utilizzando logica visuale. 
 
 \begin{figure}[h]
   \centering

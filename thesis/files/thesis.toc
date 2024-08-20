@@ -24,16 +24,17 @@
 \contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{10}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Python}{10}{subsection.3.3.1}%
 \contentsline {chapter}{\numberline {4}Progettazione e codifica}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Estrazione degli allegati}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Classificazione dei documenti}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Flusso di lavoro per il training del modello}{13}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Flusso di lavoro per la classificazione}{14}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Tecnologie e strumenti}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ciclo di vita del software}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Progettazione}{14}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Namespace 1}{14}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Design Pattern utilizzati}{15}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Codifica}{15}{section.4.7}%
+\contentsline {section}{\numberline {4.1}Introduzione}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estrazione degli allegati}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Classificazione dei documenti}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Flusso di lavoro per il training del modello}{13}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Flusso di lavoro per la classificazione}{14}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Tecnologie e strumenti}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Ciclo di vita del software}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Progettazione}{14}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Namespace 1}{14}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Design Pattern utilizzati}{15}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Codifica}{15}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Conclusioni}{16}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Consuntivo finale}{16}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Raggiungimento degli obiettivi}{16}{section.5.2}%
