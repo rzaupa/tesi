@@ -1,0 +1,44 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Organizzazione del testo}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}L'azienda}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}L'offerta di stage}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Descrizione dello stage}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduzione al progetto}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Pianificazione}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Pianificazione settimanale}{5}{subsection.2.3.1}%
+\contentsline {chapter}{\numberline {3}Tecnologie}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Amazon Web Services}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Amazon Comprehend}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Amazon Textract}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Amazon S3}{8}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}AWS Lambda}{8}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Amazon DynamoDB}{9}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Amazon Step Functions}{9}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Strumenti di sviluppo}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Visual Studio Code}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Git}{9}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Bitbucket}{10}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Python}{10}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Progettazione e codifica}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Estrazione degli allegati}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Classificazione dei documenti}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Flusso di lavoro per il training del modello}{13}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Flusso di lavoro per la classificazione}{14}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Tecnologie e strumenti}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ciclo di vita del software}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Progettazione}{14}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Namespace 1}{14}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Design Pattern utilizzati}{15}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Codifica}{15}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusioni}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Consuntivo finale}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Raggiungimento degli obiettivi}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Conoscenze acquisite}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Valutazione personale}{16}{section.5.4}%
+\contentsline {chapter}{Acronimi e abbreviazioni}{17}{section*.23}%
+\contentsline {chapter}{Glossario}{18}{section*.25}%
+\contentsline {chapter}{Bibliografia}{20}{appendix*.27}%
