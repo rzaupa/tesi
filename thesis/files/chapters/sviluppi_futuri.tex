@@ -1,0 +1,9 @@
+\chapter{Sviluppi futuri}
+\section{Analisi del contenuto della mail}
+Per poter analizzare il contenuto della mail ed estrarre le informazioni associate si può modificare la funzione lambda \textit{processEmail} in modo tale da estrarre il testo della mail e non solo gli allegati.\\
+Inoltre, si può implementare un modello di classificazione di Comprehend per classificare il testo della mail in base al contenuto analogamente a quanto fatto per gli allegati e successivamente estrarre le informazioni associate. 
+\section{Aggiunta di nuove categorie}
+Si possono aggiungere nuove categorie di classificazione se necessario andando a modificare il modello di classificazione di Comprehend e in particolare il dataset fornito. Inoltre si possono aggiungere nuove funzioni lambda per l'estrazioni delle informazioni associate a ciascuna categorie. 
+\section{Completamento delle informazioni}
+Si possono completare le informazioni mancanti non estratte interrogando il database DynamoDB. Questo lavoro si può fare tra lo step di 2 e lo step 3. 
+\section{Sviluppo di un'interfaccia grafica}

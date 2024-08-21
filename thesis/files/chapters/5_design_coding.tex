@@ -22,12 +22,12 @@ Dunque, in questa fase il file di input è un file .eml , mentre l'output sono g
 \begin{itemize}
     \item Un \glsfirstoccur{\gls{bucketg}} contenente i file .eml da analizzare
     \item Un \gls{bucketg} contente gli allegati estratti dalle mail 
-    \item Una funzione lambda avente come trigger l'inserimento di un file .eml all'interno del \gls{bucketg} di input e che elaborasse tale file per ottenere degli allegati di output
+    \item Una funzione lambda che viene attivata dall'inserimento di un file .eml all'interno del \gls{bucketg} di input e che elabora tale file per ottenere degli allegati di output
 \end{itemize}
 
 \section{Classificazione dei documenti}
 \label{sec:classificazione-documenti}
-Dovendo classificare le email in base al loro contenuto, ho analizzato diverse strade possibili , come quella di utilizzare modelli di \gls{mlg} proposti da Sagemaker per classificare le email. Tuttavia, con il chiarimento delle categorie prese in analisi durante lo stage ( ordini, fatture e contratti) , ho scelto di concentrarmi sull'estrazione degli allegati presenti nelle stessa piuttosto che sul contenuto della email. Questo cambio di prospettiva ha portato a una semplificazione del processo di classificazione, in quanto i metadati (denominati anche features nel campo del machine learning) si riducono al semplice testo estratto dagli allegati. Dunque, per poter classificare un documento in una delle categorie di interesse, ho pensato di utilizzare un modello di machine learning che prendesse in input il testo estratto e restituisse la categoria di appartenenza. In questo senso ,l'utilizzo di strumenti come Textract e Comprehend di \gls{awsg} si è rivelato molto utile, in quanto permette di estrarre il testo dai documenti e di analizzarlo per ottenere informazioni utili.
+Dovendo classificare le email in base al loro contenuto, ho analizzato diverse strade possibili , come quella di utilizzare modelli di \gls{mlg} proposti da Sagemaker per classificare le email. Tuttavia, con il chiarimento delle categorie prese in analisi durante lo stage ( ordini, fatture e contratti) , ho scelto di concentrarmi sull'estrazione degli allegati presenti nelle stessa piuttosto che sul contenuto della email. Questo cambio di prospettiva ha portato a una semplificazione del processo di classificazione, in quanto i metadati (denominati anche features nel campo del machine learning) si riducono al semplice testo estratto dagli allegati. Dunque, per poter classificare un documento in una delle categorie di interesse, ho pensato di utilizzare un modello di machine learning che prendesse in input il testo estratto e restituisse la categoria di appartenenza. In questo senso ,l'utilizzo di strumenti come Textract e Comprehend di \gls{awsg} si è rivelato molto utile, in quanto permette di estrarre il testo dai documenti e di analizzarlo per ottenere informazioni utili. Tuttavia, c'è anche da sottolineare come in una fase iniziale si sia dibattuto riguardo l'utilizzo al loro posto del servizio Bedrock con claude-3. Tale servizio è stato poi scartato a favore di un modello customizzato e maggiormente adatto alla soluzione. 
  In questa fase è necessario distinguire due tipi di flusso di lavoro:
 \begin{itemize}
     \item Flusso di lavoro per il training del modello
@@ -50,6 +50,20 @@ Tale processo segue i seguenti passi:
     \item Viene inizializzata un'iterazione flywheel
     \item In base ai risultati dell'iterazione viene scelto se attivare il nuovo modello formatosi in base a parametri scelti in precedenza
 \end{itemize}
+\subsubsection{Analisi del dataset}
+Percentuale di oridine, fattura, contratti e non classificato 
+\subsubsection{Preprocessing}
+\begin{itemize}
+    \item Estrazione del testo tramite Amazon Textract 
+    \item Creazione del file csv 
+    \item Caricamento del file di training csv trmite flywheel 
+\end{itemize}
+\subsubsection{Training}
+\begin{itemize}
+    \item Creazione di una versione del classificatore su Custom Classifier 
+\end{itemize}
+\subsubsection{Valutazione}
+\subsubsection{Test del modello}
 \subsection{Flusso di lavoro per la classificazione}
 \label{subsec:classificazione}
 Per tale fase, ho scelto di utilizzare i seguenti servizi:
@@ -58,32 +72,65 @@ Per tale fase, ho scelto di utilizzare i seguenti servizi:
     \item un modello attivo di comprehend che utilizza le funzionalità di textract per estrarre il testo in chiaro dal pdf ricevuto in input e restituisce la categoria di appartenenza con un certa confidenza
     \item tramite un'ulteriore funzione lambda viene analizzata la confidenza e in base a questo viene scelto se salvare l'allegato in un \gls{bucketg} che contiene gli allegati non classificati oppure in un \gls{bucketg} con alto grado di confidenza
 \end{itemize}
-\section{Tecnologie e strumenti}
-\label{sec:tecnologie-strumenti}
 
-Di seguito viene data una panoramica delle tecnologie e strumenti utilizzati.
+\section{Estrazione delle informazioni}
+In questa fase l'obiettivo è l'estrazione delle informazioni associate a ciascuna categoria escludendo la categoria non classificato. A partire dai risultati di classificazione della fase precedente si è analizzato il metodo migliore per poter estrarre le informazioni ricercate dalle categorie di contratti, ordini e fatture. \\
+Fondamentalmente sono stati analizzati diversi metodi utilizzando differenti servizi per aderire a tale scopo:
+\begin{itemize}
+    \item Comprehend custom entities
+    \item Amazon Bedrock
+    \item features di textract
+\end{itemize}
+Digressione sui vantaggi e svantaggi ... 
+Alla fine si è optato per le seguenti opzioni:
+\begin{itemize}
+    \item Custom queries per le fatture 
+    \item Custom queries per gli ordini 
+    \item Analisi delle tabelle e dei form per i contratti 
+\end{itemize}
+C'è da sottolineare che per ogni informazione estratta viene anche riportata la percentuale di confidenza.
+Il flusso per ogni categoria è il seguente:
+\begin{itemize}
+    \item Quando un file viene caricato nel bucket relativo ai documenti classificati tale azione scatena l'esecuzione di una lambda apposita per il tipo di documento 
+    \item Al termine dell'esecuzione tali informazioni estratte vengono passate alla fase successiva 
+\end{itemize}
+\subsection{Estrazioni delle informazioni dai contratti}
+Per tale fase essendo i contratti della stessa forma, (una tabella con le seguenti informazioni ...) si è optato per un'opzione poco costosa ma comunque efficiace. Tale soluzione consiste nell'identificare tale tabella ed estrarne i campi in base alla conoscenze note. 
+\subsection{Estrazione delle informazioni dalle fatture e degli ordini}
+Per tale fase si è pensato all'utilizzo di custom queries (adapter) di textract dato che tali documenti possiedono una struttura variabile. L'utilizzo di analisi delle fatture tramite la funzione apposita di textract è stata considerata ma poi scartata. Per gli ordini invece si è pensato di utilizzarla per ricavarne gli articoli in modo piu' diretto e sicuro. 
+\section{Persistenza dei dati}
+In questa fase l'obiettivo è far persistere i dati. La scelta è ricaduta su Amazon DynamoDB. Il flusso è il seguente:
+\begin{itemize}
+    \item Per ogni categoria (contratti, ordini, fatture) è creata una lambda, tale lambda salva i risultati delle informazioni estratte in DynamoDB nelle tabelle Ordini, Contratti, Fattura, Articoli\_Fatture, Articoli\_Ordini
+\end{itemize}
 
-\subsection*{Tecnologia 1}
-Descrizione Tecnologia 1.
-
-\subsection*{Tecnologia 2}
-Descrizione Tecnologia 2
-
-\section{Ciclo di vita del software}
-\label{sec:ciclo-vita-software}
-
-\section{Progettazione}
-\label{sec:progettazione}
-
-\subsection{Namespace 1} %**************************
-Descrizione namespace 1.
-
-\begin{namespacedesc}
-    \classdesc{Classe 1}{Descrizione classe 1}
-    \classdesc{Classe 2}{Descrizione classe 2}
-\end{namespacedesc}
-
-
-\section{Design Pattern utilizzati}
-
-\section{Codifica}
+\section{Analisi dei costi}
+%\section{Tecnologie e strumenti}
+%\label{sec:tecnologie-strumenti}
+%
+%Di seguito viene data una panoramica delle tecnologie e strumenti utilizzati.
+%
+%\subsection*{Tecnologia 1}
+%Descrizione Tecnologia 1.
+%
+%\subsection*{Tecnologia 2}
+%Descrizione Tecnologia 2
+%
+%\section{Ciclo di vita del software}
+%\label{sec:ciclo-vita-software}
+%
+%\section{Progettazione}
+%\label{sec:progettazione}
+%
+%\subsection{Namespace 1} %**************************
+%Descrizione namespace 1.
+%
+%\begin{namespacedesc}
+%    \classdesc{Classe 1}{Descrizione classe 1}
+%    \classdesc{Classe 2}{Descrizione classe 2}
+%\end{namespacedesc}
+%
+%
+%\section{Design Pattern utilizzati}
+%
+%\section{Codifica}
