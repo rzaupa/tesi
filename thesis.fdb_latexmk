@@ -1,0 +1,15 @@
+# Fdb version 4
+["latex"] 1724164424.55886 "thesis/files/thesis.tex" "thesis.dvi" "thesis" 1724164691.32918 2
+  "c:/texlive/2024/texmf-dist/tex/latex/base/bk10.clo" 1720970173 8288 89d72b042f11f13c66cb97f0c9d55d3a ""
+  "c:/texlive/2024/texmf-dist/tex/latex/base/book.cls" 1720970173 23268 866793c4788723d271ce62bb0046a901 ""
+  "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1720970157 42007 0b741a3c21a5ca32b40e3846e75b3548 ""
+  "c:/texlive/2024/texmf-var/web2c/pdftex/latex.fmt" 1720970203 6879225 293403190d6ac69cd3312c19eabc2051 ""
+  "c:/texlive/2024/texmf.cnf" 1719134177 801 dfafa23e53257a4fa2ee65b8b8c50d34 ""
+  "config/packages.tex" 0 -1 0 ""
+  "thesis.aux" 1724164424 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "thesis/files/thesis.tex" 1724076959 1148 f0e95273218eb4e8e3a123843eb78e10 ""
+  (generated)
+  "thesis.aux"
+  "thesis.dvi"
+  "thesis.log"
+  (rewritten before read)
