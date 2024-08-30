@@ -6,7 +6,10 @@
 \gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \glsfirstoccur{\gls{ml}}. Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'archittettura scalabile e \gls{serverlessg}.
 
 \subsection{Amazon Comprehend}
-Amazon Comprehend è un servizio di analisi del linguaggio naturale \gls{nlpg} che utilizza l'apprendimento automatico per identificare informazioni utili nei testi. Amazon Comprehend è stato utilizzato per analizzare i testi delle recensioni degli utenti dell'applicazione.
+Amazon Comprehend (logo in \ref{fig:comprehend}) è un servizio di analisi del linguaggio naturale \gls{nlpg} che utilizza l'apprendimento automatico per identificare informazioni e connessioni utili nel testo. Tale servizio offre due funzionalità principali: Custom Classifier e Entity Classifier. 
+Entrambi i servizi permettono di generare dei modelli dopo la fase di training creata mediante dei file csv (label e testo).\\
+Un servizio di Comprehend utile in questo contesto è Flywheel che è il punto di riferimento principale per eseguire MLOps (Machine Learning Operations) per i modelli di Comprehend. \\
+Amazon Comprehend è stato utilizzato per classificare i documenti nelle categorie selezionate. 
 
 \begin{figure}[h]
   \centering
@@ -16,7 +19,28 @@ Amazon Comprehend è un servizio di analisi del linguaggio naturale \gls{nlpg} c
 \end{figure}
 
 \subsection{Amazon Textract}
-Amazon Textract è un servizio di \gls{ocr} che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati delle immagini. Amazon Textract è stato utilizzato per estrarre il testo dalle immagini delle ricette.
+Amazon Textract (logo in \ref{fig:textract}) è un servizio di \gls{ocr} che utilizza l'apprendimento automatico per riconoscere e analizzare il testo e i dati da immagini o documenti. \\
+Tale servizio oltre ad effettuare l'identificazione ottica dei caratteri permette di identificare il contenuto del documento estraendone il testo, le tabelle, campi e relazioni. Oltre al contenuto rilevato, Amazon Textract, fornisce punteggi di confidenza e bounded box (box di confine) per ogni parola e ogni riga di testo.
+Supporta i file pdf, txt, doc, docx, jpg, png.\\
+I casi d'uso che Textract ricopre sono i seguenti:
+\begin{itemize}
+  \item Estrazione del testo non strutturato (DetectDocumentText). Questa funzionalità permette di estrarre i dati in forma di WORDS e LINES perdendo la formattazione struturale del documento. 
+  \item Estrazione ed elaborazione di moduli e tabelle (AnalyzeDocument, feature$=$TABLES)
+  \item Estrazione di form (chiave/valore) (AnalyzeDocument, feature$=$FORMS)
+  \item Estrazione tramite query. Possono essere degli strumenti potenti quando solo pochi pezzi o informazioni critiche sono desiderate. (AnalyzeDocument, feature$=$QUERIES). 
+  \item Rilevamento della firma. (AnalyzeDocument, feature$=$SIGNATURES). La risposta prevede la confidenza della rilevazione e il testo del documento (WORDS e LINES). 
+  \item Estrazione informazioni da fatture/ricevute (AnalyzeExpense)
+  \item Estrazione informazioni dai documenti di identità (CALL\_TEXTRACT\_ANALYZE\_ID)
+  \item Rilevamento multicolonna
+\end{itemize}
+Per personalizzare le query si può usare uno strumento chiamato Custom Queries. Tramite questo strumento si può riconoscere:
+\begin{itemize}
+  \item termini univoci
+  \item strutture
+  \item informazioni specifiche
+\end{itemize}
+Tale soluzione rispetto alle query non personalizzate offre maggiore precisione e un intervento umano minore. 
+Amazon Textract è stato utilizzato per estrarre il testo dai documenti sia come input al classificatore di Comprehend sia per estrarre informazioni utili.
 
 \begin{figure}[h]
   \centering

@@ -1,0 +1,5 @@
+PWD c:/Users/ricca/OneDrive/Documenti/Tesi/unipd-clean-thesis-template/thesis/files
+INPUT c:/texlive/2024/texmf.cnf
+INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/ricca/OneDrive/Documenti/Tesi/unipd-clean-thesis-template/thesis/files/thesis.tex

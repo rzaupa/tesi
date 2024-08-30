@@ -588,6 +588,10 @@ INPUT ./thesis.lot
 INPUT ./thesis.lot
 INPUT thesis.lot
 OUTPUT thesis.lot
+INPUT ./preface/6-convenzioni-tipografiche.tex
+INPUT ./preface/6-convenzioni-tipografiche.tex
+INPUT preface/6-convenzioni-tipografiche.tex
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT ./chapters/1_introduction.tex
 INPUT ./chapters/1_introduction.tex
 INPUT ./chapters/1_introduction.tex
@@ -596,7 +600,6 @@ INPUT chapters/1_introduction.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
@@ -643,6 +646,7 @@ INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT ./img/tecnologie/AWS_Lambda.png
 INPUT ./img/tecnologie/AWS_Lambda.png
 INPUT ./img/tecnologie/AWS_Lambda.png

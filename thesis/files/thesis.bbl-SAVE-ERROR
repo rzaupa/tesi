@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{site:active-learning}{online}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Active learning worflow for Amazon Comprehend}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/active-learning-workflow-for-amazon-comprehend-custom-classification-part-1/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/active-learning-workflow-for-amazon-comprehend-custom-classification-part-1/
+      \endverb
+    \endentry
+    \entry{site:comprehend}{online}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Comprehend}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/amazon-comprehend-document-classifier-adds-layout-support-for-higher-accuracy/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/amazon-comprehend-document-classifier-adds-layout-support-for-higher-accuracy/
+      \endverb
+    \endentry
     \entry{site:aws}{online}{}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
@@ -30,6 +56,45 @@
       \endverb
       \verb{url}
       \verb https://aws.amazon.com/
+      \endverb
+    \endentry
+    \entry{site:aws-samples}{online}{}{}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{aws samples}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/aws-samples/aws-ai-intelligent-document-processing
+      \endverb
+      \verb{url}
+      \verb https://github.com/aws-samples/aws-ai-intelligent-document-processing
+      \endverb
+    \endentry
+    \entry{site:comprehend-idp}{online}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Comprehend idp}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-one-step-classification-and-entity-recognition-with-amazon-comprehend-for-intelligent-document-processing/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-one-step-classification-and-entity-recognition-with-amazon-comprehend-for-intelligent-document-processing/
+      \endverb
+    \endentry
+    \entry{site:comprehend-samples}{online}{}{}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{comprehend samples}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/aws-samples/amazon-comprehend-examples/blob/master/building-custom-classifier/BuildingCustomClassifier.ipynb
+      \endverb
+      \verb{url}
+      \verb https://github.com/aws-samples/amazon-comprehend-examples/blob/master/building-custom-classifier/BuildingCustomClassifier.ipynb
       \endverb
     \endentry
     \entry{article:spooky}{article}{}{}
@@ -74,6 +139,45 @@
       \verb 10.1103/PhysRev.47.777
       \endverb
     \endentry
+    \entry{site:flywheel-mlops}{online}{}{}
+      \field{sortinit}{f}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{title}{flywheel}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-the-amazon-comprehend-flywheel-for-mlops/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-the-amazon-comprehend-flywheel-for-mlops/
+      \endverb
+    \endentry
+    \entry{site:idp}{online}{}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{Intelligent document processing parte 1}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/part-1-intelligent-document-processing-with-aws-ai-services/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/part-1-intelligent-document-processing-with-aws-ai-services/
+      \endverb
+    \endentry
+    \entry{site:invoice-textract}{online}{}{}
+      \field{sortinit}{i}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{invoice textract}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/announcing-expanded-support-for-extracting-data-from-invoices-and-receipts-using-amazon-textract/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/announcing-expanded-support-for-extracting-data-from-invoices-and-receipts-using-amazon-textract/
+      \endverb
+    \endentry
     \entry{womak:lean-thinking}{book}{}{}
       \name{author}{1}{}{%
         {{hash=e476de67e57454852ad240f1ba5e23ca}{%
@@ -112,6 +216,45 @@
       \endverb
       \verb{url}
       \verb http://agilemanifesto.org/iso/it/
+      \endverb
+    \endentry
+    \entry{site:aws-sdk-samples}{online}{}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{sdk samples}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/awsdocs/aws-doc-sdk-examples
+      \endverb
+      \verb{url}
+      \verb https://github.com/awsdocs/aws-doc-sdk-examples
+      \endverb
+    \endentry
+    \entry{site:textract}{online}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{Textract}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/automatically-extract-text-and-structured-data-from-documents-with-amazon-textract/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/automatically-extract-text-and-structured-data-from-documents-with-amazon-textract/
+      \endverb
+    \endentry
+    \entry{site:textract-bedrock}{online}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{Textract bedrock}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/intelligent-document-processing-with-amazon-textract-amazon-bedrock-and-langchain/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/blogs/machine-learning/intelligent-document-processing-with-amazon-textract-amazon-bedrock-and-langchain/
       \endverb
     \endentry
   \enddatalist
