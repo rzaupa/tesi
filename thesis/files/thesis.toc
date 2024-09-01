@@ -13,44 +13,45 @@
 \contentsline {section}{\numberline {3.1}Amazon Web Services}{7}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Amazon Comprehend}{7}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Amazon Textract}{8}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Amazon S3}{8}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}AWS Lambda}{9}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Amazon DynamoDB}{9}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Amazon Step Functions}{9}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}Amazon Sagemaker}{10}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}Amazon Bedrock}{10}{subsection.3.1.8}%
-\contentsline {section}{\numberline {3.2}Strumenti di sviluppo}{10}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Visual Studio Code}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Git}{11}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Bitbucket}{11}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{11}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Python}{11}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Progettazione e codifica}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduzione}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estrazione degli allegati}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Classificazione dei documenti}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Flusso di lavoro per il training del modello}{13}{subsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.1}Analisi del dataset}{14}{subsubsection.4.3.1.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.2}Preprocessing}{14}{subsubsection.4.3.1.2}%
-\contentsline {subsubsection}{\numberline {4.3.1.3}Training}{14}{subsubsection.4.3.1.3}%
-\contentsline {subsubsection}{\numberline {4.3.1.4}Valutazione}{14}{subsubsection.4.3.1.4}%
-\contentsline {subsubsection}{\numberline {4.3.1.5}Test del modello}{14}{subsubsection.4.3.1.5}%
-\contentsline {subsection}{\numberline {4.3.2}Flusso di lavoro per la classificazione}{14}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Estrazione delle informazioni}{15}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Estrazioni delle informazioni dai contratti}{15}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Estrazione delle informazioni dalle fatture e degli ordini}{15}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Persistenza dei dati}{15}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Analisi dei costi}{16}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Sviluppi futuri}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{17}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{17}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{17}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{18}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Consuntivo finale}{18}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{18}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{18}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Valutazione personale}{18}{section.6.4}%
-\contentsline {chapter}{Acronimi e abbreviazioni}{19}{section*.25}%
-\contentsline {chapter}{Glossario}{20}{section*.27}%
-\contentsline {chapter}{Bibliografia}{22}{appendix*.29}%
+\contentsline {subsection}{\numberline {3.1.3}Amazon S3}{10}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}AWS Lambda}{11}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Amazon DynamoDB}{11}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}AWS Step Functions}{12}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Amazon SageMaker}{12}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Amazon Bedrock}{14}{subsection.3.1.8}%
+\contentsline {section}{\numberline {3.2}Strumenti di sviluppo}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Jupyter Notebook}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Visual Studio Code}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Git}{15}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Bitbucket}{15}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Python}{16}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Progettazione e codifica}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduzione}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estrazione degli allegati}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Classificazione dei documenti}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Flusso di lavoro per il training del modello}{18}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Analisi del dataset}{19}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}Preprocessing}{19}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}Training}{19}{subsubsection.4.3.1.3}%
+\contentsline {subsubsection}{\numberline {4.3.1.4}Valutazione}{19}{subsubsection.4.3.1.4}%
+\contentsline {subsubsection}{\numberline {4.3.1.5}Test del modello}{19}{subsubsection.4.3.1.5}%
+\contentsline {subsection}{\numberline {4.3.2}Flusso di lavoro per la classificazione}{19}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Estrazione delle informazioni}{20}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Estrazioni delle informazioni dai contratti}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Estrazione delle informazioni dalle fatture e degli ordini}{20}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Persistenza dei dati}{20}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Analisi dei costi}{21}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Sviluppi futuri}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{22}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Consuntivo finale}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{23}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Valutazione personale}{23}{section.6.4}%
+\contentsline {chapter}{Acronimi e abbreviazioni}{24}{section*.28}%
+\contentsline {chapter}{Glossario}{25}{section*.30}%
+\contentsline {chapter}{Bibliografia}{27}{appendix*.32}%

@@ -636,6 +636,7 @@ INPUT ./img/tecnologie/comprehend.png
 INPUT ./img/tecnologie/comprehend.png
 INPUT ./img/tecnologie/comprehend.png
 INPUT ./img/tecnologie/comprehend.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT ./img/tecnologie/textract.png
 INPUT ./img/tecnologie/textract.png
 INPUT ./img/tecnologie/textract.png
@@ -646,7 +647,6 @@ INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
 INPUT ./img/tecnologie/s3.png
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT ./img/tecnologie/AWS_Lambda.png
 INPUT ./img/tecnologie/AWS_Lambda.png
 INPUT ./img/tecnologie/AWS_Lambda.png
@@ -662,6 +662,21 @@ INPUT ./img/tecnologie/stepfunctions.png
 INPUT ./img/tecnologie/stepfunctions.png
 INPUT ./img/tecnologie/stepfunctions.png
 INPUT ./img/tecnologie/stepfunctions.png
+INPUT ./img/tecnologie/sagemaker.png
+INPUT ./img/tecnologie/sagemaker.png
+INPUT ./img/tecnologie/sagemaker.png
+INPUT ./img/tecnologie/sagemaker.png
+INPUT ./img/tecnologie/sagemaker.png
+INPUT ./img/tecnologie/bedrock.png
+INPUT ./img/tecnologie/bedrock.png
+INPUT ./img/tecnologie/bedrock.png
+INPUT ./img/tecnologie/bedrock.png
+INPUT ./img/tecnologie/bedrock.png
+INPUT ./img/tecnologie/jupyter.png
+INPUT ./img/tecnologie/jupyter.png
+INPUT ./img/tecnologie/jupyter.png
+INPUT ./img/tecnologie/jupyter.png
+INPUT ./img/tecnologie/jupyter.png
 INPUT ./img/tecnologie/vscode.png
 INPUT ./img/tecnologie/vscode.png
 INPUT ./img/tecnologie/vscode.png
@@ -708,7 +723,6 @@ INPUT ./appendix/bibliography.tex
 INPUT ./appendix/bibliography.tex
 INPUT ./appendix/bibliography.tex
 INPUT appendix/bibliography.tex
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT appendix/glossary-entries.tex
 OUTPUT thesis.glsdefs
 INPUT thesis.aux
