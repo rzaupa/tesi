@@ -158,39 +158,259 @@ Per migliorare il modello nel tempo, è stato utilizzato il processo di \glsfirs
     \item Attivazione del nuovo modello: Sulla base dei risultati dell'iterazione, viene deciso se attivare il nuovo modello. La decisione si basa su parametri predefiniti, come le metriche di precisione, recall e F1 score.
 \end{itemize}
 
-
-
-
 \section{Estrazione delle informazioni}
-In questa fase l'obiettivo è l'estrazione delle informazioni associate a ciascuna categoria escludendo la categoria non classificato. A partire dai risultati di classificazione della fase precedente si è analizzato il metodo migliore per poter estrarre le informazioni ricercate dalle categorie di contratti, ordini e fatture. \\
+In questa fase l'obiettivo è l'estrazione delle informazioni associate a ciascuna categoria escludendo la categoria non classificato. A partire dai risultati di classificazione della fase precedente si è analizzato il metodo migliore per poter estrarre le informazioni ricercate dalle categorie di contratti, ordini e fatture. Per ciascuna categoria
+utilizzata una funzione lambda che tramite Amazon Textract estrae le informazioni
+principali dai documenti. Per ciascuna delle informazioni estratte viene riportata
+anche la confidenza associata utile nella fase successiva.\\
 Fondamentalmente sono stati analizzati diversi metodi utilizzando differenti servizi per aderire a tale scopo:
 \begin{itemize}
     \item Comprehend custom entities
-    \item Amazon Bedrock
-    \item features di textract
+    \item Amazon Bedrock con il modello Claude-3
+    \item Servizi di Amazon Textract
 \end{itemize}
-Digressione sui vantaggi e svantaggi ... 
-Alla fine si è optato per le seguenti opzioni:
+Per ciascuna categoria è stata fatta dunque un'analisi che ha riguardato i costi oltre che l'efficacia del servizio.\\
+\subsection{Estrazione delle informazioni dai contratti}
+\label{subsec:estrazione-contratti}
+Per l'estrazione delle informazioni dai contratti, è stata adottata una soluzione efficace e a basso costo, sfruttando la struttura uniforme di questi documenti. I contratti analizzati presentano una tabella standardizzata che contiene le seguenti informazioni chiave:
+
 \begin{itemize}
-    \item Custom queries per le fatture 
-    \item Custom queries per gli ordini 
-    \item Analisi delle tabelle e dei form per i contratti 
+    \item Titolo del contratto
+    \item Cliente
+    \item Partita IVA del cliente
+    \item Codice fiscale del cliente
+    \item Indirizzo del cliente
+    \item Rappresentante legale del cliente
+    \item Referente SMI
+    \item Fornitore
 \end{itemize}
-C'è da sottolineare che per ogni informazione estratta viene anche riportata la percentuale di confidenza.
-Il flusso per ogni categoria è il seguente:
+
+La strategia implementata si basa sull'identificazione di questa tabella e sull'estrazione automatizzata dei campi utilizzando le conoscenze predefinite sulla struttura del documento. Per estrarre le informazioni desiderate, è stato impiegato Amazon Textract, utilizzando la funzione \texttt{analyze\_document} con l'opzione \texttt{TABLES}, che consente di estrarre in modo efficiente i dati tabulari presenti nella prima pagina del contratto.
+
+Per distinguere tra preventivi e contratti, è stata adottata una strategia basata sulla rilevazione delle firme all'interno del documento, sempre utilizzando Amazon Textract, ma con la funzione \texttt{SIGNATURES}. Il processo prevede l'analisi delle pagine a partire dall'ultima, alla ricerca di firme. Se una firma viene rilevata, il documento viene classificato come contratto. Se, invece, al termine dell'analisi di tutte le pagine, non viene trovata alcuna firma, il documento viene classificato come preventivo.
+
+Il risultato di questa analisi viene salvato in un file JSON di output, includendo un campo \texttt{is\_contract} che indica se il documento è stato classificato come contratto o preventivo. In caso di rilevamento di una firma, viene registrato anche il livello di confidenza associato. Se non viene trovata alcuna firma, la classificazione come preventivo viene effettuata con una confidenza del 100\%. In entrambi i casi, viene applicata una soglia (\textit{threshold}) di confidenza per garantire l'accuratezza del processo di rilevazione delle firme.
+
+Questa soluzione permette di distinguere in modo efficace tra contratti e preventivi, sfruttando le funzionalità avanzate di Amazon Textract e mantenendo i costi operativi contenuti, senza compromettere l'affidabilità e la precisione del processo.
+
+\subsection{Estrazione delle informazioni dalle fatture}
+\label{subsec:estrazione-fatture}
+Per l'estrazione delle informazioni dalle fatture, sono state considerate diverse tecnologie, valutandone costi ed efficacia. Le soluzioni analizzate includono:
+
 \begin{itemize}
-    \item Quando un file viene caricato nel bucket relativo ai documenti classificati tale azione scatena l'esecuzione di una lambda apposita per il tipo di documento 
-    \item Al termine dell'esecuzione tali informazioni estratte vengono passate alla fase successiva 
+    \item Amazon Textract, in particolare la funzione \texttt{analyze\_expense}
+    \item Comprehend Custom Entity Recognition
+    \item Amazon Bedrock con il modello Claude-3
+    \item Utilizzo di \textit{queries} e \textit{custom queries} (adapters) di Amazon Textract
 \end{itemize}
-\subsection{Estrazioni delle informazioni dai contratti}
-Per tale fase essendo i contratti della stessa forma, (una tabella con le seguenti informazioni ...) si è optato per un'opzione poco costosa ma comunque efficiace. Tale soluzione consiste nell'identificare tale tabella ed estrarne i campi in base alla conoscenze note. 
-\subsection{Estrazione delle informazioni dalle fatture e degli ordini}
-Per tale fase si è pensato all'utilizzo di custom queries (adapter) di textract dato che tali documenti possiedono una struttura variabile. L'utilizzo di analisi delle fatture tramite la funzione apposita di textract è stata considerata ma poi scartata. Per gli ordini invece si è pensato di utilizzarla per ricavarne gli articoli in modo piu' diretto e sicuro. 
+
+Per quanto riguarda l'analisi delle fatture tramite la funzione \texttt{analyze\_expense} di Amazon Textract, questa è stata presa in considerazione poiché è specificamente progettata per l'analisi di fatture e ricevute, offrendo un'alta precisione per layout standard. Tuttavia, la sua efficacia è limitata a questi layout predefiniti e potrebbe non essere ottimale per fatture con strutture non convenzionali.
+
+L'utilizzo di Comprehend Custom Entity Recognition consente di creare un modello personalizzato per l'estrazione di entità specifiche dalle fatture. Offre un'elevata precisione e flessibilità nell'adattarsi a layout variabili, ma presenta costi elevati e richiede un significativo sforzo nella preparazione e annotazione dei dati di addestramento.
+
+Amazon Bedrock con il modello Claude-3 è stato valutato per la sua capacità di gestire layout complessi e variabili, garantendo un'elevata precisione. Tuttavia, il modello non è specificamente addestrato sui dati aziendali, il che potrebbe ridurre la sua efficacia per esigenze particolari.
+
+L'utilizzo di \textit{queries} e \textit{custom queries} tramite \textit{adapters} di Amazon Textract è stato infine scelto per l'analisi delle fatture grazie alla sua elevata precisione e flessibilità nel gestire layout variabili. Questa soluzione offre un buon compromesso tra personalizzazione, costi e precisione, con tempi di addestramento del modello inferiori rispetto ad altri metodi.
+
+La soluzione basata su \textit{queries} è risultata la più conveniente, offrendo un valore elevato di precisione per un numero limitato di fatture. L'integrazione con gli \textit{adapters}, in particolare l'uso dell'\textit{adapter} "checksInvoiceAdapter", ha garantito una personalizzazione ottimale mantenendo i costi contenuti.
+
+Le informazioni principali estratte dalle fatture con questa soluzione sono:
+
+\begin{itemize}
+    \item Numero fattura
+    \item Data fattura
+    \item Venditore
+    \item Prezzo totale
+    \item Partita IVA del venditore
+    \item Codice fiscale del venditore
+    \item Imponibile
+    \item Imposta
+\end{itemize}
+
+Per quanto riguarda l'estrazione delle informazioni relative agli articoli delle fatture, l'utilizzo della funzione \texttt{analyze\_expense} di Amazon Textract è emerso come la soluzione più efficace. Questa tecnologia offre un'elevata precisione e flessibilità nel gestire layout variabili, risultando particolarmente adatta per l'estrazione delle seguenti informazioni:
+
+\begin{itemize}
+    \item Codice articolo
+    \item Descrizione articolo
+    \item Valore unitario
+    \item Quantità
+    \item Unità di misura
+    \item Sconto percentuale
+    \item IVA
+    \item Imponibile articolo
+\end{itemize}
+
+Questa combinazione di strumenti e tecnologie ha permesso di ottimizzare il processo di estrazione delle informazioni dalle fatture, garantendo un'elevata accuratezza e adattabilità a diverse tipologie di documenti.
+
+
+\subsection{Estrazione delle informazioni dagli ordini}
+In questa fase si possono applicare considerazioni simili a quelle discusse per l'estrazione delle informazioni dalle fatture (sezione \ref{subsec:estrazione-fatture}), poiché sono state prese in considerazione le stesse tecnologie, con problematiche analoghe.
+
+Per l'estrazione delle informazioni principali dagli ordini, i campi identificati sono i seguenti:
+
+\begin{itemize}
+    \item Numero ordine
+    \item Data ordine
+    \item Venditore
+    \item Prezzo totale
+    \item Partita IVA del venditore
+    \item Codice fiscale del venditore
+    \item Imponibile
+    \item Imposta
+\end{itemize}
+
+Queste informazioni vengono estratte dai documenti utilizzando le \textit{queries} di Amazon Textract, integrate con \textit{custom queries} (\textit{adapters}) per adattarsi a layout variabili. L'\textit{adapter} utilizzato in questo contesto è denominato "checksOrderAdapter".
+
+Per quanto riguarda l'estrazione delle informazioni relative agli articoli contenuti negli ordini, l'utilizzo della funzione \texttt{analyze\_expense} di Amazon Textract è emerso come la soluzione più efficace. Questa tecnologia offre un'elevata precisione e flessibilità, adattandosi a diversi layout. Le informazioni estratte per ciascun articolo sono le seguenti:
+
+\begin{itemize}
+    \item Codice articolo
+    \item Descrizione articolo
+    \item Valore unitario
+    \item Quantità
+    \item Unità di misura
+    \item Sconto percentuale
+    \item IVA
+    \item Imponibile articolo
+    \item Data consegna
+\end{itemize}
+
+L'adozione di queste tecnologie ha permesso di ottimizzare il processo di estrazione delle informazioni dagli ordini, garantendo un'elevata accuratezza e adattabilità a diverse tipologie di documenti, analogamente a quanto avviene per le fatture.
+
+\subsection{Creazione degli adapter}
+Gli \textit{adapter} sono stati creati per personalizzare le query di Amazon Textract, consentendo l'estrazione di informazioni specifiche dai documenti. Questi \textit{adapter} sono stati utilizzati per l'estrazione delle informazioni sia dalle fatture che dagli ordini, e sono denominati rispettivamente \textit{checksInvoiceAdapter} e \textit{checksOrderAdapter}.
+
+\subsubsection{ChecksInvoiceAdapter}
+L'\textit{adapter} \textit{checksInvoiceAdapter} è stato sviluppato per l'estrazione delle informazioni dalle fatture. Le query personalizzate configurate in questo \textit{adapter} sono state pensate per coprire tutte le informazioni rilevanti, tra cui date, importi, identificativi e dettagli degli articoli. Le query utilizzate includono:
+
+\begin{itemize}
+    \item What is the invoice date or billing date?
+    \item What is the invoice ID or billing number?
+    \item What is the total tax amount?
+    \item What is the receiver tax ID?
+    \item What is the bill to name?
+    \item What is the vendor name?
+    \item What is the vendor VAT number?
+    \item What is the vendor taxpayer ID?
+    \item What is the subtotal?
+    \item What is the tax?
+    \item What is the total?
+    \item What are the article codes? (Articolo in Italian)
+    \item What are the descriptions of the items?
+    \item What are the unit prices of the articles? (Valore in Italian)
+    \item What are the quantities per item?
+    \item What are the units of measure for the items?
+    \item What are the discounts per item?
+    \item What is the VAT rate per item? (IVA in Italian)
+    \item What are the taxable amounts per article? (Imponibile in Italian)
+    \item How many items are listed in this invoice?
+\end{itemize}
+
+L'\textit{adapter}, attualmente alla sesta versione, è stato addestrato su un dataset di 21 fatture, di cui 16 utilizzate per il training e 5 per il test.
+
+\subsubsection{ChecksOrderAdapter}
+L'\textit{adapter} \textit{checksOrderAdapter} è stato creato per l'estrazione delle informazioni dagli ordini. Anche in questo caso, le query sono state personalizzate per garantire un'accurata estrazione dei dati rilevanti, come le date, gli importi e i dettagli degli articoli. Le query configurate includono:
+
+\begin{itemize}
+    \item What is the order date?
+    \item What is the order ID?
+    \item What is the bill to name?
+    \item What is the internal code of the order?
+    \item What is the taxpayer ID?
+    \item What is the item amount in this order?
+    \item What is the net amount in this order?
+    \item What is the total amount in this order?
+    \item What are the article codes? (Articolo in Italian)
+    \item What are the descriptions of the items?
+    \item What are the quantities per item?
+    \item What are the units of measure for the items?
+    \item What are the discounts per item?
+    \item What are the delivery dates for each item?
+\end{itemize}
+
+L'\textit{adapter}, attualmente alla seconda versione, è stato addestrato su un dataset di 10 ordini, di cui 5 utilizzati per il training e 5 per il test.
+
+Questi \textit{adapter} hanno permesso di migliorare significativamente la precisione e l'efficacia dell'estrazione delle informazioni dalle fatture e dagli ordini, adattandosi ai layout variabili dei documenti e garantendo un'alta qualità dei dati estratti.
+\section{Validazione delle informazioni}
+In questa fase, le informazioni estratte dai documenti vengono sottoposte a un processo di validazione. Per ciascuna categoria di documento (ordine, fattura, contratto) è stata implementata una funzione Lambda specifica per la validazione dei dati. La strategia di validazione applicata varia in base alla categoria di appartenenza, con regole specifiche per ogni tipo di dato. Se una delle regole di validazione non viene rispettata, il dato viene considerato non valido.
+
+\subsection{Validazione dei contratti}
+\label{subsec:validazione-contratti}
+Per i contratti, le seguenti regole di validazione sono state definite:
+
+\begin{itemize}
+    \item \textbf{Titolo contratto}: obbligatorio
+    \item \textbf{Cliente}: obbligatorio
+    \item \textbf{is\_contract}: obbligatorio e di tipo booleano
+    \item \textbf{Partita IVA del cliente}: obbligatoria
+\end{itemize}
+
+Sono inoltre state stabilite soglie di confidenza per ciascuna delle informazioni estratte. Se la confidenza è inferiore alla soglia stabilita, il dato viene considerato non valido. Ad eccezione del "Titolo contratto" (per cui la soglia è 0.8), la soglia scelta per le altre informazioni è pari a 0.9.
+
+\subsection{Validazione delle fatture}
+\label{subsec:validazione-fatture}
+Per le informazioni generali delle fatture, sono state definite le seguenti regole di validazione:
+
+\begin{itemize}
+    \item \textbf{Numero fattura}: obbligatorio
+    \item \textbf{Data fattura}: deve avere un formato valido
+    \item \textbf{Imposta}: deve essere un numero
+    \item \textbf{Imponibile}: deve essere un numero
+    \item \textbf{Prezzo totale}: deve essere un numero
+    \item \textbf{Partita IVA}: deve avere una lunghezza di 11 caratteri e deve essere un numero
+\end{itemize}
+
+Per le informazioni relative agli articoli delle fatture, sono state definite le seguenti regole di validazione:
+
+\begin{itemize}
+    \item \textbf{Valore unitario}: deve essere un numero
+    \item \textbf{Quantità}: deve essere un numero
+    \item \textbf{IVA}: deve essere un numero
+    \item \textbf{Imponibile articolo}: deve essere un numero
+\end{itemize}
+
+\subsection{Validazione degli ordini}
+\label{subsec:validazione-ordini}
+Per le informazioni generali degli ordini, le regole di validazione stabilite sono le seguenti:
+
+\begin{itemize}
+    \item \textbf{Codice interno}: obbligatorio
+    \item \textbf{Data ordine}: deve avere un formato valido
+    \item \textbf{Prezzo totale}: deve essere un numero
+    \item \textbf{Partita IVA}: deve avere una lunghezza di 11 caratteri
+\end{itemize}
+
+Per le informazioni relative agli articoli degli ordini, sono state stabilite le seguenti regole di validazione:
+
+\begin{itemize}
+    \item \textbf{Valore unitario}: deve essere un numero
+    \item \textbf{Quantità}: deve essere un numero
+    \item \textbf{IVA}: deve essere un numero
+    \item \textbf{Imponibile articolo}: deve essere un numero
+    \item \textbf{Data consegna}: deve avere un formato valido
+\end{itemize}
+
+In tutte le categorie, la validazione delle informazioni è cruciale per garantire l'integrità e l'accuratezza dei dati processati. Le soglie di confidenza e le regole definite permettono di filtrare i dati non validi, migliorando l'affidabilità del sistema.
+
 \section{Persistenza dei dati}
-In questa fase l'obiettivo è far persistere i dati. La scelta è ricaduta su Amazon DynamoDB. Il flusso è il seguente:
+L'obiettivo di questa fase è garantire la persistenza dei dati estratti. La scelta per la memorizzazione dei risultati è ricaduta su Amazon DynamoDB, grazie alla sua scalabilità e affidabilità. Il flusso di lavoro prevede l'utilizzo di funzioni Lambda dedicate per ciascuna categoria di documenti (contratti, ordini, fatture), che si occupano di salvare i dati estratti nelle rispettive tabelle di DynamoDB.
+Per ciascuna categoria di documenti è stata creata una funzione Lambda specifica, che salva i risultati nelle seguenti tabelle di DynamoDB:
 \begin{itemize}
-    \item Per ogni categoria (contratti, ordini, fatture) è creata una lambda, tale lambda salva i risultati delle informazioni estratte in DynamoDB nelle tabelle Ordini, Contratti, Fattura, Articoli\_Fatture, Articoli\_Ordini
+    \item \textbf{Contratti}: Salva i dati relativi ai contratti nella tabella \texttt{Contratti} o, in caso di documenti classificati come preventivi, nella tabella \texttt{Preventivi}. La distinzione viene effettuata sulla base della variabile \texttt{is\_contract} presente nel file JSON di output.
+    \item \textbf{Fatture}: Salva le informazioni generali delle fatture nella tabella \texttt{Fatture} e gli articoli associati nella tabella \texttt{Articoli\_Fatture}.
+    \item \textbf{Ordini}: Salva le informazioni generali degli ordini nella tabella \texttt{Ordini} e gli articoli associati nella tabella \texttt{Articoli\_Ordini}.
 \end{itemize}
+
+\subsection{Contratti}
+Le informazioni estratte dai contratti vengono salvate nella tabella \texttt{Contratti} di DynamoDB. Se il documento viene identificato come preventivo, i dati vengono invece memorizzati nella tabella \texttt{Preventivi}. Questa distinzione si basa sul valore della variabile \texttt{is\_contract} ottenuta durante l'analisi.
+
+\subsection{Fatture}
+Le informazioni generali delle fatture vengono salvate nella tabella \texttt{Fatture} di DynamoDB. Inoltre, ogni articolo associato alla fattura viene memorizzato separatamente nella tabella \texttt{Articoli\_Fatture}, assicurando una gestione dettagliata e strutturata delle informazioni.
+
+\subsection{Ordini}
+Le informazioni generali degli ordini vengono salvate nella tabella \texttt{Ordini} di DynamoDB. Similmente alle fatture, gli articoli associati agli ordini vengono memorizzati nella tabella \texttt{Articoli\_Ordini}, permettendo di gestire in modo efficace i dettagli relativi a ciascun ordine.
+
+Questo approccio assicura che tutti i dati estratti dai documenti siano memorizzati in modo organizzato e facilmente accessibile, sfruttando le potenzialità di DynamoDB per garantire performance elevate e affidabilità nel tempo.
 
 \section{Analisi dei costi}
 %\section{Tecnologie e strumenti}

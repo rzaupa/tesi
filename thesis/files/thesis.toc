@@ -39,20 +39,31 @@
 \contentsline {subsubsection}{\numberline {4.4.1.5}Test del modello}{24}{subsubsection.4.4.1.5}%
 \contentsline {subsubsection}{\numberline {4.4.1.6}Processo di Active Learning con Flywheel}{24}{subsubsection.4.4.1.6}%
 \contentsline {section}{\numberline {4.5}Estrazione delle informazioni}{24}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Estrazioni delle informazioni dai contratti}{25}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Estrazione delle informazioni dalle fatture e degli ordini}{25}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Persistenza dei dati}{25}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Analisi dei costi}{25}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Sviluppi futuri}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{26}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{26}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{26}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Consuntivo finale}{27}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{27}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Valutazione personale}{27}{section.6.4}%
-\contentsline {chapter}{Acronimi e abbreviazioni}{28}{section*.30}%
-\contentsline {chapter}{Glossario}{29}{section*.32}%
-\contentsline {chapter}{Bibliografia}{31}{appendix*.34}%
+\contentsline {subsection}{\numberline {4.5.1}Estrazione delle informazioni dai contratti}{25}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Estrazione delle informazioni dalle fatture}{25}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Estrazione delle informazioni dagli ordini}{27}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Creazione degli adapter}{28}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.1}ChecksInvoiceAdapter}{28}{subsubsection.4.5.4.1}%
+\contentsline {subsubsection}{\numberline {4.5.4.2}ChecksOrderAdapter}{29}{subsubsection.4.5.4.2}%
+\contentsline {section}{\numberline {4.6}Validazione delle informazioni}{30}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Validazione dei contratti}{30}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Validazione delle fatture}{30}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Validazione degli ordini}{31}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Persistenza dei dati}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Contratti}{32}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Fatture}{32}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Ordini}{32}{subsection.4.7.3}%
+\contentsline {section}{\numberline {4.8}Analisi dei costi}{32}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Sviluppi futuri}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{33}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{33}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Consuntivo finale}{34}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Valutazione personale}{34}{section.6.4}%
+\contentsline {chapter}{Acronimi e abbreviazioni}{35}{section*.30}%
+\contentsline {chapter}{Glossario}{36}{section*.32}%
+\contentsline {chapter}{Bibliografia}{38}{appendix*.34}%
