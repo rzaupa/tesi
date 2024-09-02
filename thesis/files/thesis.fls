@@ -702,6 +702,17 @@ INPUT ./chapters/5_design_coding.tex
 INPUT ./chapters/5_design_coding.tex
 INPUT ./chapters/5_design_coding.tex
 INPUT chapters/5_design_coding.tex
+INPUT ./img/design/classificatore_email.drawio.png
+INPUT ./img/design/classificatore_email.drawio.png
+INPUT ./img/design/classificatore_email.drawio.png
+INPUT ./img/design/classificatore_email.drawio.png
+INPUT ./img/design/classificatore_email.drawio.png
+INPUT ./img/design/IdpStateMachine.png
+INPUT ./img/design/IdpStateMachine.png
+INPUT ./img/design/IdpStateMachine.png
+INPUT ./img/design/IdpStateMachine.png
+INPUT ./img/design/IdpStateMachine.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtk10.tfm
 INPUT ./chapters/sviluppi_futuri.tex
 INPUT ./chapters/sviluppi_futuri.tex
 INPUT ./chapters/sviluppi_futuri.tex
@@ -741,5 +752,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb
