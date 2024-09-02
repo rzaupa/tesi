@@ -718,6 +718,11 @@ INPUT ./chapters/sviluppi_futuri.tex
 INPUT ./chapters/sviluppi_futuri.tex
 INPUT ./chapters/sviluppi_futuri.tex
 INPUT chapters/sviluppi_futuri.tex
+INPUT ./img/active_learning_workflow.png
+INPUT ./img/active_learning_workflow.png
+INPUT ./img/active_learning_workflow.png
+INPUT ./img/active_learning_workflow.png
+INPUT ./img/active_learning_workflow.png
 INPUT ./chapters/7_conclusions.tex
 INPUT ./chapters/7_conclusions.tex
 INPUT ./chapters/7_conclusions.tex
