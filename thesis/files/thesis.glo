@@ -3,6 +3,7 @@
 \glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{i}
@@ -21,6 +22,7 @@
 \glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
@@ -46,4 +48,45 @@
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{16}
+\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{19}
+\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{19}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{ocr?\glossentry{ocrg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{agile?\glossentry{agileg}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{bucket?\glossentry{bucketg}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{scalabilità?\glossentry{scalabilitàg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{46}
