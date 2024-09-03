@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  2 SEP 2024 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  2 SEP 2024 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1694,17 +1694,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-]
-
-LaTeX Warning: Hyper reference `cap:processi-metodologie' on page 2 undefined on input line 63.
-
-
-LaTeX Warning: Hyper reference `cap:analisi-requisiti' on page 2 undefined on input line 67.
-
-
-LaTeX Warning: Hyper reference `cap:verifica-validazione' on page 2 undefined on input line 71.
-
-) (./chapters/2_stage_desc.tex
+]) (./chapters/2_stage_desc.tex
 
 [2 <./img/logo_sanmarco_informatica.png>]
 Capitolo 2.
@@ -1732,7 +1722,7 @@ Underfull \hbox (badness 1210) in paragraph at lines 114--115
 []|\T1/lmr/m/n/10 - Ad-de-stra-men-to mod-el-lo di ap-prendi-men-to per
  []
 
-[5]) (./chapters/tecnologie.tex
+[5]) (./chapters/3_tecnologie.tex
 
 [6]
 Capitolo 3.
@@ -1741,7 +1731,7 @@ Capitolo 3.
 [7
 
 ]
-<img/tecnologie/comprehend.png, id=377, 513.92pt x 513.92pt>
+<img/tecnologie/comprehend.png, id=379, 513.92pt x 513.92pt>
 File: img/tecnologie/comprehend.png Graphic file (type png)
 <use img/tecnologie/comprehend.png>
 Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 18.
@@ -1751,12 +1741,12 @@ Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 18.
 [8 <./img/tecnologie/comprehend.png>]
 
 [9]
-<img/tecnologie/textract.png, id=392, 147.55125pt x 147.55125pt>
+<img/tecnologie/textract.png, id=394, 147.55125pt x 147.55125pt>
 File: img/tecnologie/textract.png Graphic file (type png)
 <use img/tecnologie/textract.png>
 Package pdftex.def Info: img/tecnologie/textract.png  used on input line 60.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/s3.png, id=395, 429.605pt x 513.92pt>
+<img/tecnologie/s3.png, id=397, 429.605pt x 513.92pt>
 File: img/tecnologie/s3.png Graphic file (type png)
 <use img/tecnologie/s3.png>
 Package pdftex.def Info: img/tecnologie/s3.png  used on input line 75.
@@ -1764,12 +1754,12 @@ Package pdftex.def Info: img/tecnologie/s3.png  used on input line 75.
 
 
 [10 <./img/tecnologie/textract.png> <./img/tecnologie/s3.png>]
-<img/tecnologie/AWS_Lambda.png, id=404, 3748.0025pt x 3011.25pt>
+<img/tecnologie/AWS_Lambda.png, id=406, 3748.0025pt x 3011.25pt>
 File: img/tecnologie/AWS_Lambda.png Graphic file (type png)
 <use img/tecnologie/AWS_Lambda.png>
 Package pdftex.def Info: img/tecnologie/AWS_Lambda.png  used on input line 90.
 (pdftex.def)             Requested size: 135.89174pt x 109.17224pt.
-<img/tecnologie/DynamoDB.png, id=406, 245.91875pt x 222.8325pt>
+<img/tecnologie/DynamoDB.png, id=408, 245.91875pt x 222.8325pt>
 File: img/tecnologie/DynamoDB.png Graphic file (type png)
 <use img/tecnologie/DynamoDB.png>
 Package pdftex.def Info: img/tecnologie/DynamoDB.png  used on input line 106.
@@ -1781,7 +1771,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [11 <./img/tecnologie/AWS_Lambda.png>]
-<img/tecnologie/stepfunctions.png, id=414, 301.125pt x 301.125pt>
+<img/tecnologie/stepfunctions.png, id=416, 301.125pt x 301.125pt>
 File: img/tecnologie/stepfunctions.png Graphic file (type png)
 <use img/tecnologie/stepfunctions.png>
 Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 120.
@@ -1789,7 +1779,7 @@ Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 12
 
 
 [12 <./img/tecnologie/DynamoDB.png> <./img/tecnologie/stepfunctions.png>]
-<img/tecnologie/sagemaker.png, id=422, 301.125pt x 301.125pt>
+<img/tecnologie/sagemaker.png, id=424, 301.125pt x 301.125pt>
 File: img/tecnologie/sagemaker.png Graphic file (type png)
 <use img/tecnologie/sagemaker.png>
 Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 146.
@@ -1797,12 +1787,12 @@ Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 146.
 
 
 [13 <./img/tecnologie/sagemaker.png>]
-<img/tecnologie/bedrock.png, id=429, 147.55125pt x 147.55125pt>
+<img/tecnologie/bedrock.png, id=431, 147.55125pt x 147.55125pt>
 File: img/tecnologie/bedrock.png Graphic file (type png)
 <use img/tecnologie/bedrock.png>
 Package pdftex.def Info: img/tecnologie/bedrock.png  used on input line 160.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/jupyter.png, id=431, 1204.5pt x 632.3625pt>
+<img/tecnologie/jupyter.png, id=433, 1204.5pt x 632.3625pt>
 File: img/tecnologie/jupyter.png Graphic file (type png)
 <use img/tecnologie/jupyter.png>
 Package pdftex.def Info: img/tecnologie/jupyter.png  used on input line 174.
@@ -1814,17 +1804,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14 <./img/tecnologie/bedrock.png>]
-<img/tecnologie/vscode.png, id=438, 256.96pt x 256.96pt>
+<img/tecnologie/vscode.png, id=440, 256.96pt x 256.96pt>
 File: img/tecnologie/vscode.png Graphic file (type png)
 <use img/tecnologie/vscode.png>
 Package pdftex.def Info: img/tecnologie/vscode.png  used on input line 184.
 (pdftex.def)             Requested size: 135.89174pt x 135.89407pt.
-<img/tecnologie/git.png, id=440, 913.4125pt x 381.425pt>
+<img/tecnologie/git.png, id=442, 913.4125pt x 381.425pt>
 File: img/tecnologie/git.png Graphic file (type png)
 <use img/tecnologie/git.png>
 Package pdftex.def Info: img/tecnologie/git.png  used on input line 195.
 (pdftex.def)             Requested size: 135.89174pt x 56.74567pt.
-<img/tecnologie/bitbucket.png, id=442, 1927.2pt x 346.29375pt>
+<img/tecnologie/bitbucket.png, id=444, 1927.2pt x 346.29375pt>
 File: img/tecnologie/bitbucket.png Graphic file (type png)
 <use img/tecnologie/bitbucket.png>
 Package pdftex.def Info: img/tecnologie/bitbucket.png  used on input line 205.
@@ -1836,12 +1826,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [15 <./img/tecnologie/jupyter.png> <./img/tecnologie/vscode.png> <./img/tecnologie/git.png>]
-<img/tecnologie/python.png, id=453, 1876.00874pt x 2055.68pt>
+<img/tecnologie/python.png, id=455, 1876.00874pt x 2055.68pt>
 File: img/tecnologie/python.png Graphic file (type png)
 <use img/tecnologie/python.png>
 Package pdftex.def Info: img/tecnologie/python.png  used on input line 217.
 (pdftex.def)             Requested size: 90.5922pt x 99.24553pt.
-) (./chapters/5_design_coding.tex
+) (./chapters/4_design_coding.tex
 
 [16 <./img/tecnologie/bitbucket.png> <./img/tecnologie/python.png>]
 Capitolo 4.
@@ -1850,12 +1840,12 @@ Capitolo 4.
 [17
 
 ]
-<img/design/classificatore_email.drawio.png, id=464, 1611.77156pt x 751.30687pt>
+<img/design/classificatore_email.drawio.png, id=466, 1611.77156pt x 751.30687pt>
 File: img/design/classificatore_email.drawio.png Graphic file (type png)
 <use img/design/classificatore_email.drawio.png>
 Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on input line 27.
 (pdftex.def)             Requested size: 452.9679pt x 211.14403pt.
-<img/design/IdpStateMachine.png, id=465, 554.07pt x 475.7775pt>
+<img/design/IdpStateMachine.png, id=467, 554.07pt x 475.7775pt>
 File: img/design/IdpStateMachine.png Graphic file (type png)
 <use img/design/IdpStateMachine.png>
 Package pdftex.def Info: img/design/IdpStateMachine.png  used on input line 36.
@@ -1919,14 +1909,14 @@ Overfull \hbox (1.5031pt too wide) in paragraph at lines 192--193
 
 [30]
 
-[31]) (./chapters/sviluppi_futuri.tex
+[31]) (./chapters/5_sviluppi_futuri.tex
 
 [32]
 Capitolo 5.
-<img/active_learning_workflow.png, id=541, 1104.37593pt x 560.8453pt>
+<img/active_learning_workflow.png, id=543, 1104.37593pt x 560.8453pt>
 File: img/active_learning_workflow.png Graphic file (type png)
 <use img/active_learning_workflow.png>
-Package pdftex.def Info: img/active_learning_workflow.png  used on input line 19.
+Package pdftex.def Info: img/active_learning_workflow.png  used on input line 20.
 (pdftex.def)             Requested size: 452.9679pt x 230.03363pt.
 
 
@@ -1935,28 +1925,28 @@ Package pdftex.def Info: img/active_learning_workflow.png  used on input line 19
 ]
 
 [34 <./img/active_learning_workflow.png>]
-Overfull \hbox (33.64331pt too wide) in paragraph at lines 43--44
+Overfull \hbox (33.64331pt too wide) in paragraph at lines 44--45
 []\T1/lmr/m/n/10 Se lo sta-to è \T1/lmtt/m/n/10 TRAINED\T1/lmr/m/n/10 , ven-gono sal-vate le vari-abili \T1/lmtt/m/n/10 CurrentClassifierSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTrainingDataSSM\T1/lmr/m/n/10 ,
  []
 
 
-Overfull \hbox (16.16986pt too wide) in paragraph at lines 43--44
+Overfull \hbox (16.16986pt too wide) in paragraph at lines 44--45
 \T1/lmtt/m/n/10 CurrentTestDataSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTestingTruthDataSSM \T1/lmr/m/n/10 e viene resti-tu-ito lo sta-to \T1/lmtt/m/n/10 CreateEndpoint\T1/lmr/m/n/10 . 
  []
 
 
-Overfull \hbox (31.30951pt too wide) in paragraph at lines 77--78
+Overfull \hbox (31.30951pt too wide) in paragraph at lines 78--79
 []\T1/lmr/m/n/10 In ca-so con-trario, ven-gono ag-gior-nate le vari-abili \T1/lmtt/m/n/10 CurrentClassifierSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTrainingDataSSM\T1/lmr/m/n/10 ,
  []
 
 
-Overfull \hbox (160.02354pt too wide) in paragraph at lines 80--81
+Overfull \hbox (160.02354pt too wide) in paragraph at lines 81--82
 \T1/lmr/m/n/10 Se lo sta-to è \T1/lmtt/m/n/10 DONT_CREATE\T1/lmr/m/n/10 , si pas-sa al-la lamb-da \T1/lmtt/m/n/10 FINISHED\T1/lmr/m/n/10 ; al-tri-men-ti, si pro-cede al-la lamb-da \T1/lmtt/m/n/10 StartCustomClassificationEndpointCreation\T1/lmr/m/n/10 . 
  []
 
 
 
-[35]) (./chapters/7_conclusions.tex
+[35]) (./chapters/6_conclusions.tex
 
 [36]
 Capitolo 6.
@@ -2082,19 +2072,15 @@ Package glossaries Warning: Entry `bucketg' has already been defined in the prea
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40369 strings out of 475501
- 722411 string characters out of 5776863
+ 40367 strings out of 475501
+ 722389 string characters out of 5776863
  1945908 words of memory out of 5000000
- 62104 multiletter control sequences out of 15000+600000
+ 62102 multiletter control sequences out of 15000+600000
  655286 words of font info for 82 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  99i,12n,125p,2501b,3577s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2102,9 +2088,9 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (53 pages, 2207388 bytes).
+Output written on thesis.pdf (53 pages, 2207911 bytes).
 PDF statistics:
- 1135 PDF objects out of 1200 (max. 8388607)
+ 1137 PDF objects out of 1200 (max. 8388607)
  216 named destinations out of 1000 (max. 500000)
  787 words of extra memory for PDF output out of 10000 (max. 10000000)
 
