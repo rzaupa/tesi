@@ -635,6 +635,10 @@ INPUT ./chapters/2_stage_desc.tex
 INPUT ./chapters/2_stage_desc.tex
 INPUT ./chapters/2_stage_desc.tex
 INPUT chapters/2_stage_desc.tex
+INPUT ./img/idp_workflow.png
+INPUT ./img/idp_workflow.png
+INPUT ./img/idp_workflow.png
+INPUT ./img/idp_workflow.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr5.tfm
 INPUT ./chapters/3_tecnologie.tex
 INPUT ./chapters/3_tecnologie.tex

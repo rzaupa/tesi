@@ -8,76 +8,78 @@
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{6}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Descrizione dello stage}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduzione al progetto}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Pianificazione}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Pianificazione settimanale}{9}{subsection.2.3.1}%
-\contentsline {chapter}{\numberline {3}Tecnologie e strumenti di interesse}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Amazon Web Services}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Amazon Comprehend}{11}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Amazon Textract}{12}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Amazon S3}{14}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}AWS Lambda}{15}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Amazon DynamoDB}{15}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}AWS Step Functions}{16}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}Amazon SageMaker}{16}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}Amazon Bedrock}{18}{subsection.3.1.8}%
-\contentsline {section}{\numberline {3.2}Strumenti di sviluppo}{18}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Jupyter Notebook}{18}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Visual Studio Code}{19}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Git}{19}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Bitbucket}{19}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{20}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Python}{20}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Progettazione e codifica}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduzione}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Architettura ad alto livello}{22}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Estrazione degli allegati}{23}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Classificazione dei documenti}{24}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Creazione del modello di classificazione personalizzato}{25}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}Analisi del dataset}{26}{subsubsection.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.2}Preprocessing}{27}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}Training}{27}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}Valutazione}{27}{subsubsection.4.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.4.1.5}Test del modello}{28}{subsubsection.4.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.4.1.6}Processo di Active Learning con Flywheel}{28}{subsubsection.4.4.1.6}%
-\contentsline {section}{\numberline {4.5}Estrazione delle informazioni}{28}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Estrazione delle informazioni dai contratti}{29}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Estrazione delle informazioni dalle fatture}{29}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Estrazione delle informazioni dagli ordini}{31}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Creazione degli adapter}{32}{subsection.4.5.4}%
-\contentsline {subsubsection}{\numberline {4.5.4.1}ChecksInvoiceAdapter}{32}{subsubsection.4.5.4.1}%
-\contentsline {subsubsection}{\numberline {4.5.4.2}ChecksOrderAdapter}{33}{subsubsection.4.5.4.2}%
-\contentsline {section}{\numberline {4.6}Validazione delle informazioni}{34}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Validazione dei contratti}{34}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Validazione delle fatture}{34}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Validazione degli ordini}{35}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}Persistenza dei dati}{36}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Contratti}{36}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Fatture}{36}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Ordini}{36}{subsection.4.7.3}%
-\contentsline {section}{\numberline {4.8}Analisi dei costi}{36}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Sviluppi futuri}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{37}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Active learning workflow per migliorare il modello di classificazione}{37}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}StartStepFunction}{38}{subsubsection.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.2}StartCustomClassification}{38}{subsubsection.5.3.1.2}%
-\contentsline {subsubsection}{\numberline {5.3.1.3}GetStatusClassifier}{38}{subsubsection.5.3.1.3}%
-\contentsline {subsubsection}{\numberline {5.3.1.4}StartValidationTest}{39}{subsubsection.5.3.1.4}%
-\contentsline {subsubsection}{\numberline {5.3.1.5}GetStatusValidationTest}{39}{subsubsection.5.3.1.5}%
-\contentsline {subsubsection}{\numberline {5.3.1.6}ComputeTestResults}{39}{subsubsection.5.3.1.6}%
-\contentsline {subsection}{\numberline {5.3.2}Combinazione delle custom queries con analyze expense}{40}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{40}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Utilizzo di A2I (Amazon Augmented AI) per Migliorare la Precisione del Modello}{40}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Integrazione con un Sistema Documentale}{40}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Utilizzo di Amazon OpenSearch Service}{40}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Utilizzo di Amazon CloudFormation}{40}{subsection.5.4.4}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{41}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Consuntivo finale}{41}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{41}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{41}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Valutazione personale}{41}{section.6.4}%
-\contentsline {chapter}{Acronimi e abbreviazioni}{43}{section*.33}%
-\contentsline {chapter}{Glossario}{44}{section*.35}%
-\contentsline {chapter}{Bibliografia}{48}{appendix*.37}%
+\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Prodotti attesi}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Contenuti formativi previsti}{10}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Pianificazione}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Organizzazione del lavoro}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Tecnologie e strumenti di interesse}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Amazon Web Services}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Amazon Comprehend}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Amazon Textract}{14}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Amazon S3}{16}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}AWS Lambda}{17}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Amazon DynamoDB}{17}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}AWS Step Functions}{18}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Amazon SageMaker}{18}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Amazon Bedrock}{20}{subsection.3.1.8}%
+\contentsline {section}{\numberline {3.2}Strumenti di sviluppo}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Jupyter Notebook}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Visual Studio Code}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Git}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Bitbucket}{21}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{22}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Python}{22}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Progettazione e codifica}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduzione}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Architettura ad alto livello}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Estrazione degli allegati}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Classificazione dei documenti}{26}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Creazione del modello di classificazione personalizzato}{27}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Analisi del dataset}{28}{subsubsection.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.2}Preprocessing}{29}{subsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}Training}{29}{subsubsection.4.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}Valutazione}{29}{subsubsection.4.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.4.1.5}Test del modello}{30}{subsubsection.4.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.4.1.6}Processo di Active Learning con Flywheel}{30}{subsubsection.4.4.1.6}%
+\contentsline {section}{\numberline {4.5}Estrazione delle informazioni}{30}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Estrazione delle informazioni dai contratti}{31}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Estrazione delle informazioni dalle fatture}{31}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Estrazione delle informazioni dagli ordini}{33}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Creazione degli adapter}{34}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.1}ChecksInvoiceAdapter}{34}{subsubsection.4.5.4.1}%
+\contentsline {subsubsection}{\numberline {4.5.4.2}ChecksOrderAdapter}{35}{subsubsection.4.5.4.2}%
+\contentsline {section}{\numberline {4.6}Validazione delle informazioni}{36}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Validazione dei contratti}{36}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Validazione delle fatture}{36}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Validazione degli ordini}{37}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Persistenza dei dati}{38}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Contratti}{38}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Fatture}{38}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Ordini}{38}{subsection.4.7.3}%
+\contentsline {section}{\numberline {4.8}Analisi dei costi}{38}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Sviluppi futuri}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analisi del contenuto della mail}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aggiunta di nuove categorie}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Completamento delle informazioni}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Active learning workflow per migliorare il modello di classificazione}{39}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}StartStepFunction}{40}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}StartCustomClassification}{40}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}GetStatusClassifier}{40}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}StartValidationTest}{41}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}GetStatusValidationTest}{41}{subsubsection.5.3.1.5}%
+\contentsline {subsubsection}{\numberline {5.3.1.6}ComputeTestResults}{41}{subsubsection.5.3.1.6}%
+\contentsline {subsection}{\numberline {5.3.2}Combinazione delle custom queries con analyze expense}{42}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Sviluppo di un'interfaccia grafica}{42}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Utilizzo di A2I (Amazon Augmented AI) per Migliorare la Precisione del Modello}{42}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Integrazione con un Sistema Documentale}{42}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Utilizzo di Amazon OpenSearch Service}{42}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Utilizzo di Amazon CloudFormation}{42}{subsection.5.4.4}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Consuntivo finale}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{43}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{43}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Valutazione personale}{43}{section.6.4}%
+\contentsline {chapter}{Acronimi e abbreviazioni}{45}{section*.34}%
+\contentsline {chapter}{Glossario}{46}{section*.36}%
+\contentsline {chapter}{Bibliografia}{50}{appendix*.38}%

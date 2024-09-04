@@ -29,6 +29,9 @@
 \glossaryentry{governance aziendale?\glossentry{governanceaziendaleg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{bpm?\glossentry{bpmg}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{cpq?\glossentry{cpqg}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{rpa?\glossentry{rpag}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{llm?\glossentry{llmg}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{generative ai?\glossentry{generativeaig}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{erp?\glossentry{erpg}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{data protection?\glossentry{dataprotectiong}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{cybersecurity?\glossentry{cybersecurityg}|setentrycounter[]{page}"\glsnumberformat}{2}
@@ -44,87 +47,113 @@
 \glossaryentry{agile?\glossentry{agileg}|setentrycounter[]{page}"\glsnumberformat}{4}
 \glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{4}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{5}
-\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{scalabilità?\glossentry{scalabilitàg}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{ocr?\glossentry{ocrg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{8}
-\glossaryentry{ocr?\glossentry{ocrg}|setentrycounter[]{page}"\glsnumberformat}{8}
-\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{generative ai?\glossentry{generativeaig}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{llm?\glossentry{llmg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{8}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{8}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{8}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{10}
 \glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{11}
-\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{11}
-\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{16}
-\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{19}
-\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{19}
-\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{41}
-\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{41}
-\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{bpm?\glossentry{bpmg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{cpq?\glossentry{cpqg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{erp?\glossentry{erpg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{ocr?\glossentry{ocrg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{agile?\glossentry{agileg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{18}
+\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{21}
+\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{21}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{30}
 \glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{44}
-\glossaryentry{agile?\glossentry{agileg}|setentrycounter[]{page}"\glsnumberformat}{44}
-\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{44}
-\glossaryentry{bpm?\glossentry{bpmg}|setentrycounter[]{page}"\glsnumberformat}{44}
-\glossaryentry{bucket?\glossentry{bucketg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{business intelligence?\glossentry{businessintelligenceg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{ai?\glossentry{aig}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{aws?\glossentry{awsg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{bpm?\glossentry{bpmg}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{cpq?\glossentry{cpqg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{customer intelligence?\glossentry{customerintelligenceg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{cybersecurity?\glossentry{cybersecurityg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{data protection?\glossentry{dataprotectiong}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{erp?\glossentry{erpg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{gdpr?\glossentry{gdpr}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{governance aziendale?\glossentry{governanceaziendaleg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{ibm power?\glossentry{ibmpowerg}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{performance management?\glossentry{performancemanagementg}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{scalabilità?\glossentry{scalabilitàg}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{idp?\glossentry{idpg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{llm?\glossentry{llmg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{ml?\glossentry{mlg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{nlp?\glossentry{nlpg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{ocr?\glossentry{ocrg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{pec?\glossentry{pecg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{rpa?\glossentry{rpag}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{sdk?\glossentry{sdkg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{active learning?\glossentry{activelearningg}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{agile?\glossentry{agileg}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{bias?\glossentry{biasg}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{bpm?\glossentry{bpmg}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{bucket?\glossentry{bucketg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{business intelligence?\glossentry{businessintelligenceg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{cpq?\glossentry{cpqg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{customer intelligence?\glossentry{customerintelligenceg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{cybersecurity?\glossentry{cybersecurityg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{data protection?\glossentry{dataprotectiong}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{erp?\glossentry{erpg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{gdpr?\glossentry{gdpr}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{generative ai?\glossentry{generativeaig}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{governance aziendale?\glossentry{governanceaziendaleg}|setentrycounter[]{page}"\glsnumberformat}{48}
+\glossaryentry{ibm power?\glossentry{ibmpowerg}|setentrycounter[]{page}"\glsnumberformat}{48}
+\glossaryentry{performance management?\glossentry{performancemanagementg}|setentrycounter[]{page}"\glsnumberformat}{48}
+\glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{rpa?\glossentry{rpag}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{scalabilità?\glossentry{scalabilitàg}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{serverless?\glossentry{serverlessg}|setentrycounter[]{page}"\glsnumberformat}{49}
