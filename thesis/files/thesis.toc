@@ -27,9 +27,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Jupyter Notebook}{20}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Visual Studio Code}{21}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Git}{21}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Bitbucket}{21}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Linguaggi di programmazione}{22}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Python}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Bitbucket}{22}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Python}{22}{subsection.3.2.5}%
 \contentsline {chapter}{\numberline {4}Progettazione e codifica}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduzione}{23}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Architettura ad alto livello}{24}{section.4.2}%
@@ -82,4 +81,4 @@
 \contentsline {section}{\numberline {6.4}Valutazione personale}{43}{section.6.4}%
 \contentsline {chapter}{Acronimi e abbreviazioni}{45}{section*.34}%
 \contentsline {chapter}{Glossario}{46}{section*.36}%
-\contentsline {chapter}{Bibliografia}{50}{appendix*.38}%
+\contentsline {chapter}{Bibliografia}{51}{appendix*.38}%

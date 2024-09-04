@@ -3,13 +3,15 @@
 \emph{In questo capitolo verranno descritti i servizi e le tecnologie analizzate e pertinenti per il problema descritto, in quale modo possono essere impiegate e una panoramica finalizzata a chiarirne il contesto e il caso d'uso.}
 
 \section{Amazon Web Services}
-\gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \glsfirstoccur{\gls{ml}}. Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'architettura scalabile e \gls{serverlessg}.
+\gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \gls{mlg} e in particolare che possano implementare un flusso di \gls{idpg} automatizzato e adatto agli obiettivi del progetto.\\
+Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'architettura scalabile e \gls{serverlessg}.
 
 \subsection{Amazon Comprehend}
 Amazon Comprehend (il logo è riportato in Figura \ref{fig:comprehend}) è un servizio avanzato di analisi del linguaggio naturale (\gls{nlpg}) che utilizza algoritmi di apprendimento automatico per estrarre informazioni significative dai testi. Il servizio è in grado di identificare entità, frasi chiave, lingua, sentimenti e altre caratteristiche comuni all'interno dei documenti, offrendo la possibilità di effettuare analisi sia in tempo reale che in modalità asincrona su grandi volumi di dati. Gli utenti possono scegliere di utilizzare modelli pre-addestrati o di addestrare modelli personalizzati per specifiche esigenze di classificazione e riconoscimento delle entità.\\
-Tra le principali funzionalità di Amazon Comprehend vi è \textit{Amazon Comprehend Insights}, che consente di analizzare documenti, singoli o in gruppo, per identificare le informazioni più rilevanti utilizzando modelli già addestrati. Questi modelli possono essere impiegati per individuare entità (come persone, luoghi, date, quantità, ecc.), frasi chiave, informazioni personali identificabili (PII, \textit{Personally Identifiable Information}), sentimenti (positivo, negativo, neutro, misto), oltre a determinare la lingua e la sintassi del testo.\\
-Un'altra funzionalità rilevante è \textit{Amazon Comprehend Custom}, che permette la creazione di modelli NLP personalizzati per la classificazione (\textit{Custom Classification}) e il riconoscimento delle entità (\textit{Custom Entity Recognition}). La \textit{Custom Classification} consente di categorizzare i documenti in base a categorie predefinite, mentre la \textit{Custom Entity Recognition} permette di individuare entità specifiche all'interno dei testi. Entrambi i servizi richiedono una fase di training che necessita di un dataset etichettato per addestrare il modello e supportano le'elaborazione dei documenti in un'unica fase.\\
-In aggiunta, Amazon Comprehend offre la funzionalità \textit{Flywheel}, che semplifica il processo di addestramento e gestione delle versioni dei modelli personalizzati, facilitando l'orchestrazione delle attività di training, valutazione e deployment dei modelli. Consiste dunque nel riferimento principale per la fase di MLOps (\textit{Machine Learning Operations}) e permette di monitorare le prestazioni dei modelli, valutare le metriche di accuratezza e precisione e gestire le versioni dei modelli in produzione.\\
+Tra le principali funzionalità di Amazon Comprehend vi è \textit{Amazon Comprehend Insights}, che consente di analizzare documenti, singoli o in gruppo, per identificare le informazioni più rilevanti utilizzando modelli già addestrati. Questi modelli possono essere impiegati per individuare entità (come persone, luoghi, date, quantità, ecc.), frasi chiave, informazioni personali identificabili, 
+sentiment (positivo, negativo, neutro) oltre a determinare la lingua e la sintassi del testo.\\
+Un'altra funzionalità rilevante è \textit{Amazon Comprehend Custom}, che permette la creazione di modelli \gls{nlpg} personalizzati per la classificazione (\textit{Custom Classification}) e il riconoscimento delle entità (\textit{Custom Entity Recognition}). La \textit{Custom Classification} consente di categorizzare i documenti in base a categorie predefinite, mentre la \textit{Custom Entity Recognition} permette di individuare entità specifiche all'interno dei testi. Entrambi i servizi richiedono una fase di training che necessita di un dataset etichettato per addestrare il modello e supportano l'elaborazione dei documenti in un'unica fase.\\
+In aggiunta, Amazon Comprehend offre la funzionalità \textit{Flywheel}, che semplifica il processo di addestramento e gestione delle versioni dei modelli personalizzati, facilitando l'orchestrazione delle attività di training, valutazione e deployment dei modelli. Consiste dunque nel riferimento principale per la fase di \glsfirstoccur{\gls{mlops}} e permette di monitorare le prestazioni dei modelli, valutare le metriche di accuratezza e precisione e gestire le versioni dei modelli in produzione.\\
 Infine, il \textit{Document Clustering} permette di raggruppare i documenti in base a parole chiave ricorrenti, rendendo più agevole l'identificazione di documenti simili e la loro organizzazione per categorie o argomenti.\\
 Nel presente lavoro, Amazon Comprehend è stato utilizzato per la classificazione dei documenti nelle categorie selezionate tramite la funzionalità \textit{Custom Classification}.
 
@@ -21,37 +23,37 @@ Nel presente lavoro, Amazon Comprehend è stato utilizzato per la classificazion
 \end{figure}
 
 \subsection{Amazon Textract}
-Amazon Textract (il logo è riportato in Figura \ref{fig:textract}) è un servizio di riconoscimento ottico dei caratteri (\gls{ocr}) che sfrutta l'apprendimento automatico per identificare e analizzare testo e dati presenti in immagini o documenti. Basato sulla tecnologia di deep learning collaudata e altamente scalabile sviluppata dagli esperti di visione artificiale di Amazon, Textract è in grado di analizzare quotidianamente miliardi di immagini e video. Una delle caratteristiche distintive di questo servizio è la sua accessibilità: non è richiesta alcuna esperienza nel campo del machine learning per utilizzarlo, grazie alla disponibilità di API semplici e intuitive che consentono di analizzare file immagine e PDF con facilità. Inoltre, Amazon Textract apprende continuamente dai nuovi dati e Amazon implementa costantemente nuove funzionalità, garantendo un miglioramento continuo delle sue capacità.
+Amazon Textract (il logo è riportato in Figura \ref{fig:textract}) è un servizio di riconoscimento ottico dei caratteri (\gls{ocr}) che sfrutta l'apprendimento automatico per identificare e analizzare testo e dati presenti in immagini o documenti. Basato sulla tecnologia di \glsfirstoccur{\gls{deeplearningg}} collaudata e altamente scalabile sviluppata dagli esperti di \glsfirstoccur{\gls{computervisiong}} di Amazon, Textract è in grado di analizzare quotidianamente miliardi di immagini e video. Una delle caratteristiche distintive di questo servizio è la sua accessibilità: non è richiesta alcuna esperienza nel campo del \gls{ml} per utilizzarlo, grazie alla disponibilità di \gls{apig} semplici e intuitive che consentono di analizzare file immagine e PDF con facilità. Inoltre, Amazon Textract apprende continuamente dai nuovi dati e Amazon implementa costantemente nuove funzionalità, garantendo un miglioramento continuo delle sue capacità.
 
 Il servizio non si limita a eseguire il riconoscimento ottico dei caratteri da testo digitato o scritto a mano, ma è anche in grado di estrarre il contenuto del documento, incluse tabelle, campi e relazioni strutturali. Textract fornisce punteggi di confidenza e bounding box (rappresentazioni grafiche dei confini) per ogni parola e riga di testo riconosciuta. Il servizio supporta vari formati di file, tra cui PDF, TXT, DOC, DOCX, JPG e PNG.
 
 Le principali funzionalità di Amazon Textract includono:
 
 \begin{itemize}
-    \item \textbf{Estrazione di testo non strutturato}: Questa funzionalità consente di estrarre i dati in forma di parole (\textit{WORDS}) e righe di testo (\textit{LINES}), senza mantenere la formattazione originaria del documento. Per questa operazione si utilizza l'API \texttt{DetectDocumentText}.
+    \item \textbf{Estrazione di testo non strutturato}: Questa funzionalità consente di estrarre i dati in forma di parole (\textit{WORDS}) e righe di testo (\textit{LINES}), senza mantenere la formattazione originaria del documento. Per questa operazione si utilizza l'\gls{apig} \texttt{DetectDocumentText}.
     
-    \item \textbf{Estrazione ed elaborazione di moduli e tabelle}: Tramite l'API \texttt{AnalyzeDocument}, è possibile estrarre dati mantenendo la struttura del documento originale, identificando parole, righe, tabelle e moduli (\textit{WORDS}, \textit{LINES}, \textit{TABLES}, \textit{FORMS}).
+    \item \textbf{Estrazione ed elaborazione di moduli e tabelle}: Tramite l'\gls{apig} \texttt{AnalyzeDocument}, è possibile estrarre dati mantenendo la struttura del documento originale, identificando parole, righe, tabelle e moduli (\textit{WORDS}, \textit{LINES}, \textit{TABLES}, \textit{FORMS}).
     
-    \item \textbf{Estrazione di coppie chiave-valore}: Utilizzando l'API \texttt{AnalyzeDocument}, questa funzionalità permette di estrarre informazioni strutturate in forma di chiavi e valori, preservando la formattazione del documento.
+    \item \textbf{Estrazione di coppie chiave-valore}: Utilizzando l'\gls{apig} \texttt{AnalyzeDocument}, questa funzionalità permette di estrarre informazioni strutturate in forma di chiavi e valori, preservando la formattazione del documento.
     
-    \item \textbf{Estrazione tramite query}: Questa funzionalità consente di focalizzarsi su informazioni specifiche o critiche all'interno di un documento. Anche in questo caso, l'API utilizzata è \texttt{AnalyzeDocument}.
+    \item \textbf{Estrazione tramite query}: Questa funzionalità consente di focalizzarsi su informazioni specifiche o critiche all'interno di un documento. Anche in questo caso, l'\gls{apig} utilizzata è \texttt{AnalyzeDocument}.
     
-    \item \textbf{Rilevamento delle firme}: Attraverso l'API \texttt{AnalyzeDocument}, è possibile rilevare la presenza di firme nei documenti, restituendo un punteggio di confidenza per il rilevamento, oltre al testo del documento in forma di parole e righe (\textit{WORDS} e \textit{LINES}).
+    \item \textbf{Rilevamento delle firme}: Attraverso l'\gls{apig} \texttt{AnalyzeDocument}, è possibile rilevare la presenza di firme nei documenti, restituendo un punteggio di confidenza per il rilevamento, oltre al testo del documento in forma di parole e righe (\textit{WORDS} e \textit{LINES}).
     
-    \item \textbf{Estrazione di informazioni da fatture e ricevute}: L'API \texttt{AnalyzeExpense} è specificamente progettata per estrarre dati da documenti contabili come fatture e ricevute.
+    \item \textbf{Estrazione di informazioni da fatture e ricevute}: L'\gls{apig} \texttt{AnalyzeExpense} è specificamente progettata per estrarre dati da documenti contabili come fatture e ricevute.
     
-    \item \textbf{Estrazione di informazioni da documenti di identità}: Utilizzando l'API \texttt{AnalyzeID}, è possibile estrarre dati rilevanti da documenti di identità.
+    \item \textbf{Estrazione di informazioni da documenti di identità}: Utilizzando l'\gls{apig} \texttt{AnalyzeID}, è possibile estrarre dati rilevanti da documenti di identità.
     
     \item \textbf{Rilevamento di testo su più colonne}: Questa funzionalità consente di riconoscere e trattare testi distribuiti su più colonne all'interno di un documento.
 \end{itemize}
 
 Per migliorare la precisione delle analisi e ridurre l'intervento umano necessario, Amazon Textract offre lo strumento delle \textit{Custom Queries}. Questo strumento consente di riconoscere specifici termini univoci, strutture particolari e informazioni specifiche all'interno dei documenti, offrendo un livello di personalizzazione superiore rispetto alle query standard.
 
-Un'altra opzione avanzata per personalizzare l'output dell'analisi dei documenti è l'uso degli \textit{Adapters}. Gli Adapters sono componenti che si integrano nel modello di deep learning pre-addestrato di Amazon Textract, permettendo di personalizzare l'output in base ai documenti specifici di un'azienda. Per creare un Adapter, è necessario annotare ed etichettare un insieme di documenti campione e addestrare l'Adapter su questi campioni annotati.
+Un'altra opzione avanzata per personalizzare l'output dell'analisi dei documenti è l'uso degli \textit{Adapters}. Gli Adapters sono componenti che si integrano nel modello di \gls{deeplearningg} pre-addestrato di Amazon Textract, permettendo di personalizzare l'output in base ai documenti specifici di un'azienda. Per creare un Adapter, è necessario annotare ed etichettare un insieme di documenti campione e addestrare l'Adapter su questi campioni annotati.
 
-Una volta creato un Adapter, Amazon Textract fornisce un \textit{AdapterId}. È possibile creare e gestire diverse versioni di un Adapter all'interno di uno stesso identificatore. L'\textit{AdapterId}, insieme alla versione dell'Adapter, può essere utilizzato in una richiesta per specificare l'uso dell'Adapter creato durante l'analisi dei documenti. Ad esempio, questi parametri possono essere forniti all'API \texttt{AnalyzeDocument} per un'analisi sincrona dei documenti, oppure all'operazione \texttt{StartDocumentAnalysis} per un'analisi asincrona. Includendo l'\textit{AdapterId} nella richiesta, l'Adapter verrà automaticamente integrato nel processo di analisi, migliorando le previsioni per i documenti specifici.
+Una volta creato un Adapter, Amazon Textract fornisce un \textit{AdapterId}. È possibile creare e gestire diverse versioni di un Adapter all'interno di uno stesso identificatore. L'\textit{AdapterId}, insieme alla versione dell'Adapter, può essere utilizzato in una richiesta per specificare l'uso dell'Adapter creato durante l'analisi dei documenti. Ad esempio, questi parametri possono essere forniti all'\gls{apig} \texttt{AnalyzeDocument} per un'analisi sincrona dei documenti, oppure all'operazione \texttt{StartDocumentAnalysis} per un'analisi asincrona. Includendo l'\textit{AdapterId} nella richiesta, l'Adapter verrà automaticamente integrato nel processo di analisi, migliorando le previsioni per i documenti specifici.
 
-Questo approccio consente di sfruttare le capacità dell'API \texttt{AnalyzeDocument} mentre si adatta il modello alle esigenze specifiche del proprio caso d'uso. 
+Questo approccio consente di sfruttare le capacità dell'\gls{apig} \texttt{AnalyzeDocument} mentre si adatta il modello alle esigenze specifiche del proprio caso d'uso. 
 
 Nel contesto del presente lavoro, Amazon Textract è stato utilizzato per estrarre il testo dai documenti sia come input al classificatore di Comprehend sia per estrarre informazioni utili.
 
@@ -65,7 +67,7 @@ Nel contesto del presente lavoro, Amazon Textract è stato utilizzato per estrar
 \subsection{Amazon S3}
 Amazon Simple Storage Service (Amazon S3) (logo riportato in Figura \ref{fig:s3}) è un servizio di storage di oggetti che offre elevata scalabilità, disponibilità dei dati, sicurezza e prestazioni. Amazon S3 è progettato per gestire grandi volumi di dati a costi contenuti, risultando una soluzione ideale per applicazioni che richiedono capacità di archiviazione massiva.
 
-Per memorizzare dati in Amazon S3, è necessario utilizzare un \textit{bucket}, che funge da contenitore per gli oggetti. Ogni oggetto in un bucket rappresenta un file e i relativi metadati associati. La procedura per archiviare un oggetto in Amazon S3 prevede la creazione di un bucket e il successivo caricamento dell'oggetto al suo interno. Una volta caricato, l'oggetto può essere aperto, scaricato o eliminato. Qualora un oggetto o un bucket non siano più necessari, è possibile procedere alla loro eliminazione.
+Per memorizzare dati in Amazon S3, è necessario utilizzare un \textit{bucket}, che funge da contenitore per gli oggetti. Ogni oggetto in un \textit{bucket} rappresenta un file e i relativi metadati associati. La procedura per archiviare un oggetto in Amazon S3 prevede la creazione di un \textit{bucket} e il successivo caricamento dell'oggetto al suo interno. Una volta caricato, l'oggetto può essere aperto, scaricato o eliminato. Qualora un oggetto o un \textit{bucket} non siano più necessari, è possibile procedere alla loro eliminazione.
 
 Nel contesto del presente progetto, Amazon S3 è stato utilizzato per memorizzare i file relativi alle diverse fasi del lavoro, inclusi allegati, email, file CSV impiegati per l'addestramento dei modelli e file di output generati dalle analisi. 
 
@@ -82,7 +84,7 @@ AWS Lambda (logo riportato in Figura \ref{fig:lambda}) è un servizio di calcolo
 
 Il codice in Lambda è organizzato in funzioni che vengono eseguite solo quando richiesto, scalando automaticamente in base al carico. La tariffazione si basa esclusivamente sul tempo di calcolo utilizzato, senza costi aggiuntivi quando il codice non è in esecuzione. Questa flessibilità lo rende ideale per scenari che richiedono scalabilità dinamica e riduzione automatica delle risorse in assenza di carico.
 
-Nel contesto del presente progetto, AWS Lambda è stato impiegato per implementare le funzioni di chiamate API, garantendo un'architettura serverless efficiente. Le funzioni Lambda sono state integrate con altri servizi AWS, come Amazon S3 per l'elaborazione dei file e Amazon API Gateway per la gestione delle richieste API. L'adozione di Lambda ha permesso di semplificare la gestione operativa, poiché il servizio si occupa automaticamente di capacità, monitoraggio e logging, lasciando agli sviluppatori la responsabilità esclusiva del codice.
+Nel contesto del presente progetto, AWS Lambda è stato impiegato per implementare le funzioni di chiamate \gls{apig}, garantendo un'architettura serverless efficiente. Le funzioni Lambda sono state integrate con altri servizi AWS, come Amazon S3 per l'elaborazione dei file e Amazon API Gateway per la gestione delle richieste \gls{apig}. L'adozione di Lambda ha permesso di semplificare la gestione operativa, poiché il servizio si occupa automaticamente di capacità, monitoraggio e logging, lasciando agli sviluppatori la responsabilità esclusiva del codice.
 
 
 \begin{figure}[h]
@@ -93,7 +95,7 @@ Nel contesto del presente progetto, AWS Lambda è stato impiegato per implementa
 \end{figure}
 
 \subsection{Amazon DynamoDB}
-Amazon DynamoDB (logo riportato in Figura \ref{fig:dynamodb}) è un servizio di database NoSQL completamente gestito, progettato per garantire prestazioni a singola cifra di millisecondi indipendentemente dalla scala. Ideale per carichi di lavoro operativi che richiedono alta efficienza, DynamoDB affronta le complessità di scalabilità e gestione operativa tipiche dei database relazionali, mantenendo prestazioni elevate anche in presenza di un grande numero di utenti. Questo lo rende particolarmente adatto per applicazioni moderne che necessitano di crescere rapidamente a livello globale.
+Amazon DynamoDB (logo riportato in Figura \ref{fig:dynamodb}) è un servizio di database \glsfirstoccur{\gls{nosqlg}} completamente gestito, progettato per garantire prestazioni a singola cifra di millisecondi indipendentemente dalla scala. Ideale per carichi di lavoro operativi che richiedono alta efficienza, DynamoDB affronta le complessità di scalabilità e gestione operativa tipiche dei database relazionali, mantenendo prestazioni elevate anche in presenza di un grande numero di utenti. Questo lo rende particolarmente adatto per applicazioni moderne che necessitano di crescere rapidamente a livello globale.
 
 Dal suo lancio nel 2012, DynamoDB è stato adottato da organizzazioni di ogni settore e dimensione per sviluppare applicazioni che possono iniziare con piccoli volumi di dati e scalare fino a supportare tabelle di dimensioni virtualmente illimitate, assicurando al contempo alta disponibilità.
 
@@ -108,11 +110,11 @@ Nel contesto del presente progetto, Amazon DynamoDB è stato utilizzato per la m
   \label{fig:dynamodb}
 \end{figure}
 \subsection{AWS Step Functions}
-AWS Step Functions (logo riportato in Figura \ref{fig:stepfunctions}) è un servizio di orchestrazione \gls{serverlessg} che consente di coordinare in modo efficiente i componenti di applicazioni distribuite, microservizi e pipeline di dati o di machine learning attraverso una logica visuale. Questo servizio si basa sul concetto di macchine a stati (\textit{State machines}) e task, dove una macchina a stati, o workflow, è costituita da una serie di passaggi guidati da eventi. Ogni passaggio nel workflow è chiamato stato, e uno stato di tipo Task rappresenta un'unità di lavoro eseguita da un altro servizio AWS o API. Le esecuzioni, ovvero le istanze di workflow in esecuzione, sono gestite direttamente da Step Functions.
+AWS Step Functions (logo riportato in Figura \ref{fig:stepfunctions}) è un servizio di orchestrazione \gls{serverlessg} che consente di coordinare in modo efficiente i componenti di applicazioni distribuite, microservizi e pipeline di dati o di \gls{mlg} attraverso una logica visuale. Questo servizio si basa sul concetto di macchine a stati (\textit{State machines}) e task, dove una macchina a stati, o workflow, è costituita da una serie di passaggi guidati da eventi. Ogni passaggio nel workflow è chiamato stato, e uno stato di tipo Task rappresenta un'unità di lavoro eseguita da un altro servizio \gls{awsg} o \gls{apig}. Le esecuzioni, ovvero le istanze di workflow in esecuzione, sono gestite direttamente da Step Functions.
 
 Le attività all'interno dei task della macchina a stati possono anche essere svolte utilizzando le \textit{Activities}, che sono lavoratori esterni al servizio Step Functions.
 
-Nel contesto del presente progetto, AWS Step Functions è stato utilizzato per orchestrare i vari servizi AWS coinvolti, in particolare le funzioni Lambda. 
+Nel contesto del presente progetto, AWS Step Functions è stato utilizzato per orchestrare i vari servizi \gls{awsg} coinvolti, in particolare le funzioni Lambda. 
 
 
 \begin{figure}[h]
@@ -123,24 +125,24 @@ Nel contesto del presente progetto, AWS Step Functions è stato utilizzato per o
 \end{figure}
 
 \subsection{Amazon SageMaker}
-Amazon SageMaker (logo riportato in Figura \ref{fig:sagemaker}) è un servizio completamente gestito per il \textit{machine learning} (ML) che permette a data scientist e sviluppatori di costruire, addestrare e distribuire modelli ML in un ambiente di produzione altamente scalabile e sicuro. SageMaker facilita l'intero processo di sviluppo di modelli ML, fornendo un'interfaccia utente intuitiva che integra strumenti e funzionalità di ML all'interno di diversi ambienti di sviluppo integrato (IDE).
+Amazon SageMaker (logo riportato in Figura \ref{fig:sagemaker}) è un servizio completamente gestito per il \gls{mlg} che permette a data scientist e sviluppatori di costruire, addestrare e distribuire modelli \gls{mlg} in un ambiente di produzione altamente scalabile e sicuro. SageMaker facilita l'intero processo di sviluppo di modelli \gls{mlg}, fornendo un'interfaccia utente intuitiva che integra strumenti e funzionalità di \gls{mlg} all'interno di diversi ambienti di sviluppo integrato (\glsfirstoccur{\gls{ideg}}).
 
-SageMaker consente di archiviare e condividere i dati senza dover gestire infrastrutture server, permettendo alle organizzazioni di concentrarsi sullo sviluppo collaborativo dei flussi di lavoro ML. Il servizio supporta algoritmi ML gestiti, ottimizzati per elaborare grandi volumi di dati in un ambiente distribuito, e offre la flessibilità di utilizzare algoritmi e framework personalizzati. In pochi passaggi, è possibile distribuire un modello in un ambiente sicuro e scalabile direttamente dalla console di SageMaker.
+SageMaker consente di archiviare e condividere i dati senza dover gestire infrastrutture server, permettendo alle organizzazioni di concentrarsi sullo sviluppo collaborativo dei flussi di lavoro \gls{mlg}. Il servizio supporta algoritmi \gls{mlg} gestiti, ottimizzati per elaborare grandi volumi di dati in un ambiente distribuito, e offre la flessibilità di utilizzare algoritmi e framework personalizzati. In pochi passaggi, è possibile distribuire un modello in un ambiente sicuro e scalabile direttamente dalla console di SageMaker.
 
 Tra gli strumenti offerti da Amazon SageMaker vi sono:
 
 \begin{itemize}
-    \item \textbf{Amazon SageMaker JumpStart}: Un hub di ML che consente di valutare e selezionare modelli fondamentali (\textit{foundation models}) in base a specifici parametri.
-    \item \textbf{Amazon SageMaker Studio}: Un IDE completo per preparare i dati, creare, addestrare e distribuire modelli ML, offrendo strumenti per ogni fase del ciclo di vita del ML.
-    \item \textbf{Amazon SageMaker MLOps}: Fornisce strumenti per automatizzare le operazioni di ML lungo tutto il ciclo di vita del modello, inclusi processi di integrazione e distribuzione continua (CI/CD).
+    \item \textbf{Amazon SageMaker JumpStart}: Un hub di \gls{mlg} che consente di valutare e selezionare modelli fondamentali (\textit{foundation models}) in base a specifici parametri.
+    \item \textbf{Amazon SageMaker Studio}: Un IDE completo per preparare i dati, creare, addestrare e distribuire modelli \gls{mlg}, offrendo strumenti per ogni fase del ciclo di vita del \gls{mlg}.
+    \item \textbf{Amazon SageMaker MLOps}: Fornisce strumenti per automatizzare le operazioni di \gls{mlg} lungo tutto il ciclo di vita del modello, inclusi processi di integrazione e distribuzione continua (CI/CD).
     \item \textbf{Amazon SageMaker BlazingText}: Implementa l'algoritmo Word2Vec per la creazione di vettori di parole, utilizzati nell'elaborazione del linguaggio naturale.
-    \item \textbf{Pipeline di Amazon SageMaker}: Automatizza le diverse fasi del ML, dalla pre-elaborazione dei dati al monitoraggio dei modelli in produzione.
-    \item \textbf{Amazon SageMaker Ground Truth}: Migliora la precisione dei modelli ML sfruttando il feedback umano durante tutto il ciclo di vita del modello, permettendo anche la creazione di etichette per i dati.
-    \item \textbf{Amazon SageMaker Clarify}: Rileva e mitiga i pregiudizi presenti nei dati di addestramento e nelle previsioni dei modelli ML.
-    \item \textbf{Amazon SageMaker Model Monitor}: Monitora i modelli ML in produzione per rilevare eventuali cambiamenti nei dati o nelle prestazioni dei modelli, assicurando un'accuratezza costante nel tempo.
+    \item \textbf{Pipeline di Amazon SageMaker}: Automatizza le diverse fasi del \gls{mlg}, dalla pre-elaborazione dei dati al monitoraggio dei modelli in produzione.
+    \item \textbf{Amazon SageMaker Ground Truth}: Migliora la precisione dei modelli \gls{mlg} sfruttando il feedback umano durante tutto il ciclo di vita del modello, permettendo anche la creazione di etichette per i dati.
+    \item \textbf{Amazon SageMaker Clarify}: Rileva e mitiga i pregiudizi presenti nei dati di addestramento e nelle previsioni dei modelli \gls{mlg}.
+    \item \textbf{Amazon SageMaker Model Monitor}: Monitora i modelli \gls{mlg} in produzione per rilevare eventuali cambiamenti nei dati o nelle prestazioni dei modelli, assicurando un'accuratezza costante nel tempo.
 \end{itemize}
 
-Nel contesto del presente progetto, Amazon SageMaker non è stato utilizzato direttamente, in quanto si è ritenuto l'utilizzo di Amazon Comprehend e Amazon Textract sufficiente per le esigenze di analisi del testo e dei documenti. Tuttavia, SageMaker rappresenta una risorsa fondamentale per lo sviluppo di modelli ML personalizzati e per l'implementazione di soluzioni di ML avanzate.
+Nel contesto del presente progetto, Amazon SageMaker non è stato utilizzato direttamente, in quanto si è ritenuto l'utilizzo di Amazon Comprehend e Amazon Textract sufficiente per le esigenze di analisi del testo e dei documenti. Tuttavia, SageMaker rappresenta una risorsa fondamentale per lo sviluppo di modelli \gls{mlg} personalizzati e per l'implementazione di soluzioni di \gls{mlg} avanzate.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.2\textwidth]{img/tecnologie/sagemaker.png}
@@ -149,9 +151,9 @@ Nel contesto del presente progetto, Amazon SageMaker non è stato utilizzato dir
 \end{figure}
 
 \subsection{Amazon Bedrock}
-Amazon Bedrock (logo riportato in Figura \ref{fig:bedrock}) è un servizio completamente gestito che offre una selezione di modelli di fondazione (\textit{foundation models}, FM) di alta qualità, provenienti da startup AI leader e da Amazon stessa, disponibili attraverso un'API unificata. Questo servizio consente di scegliere il modello più adatto alle specifiche esigenze di un caso d'uso e di creare applicazioni di intelligenza artificiale generativa con elevati standard di sicurezza, privacy e responsabilità. 
+Amazon Bedrock (logo riportato in Figura \ref{fig:bedrock}) è un servizio completamente gestito che offre una selezione di modelli di fondazione \glsfirstoccur{\gls{fmg}} di alta qualità, provenienti da startup \gls{aig} leader e da Amazon stessa, disponibili attraverso un'\gls{apig} unificata. Questo servizio consente di scegliere il modello più adatto alle specifiche esigenze di un caso d'uso e di creare applicazioni di intelligenza artificiale generativa con elevati standard di sicurezza, privacy e responsabilità. 
 
-Con Amazon Bedrock, è possibile personalizzare privatamente i modelli di fondazione utilizzando tecniche come il fine-tuning e il \textit{Retrieval Augmented Generation} (RAG), integrandoli facilmente nelle applicazioni senza dover gestire infrastrutture. Tra i modelli disponibili vi è Claude di Anthropic, un modello avanzato per la generazione di testo. Amazon Bedrock supporta anche la creazione di agenti in grado di eseguire compiti utilizzando sistemi e fonti di dati aziendali, migliorando l'efficienza e la precisione delle applicazioni basate su AI generativa.
+Con Amazon Bedrock, è possibile personalizzare privatamente i \gls{fmg} utilizzando tecniche come il fine-tuning e il \textit{Retrieval Augmented Generation} (RAG), integrandoli facilmente nelle applicazioni senza dover gestire infrastrutture. Tra i modelli disponibili vi è Claude di Anthropic, un modello avanzato per la generazione di testo. Amazon Bedrock supporta anche la creazione di agenti in grado di eseguire compiti utilizzando sistemi e fonti di dati aziendali, migliorando l'efficienza e la precisione delle applicazioni basate su \gls{generativeaig}.
 
 Nel contesto del presente progetto, Amazon Bedrock e in particolare il modello Claude non sono stati utilizzati direttamente, in quanto si è ritenuto l'utilizzo di Amazon Comprehend e Amazon Textract sufficiente per le esigenze di analisi del testo e dei documenti.
 
@@ -163,11 +165,14 @@ Nel contesto del presente progetto, Amazon Bedrock e in particolare il modello C
 \end{figure}
 
 \section{Strumenti di sviluppo}
-In aggiunta ai servizi AWS, sono stati utilizzati diversi strumenti di sviluppo per la realizzazione dell'applicazione. Questi strumenti hanno permesso di scrivere, testare e monitorare il codice. Di seguito sono elencati i principali strumenti utilizzati nel corso del progetto.
-\subsection{Jupyter Notebook}
-Jupyter Notebook (logo riportato in Figura \ref{fig:jupyter}) è un'applicazione web open-source che consente di creare e condividere documenti interattivi contenenti codice, testo, grafici e altri elementi multimediali. Jupyter Notebook supporta diversi linguaggi di programmazione, tra cui Python, R e Julia, e offre un ambiente di sviluppo flessibile e versatile per l'analisi dei dati, la visualizzazione e la prototipazione di modelli di machine learning.
 
-Nel contesto del presente progetto, Jupyter Notebook è stato utilizzato per eseguire analisi preliminari sui dati, testare le funzionalità di Amazon Comprehend e Amazon Textract e sviluppare i modelli di classificazione.
+Nel corso del progetto sono stati impiegati diversi strumenti di sviluppo che hanno contribuito in modo significativo alla realizzazione dell'applicazione. Tali strumenti hanno facilitato la scrittura, il testing e il monitoraggio del codice, consentendo una gestione efficiente del ciclo di sviluppo. Di seguito vengono descritti i principali strumenti utilizzati.
+
+\subsection{Jupyter Notebook}
+
+Jupyter Notebook (logo riportato in Figura \ref{fig:jupyter}) è un'applicazione web open-source che consente di creare e condividere documenti interattivi contenenti codice eseguibile, testo descrittivo, grafici e altri elementi multimediali. Jupyter supporta una vasta gamma di linguaggi di programmazione, tra cui Python, R e Julia, ed è ampiamente utilizzato in ambiti di ricerca, analisi dati e prototipazione di modelli di machine learning (\gls{mlg}).
+
+In questo progetto, Jupyter Notebook ha svolto un ruolo centrale nella fase di prototipazione, in quanto è stato utilizzato per eseguire analisi esplorative dei dati, testare le funzionalità di \textit{Amazon Comprehend} e \textit{Amazon Textract}, e sviluppare i modelli di classificazione. Grazie alla sua natura interattiva, Jupyter ha consentito un rapido ciclo di test e iterazione, migliorando l'efficienza complessiva durante lo sviluppo dei modelli.
 
 \begin{figure}[h]
   \centering
@@ -175,46 +180,55 @@ Nel contesto del presente progetto, Jupyter Notebook è stato utilizzato per ese
   \caption{Logo di Jupyter Notebook}
   \label{fig:jupyter}
 \end{figure}
-\subsection{Visual Studio Code}
-Visual Studio Code (logo riportato in Figura \ref{fig:vscode}) è un editor di codice sorgente sviluppato da Microsoft, disponibile per Windows, Linux e macOS. Grazie alla sua versatilità e alle numerose estensioni disponibili, Visual Studio Code è stato utilizzato per lo sviluppo del codice dell'applicazione, inclusi i \textit{Lambda functions} e i notebook. Inoltre, l'editor è stato impiegato per redigere e gestire la documentazione del progetto, sfruttando le sue funzionalità avanzate di editing e integrazione con strumenti di controllo di versione.
 
+\subsection{Visual Studio Code}
+
+Visual Studio Code (logo riportato in Figura \ref{fig:vscode}) è un editor di codice sorgente sviluppato da Microsoft, disponibile per diversi sistemi operativi tra cui Windows, Linux e macOS. Si distingue per la sua leggerezza, la versatilità e l'ampia gamma di estensioni, che ne permettono l'integrazione con molteplici strumenti e linguaggi di programmazione.
+
+Nel contesto del progetto, Visual Studio Code è stato utilizzato per sviluppare il codice dell'applicazione, inclusi i \textit{Lambda functions} e i notebook Python. Inoltre, è stato impiegato per redigere e mantenere la documentazione tecnica del progetto, grazie alla sua integrazione con sistemi di controllo di versione come Git. Le sue funzionalità avanzate, come il supporto per il debug, la gestione delle estensioni per diversi linguaggi e l'integrazione con \gls{awsg}, hanno contribuito a semplificare lo sviluppo e la gestione del progetto.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.3\textwidth]{img/tecnologie/vscode.png}
+  \includegraphics[width=0.2\textwidth]{img/tecnologie/vscode.png}
   \caption{Logo di Visual Studio Code}
   \label{fig:vscode}
 \end{figure}
 
 \subsection{Git}
-\glsfirstoccur{\gls{gitg}} è un sistema di controllo di versione distribuito ampiamente utilizzato per gestire e tracciare le modifiche al codice sorgente durante lo sviluppo software. Nel presente progetto, Git è stato utilizzato per monitorare l'evoluzione del codice sorgente.
 
+Git (logo riportato in Figura \ref{fig:git}) è uno dei più popolari sistemi di controllo di versione distribuiti (\gls{versioncontrolsystemg}), utilizzato ampiamente nel settore dello sviluppo software per monitorare e gestire le modifiche al codice sorgente. Git permette a più sviluppatori di collaborare su un progetto, tenendo traccia delle modifiche, gestendo versioni multiple del software e consentendo il ripristino di versioni precedenti.
+
+Nel progetto, Git è stato utilizzato per tracciare tutte le modifiche al codice sorgente, garantendo la gestione delle versioni e permettendo il lavoro collaborativo. Grazie alle sue funzionalità di branching e merging, Git ha facilitato lo sviluppo parallelo e la gestione dei vari task implementativi.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.3\textwidth]{img/tecnologie/git.png}
+  \includegraphics[width=0.2\textwidth]{img/tecnologie/git.png}
   \caption{Logo di Git}
   \label{fig:git}
 \end{figure}
 
 \subsection{Bitbucket}
-Bitbucket è un servizio di hosting di \glsfirstoccur{\gls{repositoryg}} Git basato su cloud. Bitbucket è stato utilizzato per memorizzare il codice sorgente dell'applicazione.
+
+Bitbucket (logo riportato in Figura \ref{fig:bitbucket}) è un servizio di hosting di repository Git basato su cloud, sviluppato da Atlassian. Oltre a supportare Git, Bitbucket offre integrazioni con strumenti di gestione dei progetti come Jira e Trello, rendendolo particolarmente adatto per team di sviluppo che seguono metodologie Agile.
+
+All'interno del progetto, Bitbucket è stato utilizzato per ospitare il codice sorgente, fornendo un ambiente centralizzato e sicuro per la gestione del repository Git. Le funzionalità di collaborazione, come la revisione del codice e la gestione dei pull request, hanno permesso un efficace controllo della qualità del codice sviluppato.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{img/tecnologie/bitbucket.png}
+  \includegraphics[width=0.4\textwidth]{img/tecnologie/bitbucket.png}
   \caption{Logo di Bitbucket}
   \label{fig:bitbucket}
 \end{figure}
 
-\section{Linguaggi di programmazione}
-Nel corso del progetto sono stati utilizzati diversi linguaggi di programmazione per sviluppare le funzionalità dell'applicazione. Di seguito sono elencati i principali linguaggi utilizzati e le relative caratteristiche.
 \subsection{Python}
-Python è un linguaggio di programmazione ad alto livello, interpretato, adatto per lo sviluppo di applicazioni web, desktop e mobile. Python è stato utilizzato per la realizzazione delle funzioni Lambda.
+
+Python (logo riportato in Figura \ref{fig:python}) è un linguaggio di programmazione ad alto livello, interpretato, noto per la sua semplicità sintattica e la vasta libreria di moduli disponibili, che ne fanno una scelta eccellente per un'ampia gamma di applicazioni, tra cui sviluppo web, desktop, scientifico e \gls{aig}.
+
+Nel presente progetto, Python è stato il linguaggio di riferimento per la realizzazione delle \textit{Lambda functions} utilizzate su \gls{awsg} e per lo sviluppo dei notebook di Jupyter. La sua ampia compatibilità con le librerie di \gls{mlg}, come \textit{TensorFlow}, \textit{scikit-learn} e \textit{Keras}, ha reso Python lo strumento ideale per lo sviluppo e l'addestramento dei modelli di apprendimento automatico impiegati nel progetto.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.2\textwidth]{img/tecnologie/python.png}
+  \includegraphics[width=0.15\textwidth]{img/tecnologie/python.png}
   \caption{Logo di Python}
   \label{fig:python}
 \end{figure}
