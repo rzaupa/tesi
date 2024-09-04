@@ -1,6 +1,7 @@
 \glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{API?\glossentry{api}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{AWS?\glossentry{aws}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{ERP?\glossentry{erp}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{ICT?\glossentry{ict}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{IDP?\glossentry{idp}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{ML?\glossentry{ml}|setentrycounter[]{page}"\glsnumberformat}{i}
@@ -9,6 +10,8 @@
 \glossaryentry{PEC?\glossentry{pec}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{SDK?\glossentry{sdk}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{UML?\glossentry{uml}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{BPM?\glossentry{bpm}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{CPQ?\glossentry{cpq}|setentrycounter[]{page}"\glsnumberformat}{i}
 \glossaryentry{AWS?\glossentry{aws}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{ML?\glossentry{ml}|setentrycounter[]{page}"\glsnumberformat}{11}
@@ -16,11 +19,11 @@
 \glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{44}
 \glossaryentry{API?\glossentry{api}|setentrycounter[]{page}"\glsnumberformat}{44}
 \glossaryentry{AWS?\glossentry{aws}|setentrycounter[]{page}"\glsnumberformat}{44}
-\glossaryentry{ICT?\glossentry{ict}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{IDP?\glossentry{idp}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{ML?\glossentry{ml}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{NLP?\glossentry{nlp}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{OCR?\glossentry{ocr}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{PEC?\glossentry{pec}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{SDK?\glossentry{sdk}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{UML?\glossentry{uml}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{ICT?\glossentry{ict}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{IDP?\glossentry{idp}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{ML?\glossentry{ml}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{NLP?\glossentry{nlp}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{OCR?\glossentry{ocr}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{PEC?\glossentry{pec}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{SDK?\glossentry{sdk}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{UML?\glossentry{uml}|setentrycounter[]{page}"\glsnumberformat}{47}

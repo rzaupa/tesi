@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Profilo aziendale}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Business Unit}{2}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Metodologia di sviluppo}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}Metodologia di sviluppo}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}L'offerta di stage}{5}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{6}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Descrizione dello stage}{7}{chapter.2}%
@@ -80,4 +80,4 @@
 \contentsline {section}{\numberline {6.4}Valutazione personale}{41}{section.6.4}%
 \contentsline {chapter}{Acronimi e abbreviazioni}{43}{section*.33}%
 \contentsline {chapter}{Glossario}{44}{section*.35}%
-\contentsline {chapter}{Bibliografia}{47}{appendix*.37}%
+\contentsline {chapter}{Bibliografia}{48}{appendix*.37}%

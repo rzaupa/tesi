@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  3 SEP 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  4 SEP 2024 08:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1671,47 +1671,47 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] (./chapters/1_introduction.tex
 Capitolo 1.
-
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 45.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 45.
+(c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 [1
 
 
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 46.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 46.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 46.
- (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 <img/logo_sanmarco_informatica.png, id=286, 578.16pt x 87.32625pt>
 File: img/logo_sanmarco_informatica.png Graphic file (type png)
 <use img/logo_sanmarco_informatica.png>
 Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 49.
 (pdftex.def)             Requested size: 226.48395pt x 34.20766pt.
 
+Overfull \hbox (30.25996pt too wide) in paragraph at lines 58--59
+[]\T1/lmr/bx/n/10 SMITech\T1/lmr/m/n/10 : Spe-cial-iz-za-ta nelle soluzioni per la $[]$[][][]Data Pro-tec-tion[][], SMITech of-fre servizi di $[]$[][][]Cybersecurity[][],
+ []
+
+
 
 [2 <./img/logo_sanmarco_informatica.png>]
-<img/business_unit.png, id=298, 1027.84pt x 521.95pt>
+<img/business_unit.png, id=319, 1027.84pt x 521.95pt>
 File: img/business_unit.png Graphic file (type png)
 <use img/business_unit.png>
-Package pdftex.def Info: img/business_unit.png  used on input line 73.
+Package pdftex.def Info: img/business_unit.png  used on input line 75.
 (pdftex.def)             Requested size: 362.37569pt x 184.02324pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[3 <./img/business_unit.png>]
 
-
-
-[3]
-
-[4 <./img/business_unit.png>]
-<img/scrum.png, id=313, 903.375pt x 451.6875pt>
+[4]
+<img/scrum.png, id=337, 903.375pt x 451.6875pt>
 File: img/scrum.png Graphic file (type png)
 <use img/scrum.png>
-Package pdftex.def Info: img/scrum.png  used on input line 111.
+Package pdftex.def Info: img/scrum.png  used on input line 113.
 (pdftex.def)             Requested size: 407.66833pt x 203.83643pt.
 
 
@@ -1752,7 +1752,7 @@ Capitolo 3.
 [11
 
 ]
-<img/tecnologie/comprehend.png, id=412, 513.92pt x 513.92pt>
+<img/tecnologie/comprehend.png, id=436, 513.92pt x 513.92pt>
 File: img/tecnologie/comprehend.png Graphic file (type png)
 <use img/tecnologie/comprehend.png>
 Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 18.
@@ -1762,12 +1762,12 @@ Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 18.
 [12 <./img/tecnologie/comprehend.png>]
 
 [13]
-<img/tecnologie/textract.png, id=426, 147.55125pt x 147.55125pt>
+<img/tecnologie/textract.png, id=450, 147.55125pt x 147.55125pt>
 File: img/tecnologie/textract.png Graphic file (type png)
 <use img/tecnologie/textract.png>
 Package pdftex.def Info: img/tecnologie/textract.png  used on input line 60.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/s3.png, id=428, 429.605pt x 513.92pt>
+<img/tecnologie/s3.png, id=452, 429.605pt x 513.92pt>
 File: img/tecnologie/s3.png Graphic file (type png)
 <use img/tecnologie/s3.png>
 Package pdftex.def Info: img/tecnologie/s3.png  used on input line 75.
@@ -1775,12 +1775,12 @@ Package pdftex.def Info: img/tecnologie/s3.png  used on input line 75.
 
 
 [14 <./img/tecnologie/textract.png> <./img/tecnologie/s3.png>]
-<img/tecnologie/AWS_Lambda.png, id=437, 3748.0025pt x 3011.25pt>
+<img/tecnologie/AWS_Lambda.png, id=461, 3748.0025pt x 3011.25pt>
 File: img/tecnologie/AWS_Lambda.png Graphic file (type png)
 <use img/tecnologie/AWS_Lambda.png>
 Package pdftex.def Info: img/tecnologie/AWS_Lambda.png  used on input line 90.
 (pdftex.def)             Requested size: 135.89174pt x 109.17224pt.
-<img/tecnologie/DynamoDB.png, id=439, 245.91875pt x 222.8325pt>
+<img/tecnologie/DynamoDB.png, id=463, 245.91875pt x 222.8325pt>
 File: img/tecnologie/DynamoDB.png Graphic file (type png)
 <use img/tecnologie/DynamoDB.png>
 Package pdftex.def Info: img/tecnologie/DynamoDB.png  used on input line 106.
@@ -1792,7 +1792,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [15 <./img/tecnologie/AWS_Lambda.png>]
-<img/tecnologie/stepfunctions.png, id=448, 301.125pt x 301.125pt>
+<img/tecnologie/stepfunctions.png, id=472, 301.125pt x 301.125pt>
 File: img/tecnologie/stepfunctions.png Graphic file (type png)
 <use img/tecnologie/stepfunctions.png>
 Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 120.
@@ -1800,7 +1800,7 @@ Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 12
 
 
 [16 <./img/tecnologie/DynamoDB.png> <./img/tecnologie/stepfunctions.png>]
-<img/tecnologie/sagemaker.png, id=456, 301.125pt x 301.125pt>
+<img/tecnologie/sagemaker.png, id=480, 301.125pt x 301.125pt>
 File: img/tecnologie/sagemaker.png Graphic file (type png)
 <use img/tecnologie/sagemaker.png>
 Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 146.
@@ -1808,12 +1808,12 @@ Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 146.
 
 
 [17 <./img/tecnologie/sagemaker.png>]
-<img/tecnologie/bedrock.png, id=463, 147.55125pt x 147.55125pt>
+<img/tecnologie/bedrock.png, id=487, 147.55125pt x 147.55125pt>
 File: img/tecnologie/bedrock.png Graphic file (type png)
 <use img/tecnologie/bedrock.png>
 Package pdftex.def Info: img/tecnologie/bedrock.png  used on input line 160.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/jupyter.png, id=465, 1204.5pt x 632.3625pt>
+<img/tecnologie/jupyter.png, id=489, 1204.5pt x 632.3625pt>
 File: img/tecnologie/jupyter.png Graphic file (type png)
 <use img/tecnologie/jupyter.png>
 Package pdftex.def Info: img/tecnologie/jupyter.png  used on input line 174.
@@ -1825,17 +1825,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [18 <./img/tecnologie/bedrock.png>]
-<img/tecnologie/vscode.png, id=472, 256.96pt x 256.96pt>
+<img/tecnologie/vscode.png, id=496, 256.96pt x 256.96pt>
 File: img/tecnologie/vscode.png Graphic file (type png)
 <use img/tecnologie/vscode.png>
 Package pdftex.def Info: img/tecnologie/vscode.png  used on input line 184.
 (pdftex.def)             Requested size: 135.89174pt x 135.89407pt.
-<img/tecnologie/git.png, id=474, 913.4125pt x 381.425pt>
+<img/tecnologie/git.png, id=498, 913.4125pt x 381.425pt>
 File: img/tecnologie/git.png Graphic file (type png)
 <use img/tecnologie/git.png>
 Package pdftex.def Info: img/tecnologie/git.png  used on input line 195.
 (pdftex.def)             Requested size: 135.89174pt x 56.74567pt.
-<img/tecnologie/bitbucket.png, id=476, 1927.2pt x 346.29375pt>
+<img/tecnologie/bitbucket.png, id=500, 1927.2pt x 346.29375pt>
 File: img/tecnologie/bitbucket.png Graphic file (type png)
 <use img/tecnologie/bitbucket.png>
 Package pdftex.def Info: img/tecnologie/bitbucket.png  used on input line 205.
@@ -1847,7 +1847,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [19 <./img/tecnologie/jupyter.png> <./img/tecnologie/vscode.png> <./img/tecnologie/git.png>]
-<img/tecnologie/python.png, id=486, 1876.00874pt x 2055.68pt>
+<img/tecnologie/python.png, id=510, 1876.00874pt x 2055.68pt>
 File: img/tecnologie/python.png Graphic file (type png)
 <use img/tecnologie/python.png>
 Package pdftex.def Info: img/tecnologie/python.png  used on input line 217.
@@ -1861,12 +1861,12 @@ Capitolo 4.
 [21
 
 ]
-<img/design/classificatore_email.drawio.png, id=498, 1611.77156pt x 751.30687pt>
+<img/design/classificatore_email.drawio.png, id=522, 1611.77156pt x 751.30687pt>
 File: img/design/classificatore_email.drawio.png Graphic file (type png)
 <use img/design/classificatore_email.drawio.png>
 Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on input line 27.
 (pdftex.def)             Requested size: 452.9679pt x 211.14403pt.
-<img/design/IdpStateMachine.png, id=499, 554.07pt x 475.7775pt>
+<img/design/IdpStateMachine.png, id=523, 554.07pt x 475.7775pt>
 File: img/design/IdpStateMachine.png Graphic file (type png)
 <use img/design/IdpStateMachine.png>
 Package pdftex.def Info: img/design/IdpStateMachine.png  used on input line 36.
@@ -1934,7 +1934,7 @@ Overfull \hbox (1.5031pt too wide) in paragraph at lines 192--193
 
 [36]
 Capitolo 5.
-<img/active_learning_workflow.png, id=575, 1104.37593pt x 560.8453pt>
+<img/active_learning_workflow.png, id=599, 1104.37593pt x 560.8453pt>
 File: img/active_learning_workflow.png Graphic file (type png)
 <use img/active_learning_workflow.png>
 Package pdftex.def Info: img/active_learning_workflow.png  used on input line 20.
@@ -1990,16 +1990,18 @@ Capitolo 6.
 
 ]
 
-[45]) (./appendix/bibliography.tex
+[45]
 
-[46]
+[46]) (./appendix/bibliography.tex
+
+[47]
 Overfull \hbox (83.7806pt too wide) in paragraph at lines 14--14
 \T1/lmtt/m/n/10 samples / amazon -[] comprehend -[] examples / blob / master / building -[] custom -[] classifier / BuildingCustomClassifier .
  []
 
 
 
-[47
+[48
 
 ]) (./appendix/glossary-entries.tex
 \@gls@deffile=\write12
@@ -2016,92 +2018,134 @@ Package glossaries Warning: Entry `api' has already been defined in the preamble
 Package glossaries Warning: Entry `aws' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 9.
 
 
-Package glossaries Warning: Entry `ict' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 12.
+Package glossaries Warning: Entry `erp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 12.
 
 
-Package glossaries Warning: Entry `idp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 15.
+Package glossaries Warning: Entry `ict' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 15.
 
 
-Package glossaries Warning: Entry `ml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 18.
+Package glossaries Warning: Entry `idp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 18.
 
 
-Package glossaries Warning: Entry `nlp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 21.
+Package glossaries Warning: Entry `ml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 21.
 
 
-Package glossaries Warning: Entry `ocr' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 24.
+Package glossaries Warning: Entry `nlp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 24.
 
 
-Package glossaries Warning: Entry `pec' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 27.
+Package glossaries Warning: Entry `ocr' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 27.
 
 
-Package glossaries Warning: Entry `sdk' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 30.
+Package glossaries Warning: Entry `pec' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 30.
 
 
-Package glossaries Warning: Entry `uml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 33.
+Package glossaries Warning: Entry `sdk' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 33.
 
 
-Package glossaries Warning: Entry `agileg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 41.
+Package glossaries Warning: Entry `uml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 36.
 
 
-Package glossaries Warning: Entry `aig' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 48.
+Package glossaries Warning: Entry `bpm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 39.
 
 
-Package glossaries Warning: Entry `apig' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 57.
+Package glossaries Warning: Entry `cpq' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 42.
 
 
-Package glossaries Warning: Entry `awsg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 64.
+Package glossaries Warning: Entry `agileg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 50.
 
 
-Package glossaries Warning: Entry `gitg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 71.
+Package glossaries Warning: Entry `aig' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 57.
 
 
-Package glossaries Warning: Entry `ictg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 78.
+Package glossaries Warning: Entry `apig' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 66.
 
 
-Package glossaries Warning: Entry `idpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 85.
+Package glossaries Warning: Entry `awsg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 73.
 
 
-Package glossaries Warning: Entry `mlg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 92.
+Package glossaries Warning: Entry `gitg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 80.
 
 
-Package glossaries Warning: Entry `nlpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 99.
+Package glossaries Warning: Entry `ictg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 87.
 
 
-Package glossaries Warning: Entry `ocrg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 107.
+Package glossaries Warning: Entry `idpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 94.
 
 
-Package glossaries Warning: Entry `pecg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 114.
+Package glossaries Warning: Entry `mlg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 101.
 
 
-Package glossaries Warning: Entry `repositoryg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 122.
+Package glossaries Warning: Entry `nlpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 108.
 
 
-Package glossaries Warning: Entry `scalabilitàg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 129.
+Package glossaries Warning: Entry `ocrg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 116.
 
 
-Package glossaries Warning: Entry `sdkg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 136.
+Package glossaries Warning: Entry `pecg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 123.
 
 
-Package glossaries Warning: Entry `scrumg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 143.
+Package glossaries Warning: Entry `repositoryg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 131.
 
 
-Package glossaries Warning: Entry `umlg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 150.
+Package glossaries Warning: Entry `scalabilitàg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 138.
 
 
-Package glossaries Warning: Entry `serverlessg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 157.
+Package glossaries Warning: Entry `sdkg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 145.
 
 
-Package glossaries Warning: Entry `biasg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 164.
+Package glossaries Warning: Entry `scrumg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 152.
 
 
-Package glossaries Warning: Entry `activelearningg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 171.
+Package glossaries Warning: Entry `umlg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 159.
 
 
-Package glossaries Warning: Entry `bucketg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 178.
+Package glossaries Warning: Entry `serverlessg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 166.
+
+
+Package glossaries Warning: Entry `biasg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 173.
+
+
+Package glossaries Warning: Entry `activelearningg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 180.
+
+
+Package glossaries Warning: Entry `bucketg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 187.
+
+
+Package glossaries Warning: Entry `erpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 194.
+
+
+Package glossaries Warning: Entry `dataprotectiong' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 201.
+
+
+Package glossaries Warning: Entry `cybersecurityg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 208.
+
+
+Package glossaries Warning: Entry `ibmpowerg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 215.
+
+
+Package glossaries Warning: Entry `gdpr' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 222.
+
+
+Package glossaries Warning: Entry `businessintelligenceg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 229.
+
+
+Package glossaries Warning: Entry `performancemanagementg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 236.
+
+
+Package glossaries Warning: Entry `customerintelligenceg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 243.
+
+
+Package glossaries Warning: Entry `governanceaziendaleg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 251.
+
+
+Package glossaries Warning: Entry `bpmg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 258.
+
+
+Package glossaries Warning: Entry `cpqg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 265.
 
 )
 
-[48] (./thesis.aux)
+[49] (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2111,10 +2155,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40471 strings out of 475501
- 724241 string characters out of 5776863
+ 40907 strings out of 475501
+ 733607 string characters out of 5776863
  1945908 words of memory out of 5000000
- 62193 multiletter control sequences out of 15000+600000
+ 62614 multiletter control sequences out of 15000+600000
  655286 words of font info for 82 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  99i,12n,125p,2501b,3595s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2122,9 +2166,9 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (58 pages, 2365630 bytes).
+Output written on thesis.pdf (59 pages, 2383698 bytes).
 PDF statistics:
- 1206 PDF objects out of 1440 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
+ 1293 PDF objects out of 1440 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
  813 words of extra memory for PDF output out of 10000 (max. 10000000)
 
