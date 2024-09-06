@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  4 SEP 2024 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  6 SEP 2024 16:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1418,6 +1418,13 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen272
 \titlewidthlast=\dimen273
 \titlewidthfirst=\dimen274
+) (c:/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count503
+\rotFPtop=\skip113
+\rotFPbot=\skip114
+\rot@float@box=\box67
+\rot@mess@toks=\toks51
 )) (./config/thesis-config.tex (./config/variables.tex) (./appendix/glossary-entries.tex)
 runsystem(makeindex -s thesis.ist -t thesis.glg -o thesis.gls thesis.glo)...executed safely (allowed).
 
@@ -1461,8 +1468,8 @@ File: lstlang3.sty 2024/05/25 1.10b listings language file
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 )
-\c@riskcounter=\count503
-\c@usecasecounter=\count504
+\c@riskcounter=\count504
+\c@usecasecounter=\count505
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1494,17 +1501,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count505
+\scratchcounter=\count506
 \scratchdimen=\dimen275
-\scratchbox=\box67
-\nofMPsegments=\count506
-\nofMParguments=\count507
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count508
+\scratchbox=\box68
+\nofMPsegments=\count507
+\nofMParguments=\count508
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count509
 \MPscratchDim=\dimen276
-\MPnumerator=\count509
-\makeMPintoPDFobject=\count510
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count510
+\makeMPintoPDFobject=\count511
+\everyMPtoPDFconversion=\toks53
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1521,8 +1528,9 @@ Package caption Info: longtable package is loaded.
  (c:/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count511
+\c@lstlisting=\count512
  (./thesis.glsdefs)
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1685,7 +1693,7 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 ]
-<img/logo_sanmarco_informatica.png, id=294, 578.16pt x 87.32625pt>
+<img/logo_sanmarco_informatica.png, id=283, 578.16pt x 87.32625pt>
 File: img/logo_sanmarco_informatica.png Graphic file (type png)
 <use img/logo_sanmarco_informatica.png>
 Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 49.
@@ -1698,7 +1706,7 @@ Overfull \hbox (30.25996pt too wide) in paragraph at lines 58--59
 
 
 [2 <./img/logo_sanmarco_informatica.png>]
-<img/business_unit.png, id=327, 1027.84pt x 521.95pt>
+<img/business_unit.png, id=316, 1027.84pt x 521.95pt>
 File: img/business_unit.png Graphic file (type png)
 <use img/business_unit.png>
 Package pdftex.def Info: img/business_unit.png  used on input line 75.
@@ -1708,7 +1716,7 @@ Package pdftex.def Info: img/business_unit.png  used on input line 75.
 [3 <./img/business_unit.png>]
 
 [4]
-<img/scrum.png, id=345, 903.375pt x 451.6875pt>
+<img/scrum.png, id=334, 903.375pt x 451.6875pt>
 File: img/scrum.png Graphic file (type png)
 <use img/scrum.png>
 Package pdftex.def Info: img/scrum.png  used on input line 113.
@@ -1731,7 +1739,7 @@ Overfull \hbox (3.65652pt too wide) in paragraph at lines 19--20
 
 
 [8]
-<img/idp_workflow.png, id=435, 1284.8pt x 722.7pt>
+<img/idp_workflow.png, id=424, 1284.8pt x 722.7pt>
 File: img/idp_workflow.png Graphic file (type png)
 <use img/idp_workflow.png>
 Package pdftex.def Info: img/idp_workflow.png  used on input line 37.
@@ -1762,7 +1770,7 @@ Capitolo 3.
 [13
 
 ]
-<img/tecnologie/comprehend.png, id=494, 513.92pt x 513.92pt>
+<img/tecnologie/comprehend.png, id=484, 513.92pt x 513.92pt>
 File: img/tecnologie/comprehend.png Graphic file (type png)
 <use img/tecnologie/comprehend.png>
 Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 20.
@@ -1772,12 +1780,12 @@ Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 20.
 [14 <./img/tecnologie/comprehend.png>]
 
 [15]
-<img/tecnologie/textract.png, id=525, 147.55125pt x 147.55125pt>
+<img/tecnologie/textract.png, id=516, 147.55125pt x 147.55125pt>
 File: img/tecnologie/textract.png Graphic file (type png)
 <use img/tecnologie/textract.png>
 Package pdftex.def Info: img/tecnologie/textract.png  used on input line 62.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/s3.png, id=527, 429.605pt x 513.92pt>
+<img/tecnologie/s3.png, id=518, 429.605pt x 513.92pt>
 File: img/tecnologie/s3.png Graphic file (type png)
 <use img/tecnologie/s3.png>
 Package pdftex.def Info: img/tecnologie/s3.png  used on input line 77.
@@ -1785,12 +1793,12 @@ Package pdftex.def Info: img/tecnologie/s3.png  used on input line 77.
 
 
 [16 <./img/tecnologie/textract.png> <./img/tecnologie/s3.png>]
-<img/tecnologie/AWS_Lambda.png, id=538, 3748.0025pt x 3011.25pt>
+<img/tecnologie/AWS_Lambda.png, id=529, 3748.0025pt x 3011.25pt>
 File: img/tecnologie/AWS_Lambda.png Graphic file (type png)
 <use img/tecnologie/AWS_Lambda.png>
 Package pdftex.def Info: img/tecnologie/AWS_Lambda.png  used on input line 92.
 (pdftex.def)             Requested size: 135.89174pt x 109.17224pt.
-<img/tecnologie/DynamoDB.png, id=541, 245.91875pt x 222.8325pt>
+<img/tecnologie/DynamoDB.png, id=532, 245.91875pt x 222.8325pt>
 File: img/tecnologie/DynamoDB.png Graphic file (type png)
 <use img/tecnologie/DynamoDB.png>
 Package pdftex.def Info: img/tecnologie/DynamoDB.png  used on input line 108.
@@ -1802,7 +1810,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [17 <./img/tecnologie/AWS_Lambda.png>]
-<img/tecnologie/stepfunctions.png, id=554, 301.125pt x 301.125pt>
+<img/tecnologie/stepfunctions.png, id=545, 301.125pt x 301.125pt>
 File: img/tecnologie/stepfunctions.png Graphic file (type png)
 <use img/tecnologie/stepfunctions.png>
 Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 122.
@@ -1810,7 +1818,7 @@ Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 12
 
 
 [18 <./img/tecnologie/DynamoDB.png> <./img/tecnologie/stepfunctions.png>]
-<img/tecnologie/sagemaker.png, id=580, 301.125pt x 301.125pt>
+<img/tecnologie/sagemaker.png, id=571, 301.125pt x 301.125pt>
 File: img/tecnologie/sagemaker.png Graphic file (type png)
 <use img/tecnologie/sagemaker.png>
 Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 148.
@@ -1818,7 +1826,7 @@ Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 148.
 
 
 [19 <./img/tecnologie/sagemaker.png>]
-<img/tecnologie/bedrock.png, id=592, 147.55125pt x 147.55125pt>
+<img/tecnologie/bedrock.png, id=583, 147.55125pt x 147.55125pt>
 File: img/tecnologie/bedrock.png Graphic file (type png)
 <use img/tecnologie/bedrock.png>
 Package pdftex.def Info: img/tecnologie/bedrock.png  used on input line 162.
@@ -1826,17 +1834,17 @@ Package pdftex.def Info: img/tecnologie/bedrock.png  used on input line 162.
 
 
 [20 <./img/tecnologie/bedrock.png>]
-<img/tecnologie/jupyter.png, id=601, 1204.5pt x 632.3625pt>
+<img/tecnologie/jupyter.png, id=592, 1204.5pt x 632.3625pt>
 File: img/tecnologie/jupyter.png Graphic file (type png)
 <use img/tecnologie/jupyter.png>
 Package pdftex.def Info: img/tecnologie/jupyter.png  used on input line 179.
 (pdftex.def)             Requested size: 135.89174pt x 71.33551pt.
-<img/tecnologie/vscode.png, id=604, 256.96pt x 256.96pt>
+<img/tecnologie/vscode.png, id=595, 256.96pt x 256.96pt>
 File: img/tecnologie/vscode.png Graphic file (type png)
 <use img/tecnologie/vscode.png>
 Package pdftex.def Info: img/tecnologie/vscode.png  used on input line 192.
 (pdftex.def)             Requested size: 90.5922pt x 90.59213pt.
-<img/tecnologie/git.png, id=607, 913.4125pt x 381.425pt>
+<img/tecnologie/git.png, id=598, 913.4125pt x 381.425pt>
 File: img/tecnologie/git.png Graphic file (type png)
 <use img/tecnologie/git.png>
 Package pdftex.def Info: img/tecnologie/git.png  used on input line 205.
@@ -1848,12 +1856,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [21 <./img/tecnologie/jupyter.png> <./img/tecnologie/vscode.png>]
-<img/tecnologie/bitbucket.png, id=617, 1927.2pt x 346.29375pt>
+<img/tecnologie/bitbucket.png, id=608, 1927.2pt x 346.29375pt>
 File: img/tecnologie/bitbucket.png Graphic file (type png)
 <use img/tecnologie/bitbucket.png>
 Package pdftex.def Info: img/tecnologie/bitbucket.png  used on input line 218.
 (pdftex.def)             Requested size: 181.18439pt x 32.55478pt.
-<img/tecnologie/python.png, id=622, 1876.00874pt x 2055.68pt>
+<img/tecnologie/python.png, id=613, 1876.00874pt x 2055.68pt>
 File: img/tecnologie/python.png Graphic file (type png)
 <use img/tecnologie/python.png>
 Package pdftex.def Info: img/tecnologie/python.png  used on input line 231.
@@ -1867,68 +1875,64 @@ Capitolo 4.
 [23
 
 ]
-<img/design/classificatore_email.drawio.png, id=634, 1611.77156pt x 751.30687pt>
+<img/design/classificatore_email.drawio.png, id=630, 1611.77156pt x 761.09344pt>
 File: img/design/classificatore_email.drawio.png Graphic file (type png)
 <use img/design/classificatore_email.drawio.png>
-Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on input line 27.
-(pdftex.def)             Requested size: 452.9679pt x 211.14403pt.
-<img/design/IdpStateMachine.png, id=635, 554.07pt x 475.7775pt>
+Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on input line 31.
+(pdftex.def)             Requested size: 700.50687pt x 330.78265pt.
+
+
+LaTeX Warning: Float too large for page by 21.0pt on input line 35.
+
+<img/design/IdpStateMachine.png, id=633, 1992.44376pt x 1685.29625pt>
 File: img/design/IdpStateMachine.png Graphic file (type png)
 <use img/design/IdpStateMachine.png>
-Package pdftex.def Info: img/design/IdpStateMachine.png  used on input line 36.
-(pdftex.def)             Requested size: 498.26744pt x 427.86183pt.
+Package pdftex.def Info: img/design/IdpStateMachine.png  used on input line 40.
+(pdftex.def)             Requested size: 498.26173pt x 630.46733pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 36--37
+Overfull \hbox (45.29384pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+[24]
 
+[25 <./img/design/classificatore_email.drawio.png>]
 
-[24 <./img/design/classificatore_email.drawio.png>]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 53.
-
-
-[25 <./img/design/IdpStateMachine.png>]
-
-[26]
+[26 <./img/design/IdpStateMachine.png>]
 
 [27]
-Overfull \hbox (0.46909pt too wide) in paragraph at lines 97--98
-[]\T1/lmr/bx/n/10 Valutazione\T1/lmr/m/n/10 : Il mod-el-lo è sta-to va-l-u-ta-to uti-liz-zan-do met-riche stan-dard per va-l-u-tarne le prestazioni. 
- []
-
-
-Overfull \hbox (4.72678pt too wide) in paragraph at lines 101--103
-\T1/lmr/m/n/10 L'analisi del dataset è fon-da-men-tale per com-pren-dere la dis-tribuzione delle cat-e-gorie e va-l-utare l'adeguatez-
- []
-
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 114.
 
 
 [28]
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
+Overfull \hbox (5.30122pt too wide) in paragraph at lines 153--155
+\T1/lmr/m/n/10 L'\T1/lmr/m/it/10 analisi del dataset \T1/lmr/m/n/10 è fon-da-men-tale per com-pren-dere la dis-tribuzione delle cat-e-gorie e va-l-utare l'adeguatez-
  []
 
 
 
 [30]
-Overfull \hbox (1.5031pt too wide) in paragraph at lines 192--193
-[]\T1/lmr/m/n/10 Il risul-ta-to di ques-ta anal-isi viene sal-va-to in un file JSON di out-put, in-clu-den-do un cam-po \T1/lmtt/m/n/10 is_contract
- []
-
-
 
 [31]
 
 [32]
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
 
 [33]
+Overfull \hbox (1.5031pt too wide) in paragraph at lines 243--244
+[]\T1/lmr/m/n/10 Il risul-ta-to di ques-ta anal-isi viene sal-va-to in un file JSON di out-put, in-clu-den-do un cam-po \T1/lmtt/m/n/10 is_contract
+ []
+
+
 
 [34]
 
@@ -1936,22 +1940,28 @@ Overfull \hbox (1.5031pt too wide) in paragraph at lines 192--193
 
 [36]
 
-[37]) (./chapters/5_sviluppi_futuri.tex
+[37]
 
 [38]
+
+[39]
+
+[40]) (./chapters/5_sviluppi_futuri.tex
+
+[41]
 Capitolo 5.
-<img/active_learning_workflow.png, id=710, 1104.37593pt x 560.8453pt>
+<img/active_learning_workflow.png, id=734, 1104.37593pt x 560.8453pt>
 File: img/active_learning_workflow.png Graphic file (type png)
 <use img/active_learning_workflow.png>
 Package pdftex.def Info: img/active_learning_workflow.png  used on input line 20.
 (pdftex.def)             Requested size: 452.9679pt x 230.03363pt.
 
 
-[39
+[42
 
 ]
 
-[40 <./img/active_learning_workflow.png>]
+[43 <./img/active_learning_workflow.png>]
 Overfull \hbox (33.64331pt too wide) in paragraph at lines 44--45
 []\T1/lmr/m/n/10 Se lo sta-to è \T1/lmtt/m/n/10 TRAINED\T1/lmr/m/n/10 , ven-gono sal-vate le vari-abili \T1/lmtt/m/n/10 CurrentClassifierSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTrainingDataSSM\T1/lmr/m/n/10 ,
  []
@@ -1973,43 +1983,43 @@ Overfull \hbox (160.02354pt too wide) in paragraph at lines 81--82
 
 
 
-[41]) (./chapters/6_conclusions.tex
+[44]) (./chapters/6_conclusions.tex
 
-[42]
+[45]
 Capitolo 6.
 )
 
-[43
-
-]
-
-[44] (./thesis.acr) (./thesis.gls
-
-[45
-
-
-
-]
-
 [46
 
+]
+
+[47] (./thesis.acr) (./thesis.gls
+
+[48
+
+
 
 ]
 
-[47]
+[49
 
-[48]
 
-[49]) (./appendix/bibliography.tex
+]
 
 [50]
+
+[51]
+
+[52]) (./appendix/bibliography.tex
+
+[53]
 Overfull \hbox (83.7806pt too wide) in paragraph at lines 14--14
 \T1/lmtt/m/n/10 samples / amazon -[] comprehend -[] examples / blob / master / building -[] custom -[] classifier / BuildingCustomClassifier .
  []
 
 
 
-[51
+[54
 
 ]) (./appendix/glossary-entries.tex
 \@gls@deffile=\write12
@@ -2196,9 +2206,12 @@ Package glossaries Warning: Entry `fmg' has already been defined in the preamble
 
 Package glossaries Warning: Entry `versioncontrolsystemg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 347.
 
+
+Package glossaries Warning: Entry `datasetg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 354.
+
 )
 
-[52] (./thesis.aux)
+[55] (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2208,20 +2221,20 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41398 strings out of 475501
- 742422 string characters out of 5776863
+ 41496 strings out of 475501
+ 743998 string characters out of 5776863
  1944908 words of memory out of 5000000
- 63085 multiletter control sequences out of 15000+600000
- 655286 words of font info for 82 fonts, out of 8000000 for 9000
+ 63183 multiletter control sequences out of 15000+600000
+ 656532 words of font info for 82 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  99i,12n,125p,2501b,3619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (62 pages, 2480776 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on thesis.pdf (65 pages, 2560105 bytes).
 PDF statistics:
- 1502 PDF objects out of 1728 (max. 8388607)
- 264 named destinations out of 1000 (max. 500000)
- 826 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1517 PDF objects out of 1728 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 786 words of extra memory for PDF output out of 10000 (max. 10000000)
 

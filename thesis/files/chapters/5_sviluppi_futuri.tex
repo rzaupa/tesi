@@ -80,24 +80,24 @@ Nel \textit{choice state}, si verifica se lo stato di entrambi i job è \texttt{
 \end{itemize}
 Se lo stato è \texttt{DONT\_CREATE}, si passa alla lambda \texttt{FINISHED}; altrimenti, si procede alla lambda \texttt{StartCustomClassificationEndpointCreation}.
 
-\subsection{Combinazione delle custom queries con analyze expense}
+\section{Combinazione delle custom queries con analyze expense}
 Si può combinare l'uso delle custom queries con analyze expense per migliorare l'estrazione delle informazioni associate a ordini e fatture. In particolare, si può confrontare la percentuale di correttezza delle informazioni estratte con l'uso di queste due funzionalità.
 
 \section{Sviluppo di un'interfaccia grafica}
 Invece di caricare manualmente gli allegati o le email nel bucket S3, è possibile sviluppare un'interfaccia grafica che consenta l'upload diretto degli allegati e delle email. Questa soluzione semplificherebbe il processo, migliorando l'efficienza e l'usabilità del sistema.
 
-\subsection{Utilizzo di A2I (Amazon Augmented AI) per Migliorare la Precisione del Modello}
+\section{Utilizzo di A2I (Amazon Augmented AI)}
 
 Per migliorare la precisione del modello, è possibile utilizzare Amazon Augmented AI (A2I). Maggiori informazioni sono disponibili al seguente link: \href{https://aws.amazon.com/it/augmented-ai/}{Amazon Augmented AI}.
 
-\subsection{Integrazione con un Sistema Documentale}
+\section{Integrazione con un Sistema Documentale}
 
 È possibile integrare il sistema con un sistema documentale per l'archiviazione delle email e degli allegati, migliorando la gestione e l'accessibilità dei documenti.
 
-\subsection{Utilizzo di Amazon OpenSearch Service}
+\section{Utilizzo di Amazon OpenSearch Service}
 
 Amazon OpenSearch Service può essere utilizzato per l'indicizzazione delle informazioni in Amazon DynamoDB, facilitando la ricerca delle informazioni. Questo servizio offre un'esperienza di ricerca sicura e scalabile.
 
-\subsection{Utilizzo di Amazon CloudFormation}
+\section{Utilizzo di Amazon CloudFormation}
 
 Amazon CloudFormation può essere utilizzato per automatizzare la creazione e la gestione delle risorse AWS, semplificando il processo di provisioning dell'infrastruttura.

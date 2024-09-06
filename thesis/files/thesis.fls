@@ -422,6 +422,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
 INPUT ./config/thesis-config.tex
 INPUT ./config/thesis-config.tex
 INPUT ./config/thesis-config.tex
@@ -540,7 +542,6 @@ INPUT ./preface/3_acknowledgements.tex
 INPUT ./preface/3_acknowledgements.tex
 INPUT preface/3_acknowledgements.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT ./preface/4_abstract.tex
@@ -716,6 +717,7 @@ INPUT ./chapters/4_design_coding.tex
 INPUT ./chapters/4_design_coding.tex
 INPUT ./chapters/4_design_coding.tex
 INPUT chapters/4_design_coding.tex
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT ./img/design/classificatore_email.drawio.png
 INPUT ./img/design/classificatore_email.drawio.png
 INPUT ./img/design/classificatore_email.drawio.png
@@ -761,6 +763,7 @@ OUTPUT thesis.run.xml
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
@@ -769,7 +772,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb

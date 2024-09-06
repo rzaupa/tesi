@@ -21,9 +21,9 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Logo di Bitbucket}}{22}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Logo di Python}}{22}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flusso di lavoro per l'Intelligent Document Processing}}{24}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces State Machine per l'Intelligent Document Processing}}{25}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura ad alto livello del sistema}}{25}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces State machine "IdpStateMachine" di AWS Step Functions}}{26}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Active learning workflow}}{40}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Active learning workflow}}{43}{figure.caption.33}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
