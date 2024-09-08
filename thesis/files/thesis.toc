@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {1.1.2}Metodologia di sviluppo}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}L'offerta di \emph {stage}}{5}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{6}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Descrizione dello stage}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Descrizione dello \emph {stage}}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduzione al progetto}{7}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{9}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Prodotti attesi}{10}{subsection.2.2.1}%

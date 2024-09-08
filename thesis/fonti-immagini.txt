@@ -1,0 +1,24 @@
+figura 1.1 - https://www.sanmarcoinformatica.com/
+figura 1.2 - https://www.industriaitaliana.it/sanmarco-informatica-manifattura-continuita-digitale/
+figura 1.3 - https://www.scrum.org/resources/what-scrum-module
+
+figura 2.1 - https://www.docsumo.com/blog/intelligent-document-processing-workflow
+
+figura 3.1 Comprehend - https://alternativeto.net/software/amazon-comprehend/about/
+figura 3.2 Textract - https://pypi.org/project/aws-textract/
+figura 3.3 Amazon S3 - https://www.pngegg.com/en/search?q=Amazon+S3
+figura 3.4 AWS Lambda - https://www.cleanpng.com/png-aws-lambda-amazon-web-services-serverless-computin-1036216/
+figura 3.5 Amazon DynamoDB - https://en.m.wikipedia.org/wiki/File:DynamoDB.png
+figura 3.6 Aws step functions - https://vecta.io/symbols/6/aws-application-services/6/amazon-step-functions
+figura 3.7 Amazon SageMaker - https://www.sorint.com/workshop_skill/machine-learning-con-amazon-sagemaker/
+figura 3.8 Amazon Bedrock - https://www.outsystems.com/forge/component-overview/16676/amazon-bedrock-connector-o11
+figura 3.9 Jupiter Notebook - https://jupyter.org/
+figura 3.10 Visual Studio Code - https://www.pngwing.com/en/search?q=visual+studio+code
+figura 3.11 Git - https://www.pngwing.com/en/free-png-azcbc
+figura 3.12 Bitbucket - https://it.m.wikipedia.org/wiki/File:Atlassian_Bitbucket_Logo.png
+figura 3.13 Python - https://www.cleanpng.com/png-python-computer-icons-programming-language-executa-7247110/
+
+figura 4.1 - immagine creata con drawio
+figura 4.2 - immagine esportata da aws step functions
+
+figura 5.1 - immagine creata con drawio
