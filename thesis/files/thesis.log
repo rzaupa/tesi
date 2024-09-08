@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  6 SEP 2024 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.14)  8 SEP 2024 12:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1101,7 +1101,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'verbose-ibid.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count408
@@ -1209,32 +1209,32 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count484
 )
-Package biblatex Info: Trying to load bibliography style 'verbose-ibid'...
-Package biblatex Info: ... file 'verbose-ibid.bbx' found.
- (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/verbose-ibid.bbx
-File: verbose-ibid.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authortitle'...
-Package biblatex Info: ... file 'authortitle.bbx' found.
- (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
-File: authortitle.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count485
 \c@bbx:relatedtotal=\count486
-)))
-Package biblatex Info: Trying to load citation style 'verbose-ibid'...
-Package biblatex Info: ... file 'verbose-ibid.cbx' found.
- (c:/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/verbose-ibid.cbx
-File: verbose-ibid.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (c:/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1679,51 +1679,51 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] (./chapters/1_introduction.tex
 Capitolo 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 45.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 45.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 45.
-(c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+<img/logo_sanmarco_informatica.png, id=279, 578.16pt x 87.32625pt>
+File: img/logo_sanmarco_informatica.png Graphic file (type png)
+<use img/logo_sanmarco_informatica.png>
+Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 37.
+(pdftex.def)             Requested size: 271.7835pt x 41.05pt.
+
 
 [1
 
 
 
-]
-<img/logo_sanmarco_informatica.png, id=283, 578.16pt x 87.32625pt>
-File: img/logo_sanmarco_informatica.png Graphic file (type png)
-<use img/logo_sanmarco_informatica.png>
-Package pdftex.def Info: img/logo_sanmarco_informatica.png  used on input line 49.
-(pdftex.def)             Requested size: 226.48395pt x 34.20766pt.
-
-Overfull \hbox (30.25996pt too wide) in paragraph at lines 58--59
-[]\T1/lmr/bx/n/10 SMITech\T1/lmr/m/n/10 : Spe-cial-iz-za-ta nelle soluzioni per la $[]$[][][]Data Pro-tec-tion[][], SMITech of-fre servizi di $[]$[][][]Cybersecurity[][],
+ <./img/logo_sanmarco_informatica.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 50.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 50.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 50.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (28.78984pt too wide) in paragraph at lines 58--59
+[]\T1/lmr/bx/it/10 SMITech\T1/lmr/m/n/10 : Spe-cial-iz-za-ta nelle soluzioni per la $[]$[][][]\T1/lmr/m/it/10 Data Pro-tec-tion[][]\T1/lmr/m/n/10 , \T1/lmr/m/it/10 SMITech \T1/lmr/m/n/10 of-fre servizi di $[]$[][][]\T1/lmr/m/it/10 Cybersecurity[][]\T1/lmr/m/n/10 ,
  []
 
 
 
-[2 <./img/logo_sanmarco_informatica.png>]
-<img/business_unit.png, id=316, 1027.84pt x 521.95pt>
+[2]
+<img/business_unit.png, id=326, 1027.84pt x 521.95pt>
 File: img/business_unit.png Graphic file (type png)
 <use img/business_unit.png>
-Package pdftex.def Info: img/business_unit.png  used on input line 75.
+Package pdftex.def Info: img/business_unit.png  used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 184.02324pt.
 
 
 [3 <./img/business_unit.png>]
-
-[4]
-<img/scrum.png, id=334, 903.375pt x 451.6875pt>
+<img/scrum.png, id=344, 903.375pt x 451.6875pt>
 File: img/scrum.png Graphic file (type png)
 <use img/scrum.png>
-Package pdftex.def Info: img/scrum.png  used on input line 113.
+Package pdftex.def Info: img/scrum.png  used on input line 84.
 (pdftex.def)             Requested size: 407.66833pt x 203.83643pt.
 
 
-[5 <./img/scrum.png>]) (./chapters/2_stage_desc.tex
+[4 <./img/scrum.png>]
+
+[5]) (./chapters/2_stage_desc.tex
 
 [6]
 Capitolo 2.
@@ -1732,14 +1732,14 @@ Capitolo 2.
 [7
 
 ]
-Overfull \hbox (3.65652pt too wide) in paragraph at lines 19--20
-[]\T1/lmr/m/n/10 Le tec-nolo-gie prin-ci-pali che sup-por-t-ano l'[][][]IDP[][] in-cludono il ri-conosci-men-to ot-ti-co dei carat-teri ($[]$[][][]Optical
+Overfull \hbox (3.27913pt too wide) in paragraph at lines 19--20
+[]\T1/lmr/m/n/10 Le tec-nolo-gie prin-ci-pali che sup-por-t-ano l'[][][]\T1/lmr/m/it/10 IDP[][] \T1/lmr/m/n/10 in-cludono il ri-conosci-men-to ot-ti-co dei carat-teri ($[]$[][][]\T1/lmr/m/it/10 Optical
  []
 
 
 
 [8]
-<img/idp_workflow.png, id=424, 1284.8pt x 722.7pt>
+<img/idp_workflow.png, id=447, 1284.8pt x 722.7pt>
 File: img/idp_workflow.png Graphic file (type png)
 <use img/idp_workflow.png>
 Package pdftex.def Info: img/idp_workflow.png  used on input line 37.
@@ -1770,7 +1770,7 @@ Capitolo 3.
 [13
 
 ]
-<img/tecnologie/comprehend.png, id=484, 513.92pt x 513.92pt>
+<img/tecnologie/comprehend.png, id=507, 513.92pt x 513.92pt>
 File: img/tecnologie/comprehend.png Graphic file (type png)
 <use img/tecnologie/comprehend.png>
 Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 20.
@@ -1780,12 +1780,12 @@ Package pdftex.def Info: img/tecnologie/comprehend.png  used on input line 20.
 [14 <./img/tecnologie/comprehend.png>]
 
 [15]
-<img/tecnologie/textract.png, id=516, 147.55125pt x 147.55125pt>
+<img/tecnologie/textract.png, id=539, 147.55125pt x 147.55125pt>
 File: img/tecnologie/textract.png Graphic file (type png)
 <use img/tecnologie/textract.png>
 Package pdftex.def Info: img/tecnologie/textract.png  used on input line 62.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
-<img/tecnologie/s3.png, id=518, 429.605pt x 513.92pt>
+<img/tecnologie/s3.png, id=541, 429.605pt x 513.92pt>
 File: img/tecnologie/s3.png Graphic file (type png)
 <use img/tecnologie/s3.png>
 Package pdftex.def Info: img/tecnologie/s3.png  used on input line 77.
@@ -1793,12 +1793,12 @@ Package pdftex.def Info: img/tecnologie/s3.png  used on input line 77.
 
 
 [16 <./img/tecnologie/textract.png> <./img/tecnologie/s3.png>]
-<img/tecnologie/AWS_Lambda.png, id=529, 3748.0025pt x 3011.25pt>
+<img/tecnologie/AWS_Lambda.png, id=552, 3748.0025pt x 3011.25pt>
 File: img/tecnologie/AWS_Lambda.png Graphic file (type png)
 <use img/tecnologie/AWS_Lambda.png>
 Package pdftex.def Info: img/tecnologie/AWS_Lambda.png  used on input line 92.
 (pdftex.def)             Requested size: 135.89174pt x 109.17224pt.
-<img/tecnologie/DynamoDB.png, id=532, 245.91875pt x 222.8325pt>
+<img/tecnologie/DynamoDB.png, id=555, 245.91875pt x 222.8325pt>
 File: img/tecnologie/DynamoDB.png Graphic file (type png)
 <use img/tecnologie/DynamoDB.png>
 Package pdftex.def Info: img/tecnologie/DynamoDB.png  used on input line 108.
@@ -1810,7 +1810,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [17 <./img/tecnologie/AWS_Lambda.png>]
-<img/tecnologie/stepfunctions.png, id=545, 301.125pt x 301.125pt>
+<img/tecnologie/stepfunctions.png, id=568, 301.125pt x 301.125pt>
 File: img/tecnologie/stepfunctions.png Graphic file (type png)
 <use img/tecnologie/stepfunctions.png>
 Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 122.
@@ -1818,64 +1818,70 @@ Package pdftex.def Info: img/tecnologie/stepfunctions.png  used on input line 12
 
 
 [18 <./img/tecnologie/DynamoDB.png> <./img/tecnologie/stepfunctions.png>]
-<img/tecnologie/sagemaker.png, id=571, 301.125pt x 301.125pt>
+<img/tecnologie/sagemaker.png, id=596, 301.125pt x 301.125pt>
 File: img/tecnologie/sagemaker.png Graphic file (type png)
 <use img/tecnologie/sagemaker.png>
 Package pdftex.def Info: img/tecnologie/sagemaker.png  used on input line 148.
 (pdftex.def)             Requested size: 90.5922pt x 90.5909pt.
 
 
-[19 <./img/tecnologie/sagemaker.png>]
-<img/tecnologie/bedrock.png, id=583, 147.55125pt x 147.55125pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[19]
+<img/tecnologie/bedrock.png, id=610, 147.55125pt x 147.55125pt>
 File: img/tecnologie/bedrock.png Graphic file (type png)
 <use img/tecnologie/bedrock.png>
 Package pdftex.def Info: img/tecnologie/bedrock.png  used on input line 162.
 (pdftex.def)             Requested size: 90.5922pt x 90.59375pt.
 
 
-[20 <./img/tecnologie/bedrock.png>]
-<img/tecnologie/jupyter.png, id=592, 1204.5pt x 632.3625pt>
+[20 <./img/tecnologie/sagemaker.png> <./img/tecnologie/bedrock.png>]
+<img/tecnologie/jupyter.png, id=620, 1204.5pt x 632.3625pt>
 File: img/tecnologie/jupyter.png Graphic file (type png)
 <use img/tecnologie/jupyter.png>
 Package pdftex.def Info: img/tecnologie/jupyter.png  used on input line 179.
 (pdftex.def)             Requested size: 135.89174pt x 71.33551pt.
-<img/tecnologie/vscode.png, id=595, 256.96pt x 256.96pt>
+<img/tecnologie/vscode.png, id=623, 256.96pt x 256.96pt>
 File: img/tecnologie/vscode.png Graphic file (type png)
 <use img/tecnologie/vscode.png>
 Package pdftex.def Info: img/tecnologie/vscode.png  used on input line 192.
 (pdftex.def)             Requested size: 90.5922pt x 90.59213pt.
-<img/tecnologie/git.png, id=598, 913.4125pt x 381.425pt>
+
+
+[21 <./img/tecnologie/jupyter.png> <./img/tecnologie/vscode.png>]
+<img/tecnologie/git.png, id=633, 913.4125pt x 381.425pt>
 File: img/tecnologie/git.png Graphic file (type png)
 <use img/tecnologie/git.png>
 Package pdftex.def Info: img/tecnologie/git.png  used on input line 205.
 (pdftex.def)             Requested size: 90.5922pt x 37.82462pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[21 <./img/tecnologie/jupyter.png> <./img/tecnologie/vscode.png>]
-<img/tecnologie/bitbucket.png, id=608, 1927.2pt x 346.29375pt>
+<img/tecnologie/bitbucket.png, id=635, 1927.2pt x 346.29375pt>
 File: img/tecnologie/bitbucket.png Graphic file (type png)
 <use img/tecnologie/bitbucket.png>
 Package pdftex.def Info: img/tecnologie/bitbucket.png  used on input line 218.
 (pdftex.def)             Requested size: 181.18439pt x 32.55478pt.
-<img/tecnologie/python.png, id=613, 1876.00874pt x 2055.68pt>
+<img/tecnologie/python.png, id=640, 1876.00874pt x 2055.68pt>
 File: img/tecnologie/python.png Graphic file (type png)
 <use img/tecnologie/python.png>
 Package pdftex.def Info: img/tecnologie/python.png  used on input line 231.
 (pdftex.def)             Requested size: 67.94241pt x 74.43414pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./chapters/4_design_coding.tex
 
-[22 <./img/tecnologie/git.png> <./img/tecnologie/bitbucket.png> <./img/tecnologie/python.png>]
+[22 <./img/tecnologie/git.png> <./img/tecnologie/bitbucket.png>]
+
+[23 <./img/tecnologie/python.png>]
 Capitolo 4.
 
 
-[23
+[24
 
 ]
-<img/design/classificatore_email.drawio.png, id=630, 1611.77156pt x 761.09344pt>
+<img/design/classificatore_email.drawio.png, id=661, 1611.77156pt x 761.09344pt>
 File: img/design/classificatore_email.drawio.png Graphic file (type png)
 <use img/design/classificatore_email.drawio.png>
 Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on input line 31.
@@ -1884,7 +1890,7 @@ Package pdftex.def Info: img/design/classificatore_email.drawio.png  used on inp
 
 LaTeX Warning: Float too large for page by 21.0pt on input line 35.
 
-<img/design/IdpStateMachine.png, id=633, 1992.44376pt x 1685.29625pt>
+<img/design/IdpStateMachine.png, id=664, 1992.44376pt x 1685.29625pt>
 File: img/design/IdpStateMachine.png Graphic file (type png)
 <use img/design/IdpStateMachine.png>
 Package pdftex.def Info: img/design/IdpStateMachine.png  used on input line 40.
@@ -1896,45 +1902,43 @@ Overfull \hbox (45.29384pt too wide) in paragraph at lines 40--41
 
 
 
-[24]
+[25]
 
-[25 <./img/design/classificatore_email.drawio.png>]
+[26 <./img/design/classificatore_email.drawio.png>]
 
-[26 <./img/design/IdpStateMachine.png>]
+[27 <./img/design/IdpStateMachine.png>]
 
-[27]
+[28]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 114.
 
 
-[28]
-
 [29]
+
+[30]
 Overfull \hbox (5.30122pt too wide) in paragraph at lines 153--155
 \T1/lmr/m/n/10 L'\T1/lmr/m/it/10 analisi del dataset \T1/lmr/m/n/10 è fon-da-men-tale per com-pren-dere la dis-tribuzione delle cat-e-gorie e va-l-utare l'adeguatez-
  []
 
 
 
-[30]
-
 [31]
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-
 
 [33]
-Overfull \hbox (1.5031pt too wide) in paragraph at lines 243--244
-[]\T1/lmr/m/n/10 Il risul-ta-to di ques-ta anal-isi viene sal-va-to in un file JSON di out-put, in-clu-den-do un cam-po \T1/lmtt/m/n/10 is_contract
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
  []
 
 
 
 [34]
+Overfull \hbox (1.5031pt too wide) in paragraph at lines 244--245
+[]\T1/lmr/m/n/10 Il risul-ta-to di ques-ta anal-isi viene sal-va-to in un file JSON di out-put, in-clu-den-do un cam-po \T1/lmtt/m/n/10 is_contract
+ []
+
+
 
 [35]
 
@@ -1946,22 +1950,34 @@ Overfull \hbox (1.5031pt too wide) in paragraph at lines 243--244
 
 [39]
 
-[40]) (./chapters/5_sviluppi_futuri.tex
+[40]
 
 [41]
+
+[42]
+
+[43]) (./chapters/5_sviluppi_futuri.tex
+
+[44]
 Capitolo 5.
-<img/active_learning_workflow.png, id=734, 1104.37593pt x 560.8453pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+
+
+[45
+
+]
+<img/active_learning_workflow.png, id=785, 1104.37593pt x 560.8453pt>
 File: img/active_learning_workflow.png Graphic file (type png)
 <use img/active_learning_workflow.png>
 Package pdftex.def Info: img/active_learning_workflow.png  used on input line 20.
 (pdftex.def)             Requested size: 452.9679pt x 230.03363pt.
 
 
-[42
-
-]
-
-[43 <./img/active_learning_workflow.png>]
+[46 <./img/active_learning_workflow.png>]
 Overfull \hbox (33.64331pt too wide) in paragraph at lines 44--45
 []\T1/lmr/m/n/10 Se lo sta-to è \T1/lmtt/m/n/10 TRAINED\T1/lmr/m/n/10 , ven-gono sal-vate le vari-abili \T1/lmtt/m/n/10 CurrentClassifierSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTrainingDataSSM\T1/lmr/m/n/10 ,
  []
@@ -1972,6 +1988,8 @@ Overfull \hbox (16.16986pt too wide) in paragraph at lines 44--45
  []
 
 
+
+[47]
 Overfull \hbox (31.30951pt too wide) in paragraph at lines 78--79
 []\T1/lmr/m/n/10 In ca-so con-trario, ven-gono ag-gior-nate le vari-abili \T1/lmtt/m/n/10 CurrentClassifierSSM\T1/lmr/m/n/10 , \T1/lmtt/m/n/10 CurrentTrainingDataSSM\T1/lmr/m/n/10 ,
  []
@@ -1983,45 +2001,57 @@ Overfull \hbox (160.02354pt too wide) in paragraph at lines 81--82
 
 
 
-[44]) (./chapters/6_conclusions.tex
+[48]) (./chapters/6_conclusions.tex
 
-[45]
+[49]
 Capitolo 6.
 )
 
-[46
+[50
 
 ]
 
-[47] (./thesis.acr) (./thesis.gls
+[51] (./thesis.acr) (./thesis.gls
 
-[48
+[52
 
-
-
-]
-
-[49
 
 
 ]
 
-[50]
+[53
 
-[51]
 
-[52]) (./appendix/bibliography.tex
+]
 
-[53]
-Overfull \hbox (83.7806pt too wide) in paragraph at lines 14--14
-\T1/lmtt/m/n/10 samples / amazon -[] comprehend -[] examples / blob / master / building -[] custom -[] classifier / BuildingCustomClassifier .
+[54]
+
+[55]
+
+[56]
+
+[57]) (./appendix/bibliography.tex
+
+[58]
+
+Package biblatex Warning: Split bibliography detected.
+(biblatex)                Many simple split bibliography setups with
+(biblatex)                non-overlapping bibliographies benefit from
+(biblatex)                setting 'defernumbers=true'.
+(biblatex)                See the documentation for details.
+(biblatex)                This warning can be suppressed with
+(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
+
+
+
+[59
+
+]
+Overfull \hbox (8.08636pt too wide) in paragraph at lines 14--14
+\T1/lmtt/m/n/10 introducing -[] one -[] step -[] classification -[] and -[] entity -[] recognition -[] with -[] amazon -[] comprehend -[]
  []
 
-
-
-[54
-
-]) (./appendix/glossary-entries.tex
+) (./appendix/glossary-entries.tex
 \@gls@deffile=\write12
 \openout12 = `thesis.glsdefs'.
 
@@ -2045,46 +2075,46 @@ Package glossaries Warning: Entry `ict' has already been defined in the preamble
 Package glossaries Warning: Entry `idp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 18.
 
 
-Package glossaries Warning: Entry `ml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 21.
+Package glossaries Warning: Entry `nlp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 21.
 
 
-Package glossaries Warning: Entry `nlp' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 24.
+Package glossaries Warning: Entry `ocr' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 24.
 
 
-Package glossaries Warning: Entry `ocr' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 27.
+Package glossaries Warning: Entry `pec' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 27.
 
 
-Package glossaries Warning: Entry `pec' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 30.
+Package glossaries Warning: Entry `sdk' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 30.
 
 
-Package glossaries Warning: Entry `sdk' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 33.
+Package glossaries Warning: Entry `uml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 33.
 
 
-Package glossaries Warning: Entry `uml' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 36.
+Package glossaries Warning: Entry `bpm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 36.
 
 
-Package glossaries Warning: Entry `bpm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 39.
+Package glossaries Warning: Entry `cpq' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 39.
 
 
-Package glossaries Warning: Entry `cpq' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 42.
+Package glossaries Warning: Entry `rpa' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 42.
 
 
-Package glossaries Warning: Entry `rpa' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 45.
+Package glossaries Warning: Entry `llm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 45.
 
 
-Package glossaries Warning: Entry `llm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 48.
+Package glossaries Warning: Entry `mlops' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 48.
 
 
-Package glossaries Warning: Entry `mlops' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 51.
+Package glossaries Warning: Entry `ide' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 51.
 
 
-Package glossaries Warning: Entry `ide' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 54.
+Package glossaries Warning: Entry `fm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 54.
 
 
-Package glossaries Warning: Entry `fm' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 57.
+Package glossaries Warning: Entry `vcs' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 57.
 
 
-Package glossaries Warning: Entry `vcs' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 60.
+Package glossaries Warning: Entry `it' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 60.
 
 
 Package glossaries Warning: Entry `agileg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 68.
@@ -2105,7 +2135,7 @@ Package glossaries Warning: Entry `ictg' has already been defined in the preambl
 Package glossaries Warning: Entry `idpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 105.
 
 
-Package glossaries Warning: Entry `mlg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 112.
+Package glossaries Warning: Entry `machinelearningg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 112.
 
 
 Package glossaries Warning: Entry `nlpg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 119.
@@ -2209,9 +2239,21 @@ Package glossaries Warning: Entry `versioncontrolsystemg' has already been defin
 
 Package glossaries Warning: Entry `datasetg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 354.
 
+
+Package glossaries Warning: Entry `itg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 361.
+
+
+Package glossaries Warning: Entry `supplychaing' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 368.
+
+
+Package glossaries Warning: Entry `operationsg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 375.
+
+
+Package glossaries Warning: Entry `projectmanagementg' has already been defined in the preamble (in which case remove the duplicate definition) or you have just updated to glossaries.sty v4.47 (in which case delete `thesis.glsdefs') on input line 382.
+
 )
 
-[55] (./thesis.aux)
+[60] (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2221,20 +2263,20 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41496 strings out of 475501
- 743998 string characters out of 5776863
- 1944908 words of memory out of 5000000
- 63183 multiletter control sequences out of 15000+600000
- 656532 words of font info for 82 fonts, out of 8000000 for 9000
+ 41612 strings out of 475501
+ 746808 string characters out of 5776863
+ 1945908 words of memory out of 5000000
+ 63291 multiletter control sequences out of 15000+600000
+ 669337 words of font info for 85 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 99i,12n,125p,2501b,3619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,125p,2496b,3619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (65 pages, 2560105 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on thesis.pdf (70 pages, 2602197 bytes).
 PDF statistics:
- 1517 PDF objects out of 1728 (max. 8388607)
- 261 named destinations out of 1000 (max. 500000)
+ 1596 PDF objects out of 1728 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
  786 words of extra memory for PDF output out of 10000 (max. 10000000)
 

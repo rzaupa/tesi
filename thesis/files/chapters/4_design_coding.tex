@@ -121,7 +121,7 @@ L'obiettivo principale di questa fase è quindi quello di ricavare gli allegati 
 Gli allegati, ora presenti nei bucket \emph{S3 Attachments Bucket} e \emph{S3 First Pages Attachments Bucket}, sono pronti per essere classificati e analizzati nelle fasi successive del processo. 
 \section{Classificazione dei documenti}
 \label{sec:classificazione-documenti}
-Inizialmente, si era presa in considerazione l'idea di classificare le email in base al loro contenuto utilizzando modelli di \gls{mlg} offerti da \emph{Amazon SageMaker}. Tuttavia, con il chiarimento delle categorie di interesse durante lo stage (ordini, fatture e contratti), si è deciso di focalizzarsi sull'estrazione e la classificazione degli allegati presenti nelle email, piuttosto che sul contenuto testuale delle stesse. Questo approccio ha semplificato significativamente il processo di classificazione, poiché i metadati (denominati anche \textit{features} nel contesto del \gls{mlg}) si riducono al semplice testo estratto dagli allegati e tale caso d'uso si presta bene all'utilizzo di \emph{Amazon Comprehend} per la classificazione ed in particolare per la creazione di un modello personalizzato.\\
+Inizialmente, si era presa in considerazione l'idea di classificare le email in base al loro contenuto utilizzando modelli di \gls{machinelearningg} offerti da \emph{Amazon SageMaker}. Tuttavia, con il chiarimento delle categorie di interesse durante lo stage (ordini, fatture e contratti), si è deciso di focalizzarsi sull'estrazione e la classificazione degli allegati presenti nelle email, piuttosto che sul contenuto testuale delle stesse. Questo approccio ha semplificato significativamente il processo di classificazione, poiché i metadati (denominati anche \textit{features} nel contesto del \gls{machinelearningg}) si riducono al semplice testo estratto dagli allegati e tale caso d'uso si presta bene all'utilizzo di \emph{Amazon Comprehend} per la classificazione ed in particolare per la creazione di un modello personalizzato.\\
 Sebbene in una fase iniziale fosse stato considerato e provato l'uso del servizio \emph{Amazon Bedrock} per classificare i documenti, in particolare con il modello \emph{Claude-3}, questa opzione è stata successivamente scartata a favore di un modello personalizzato, ritenuto più adatto alle specifiche esigenze del progetto e meno costoso.\\
 In questo contesto, l'utilizzo di \emph{Amazon Textract} e \emph{Amazon Comprehend} si è rivelato cruciale per l'accuratezza della classificazione.\\
 La fase di classificazione degli allegati (figura \ref{fig:architettura-alto-livello} riquadro denominato \emph{Classification}) si articola nelle seguenti operazioni:
@@ -210,6 +210,7 @@ Per migliorare il modello nel tempo, è stato utilizzato il processo di \glsfirs
 \end{itemize}
 
 \section{Estrazione delle informazioni}
+\label{sec:estrazione-informazioni}
 In questa fase l'obiettivo è l'estrazione delle informazioni associate a ciascuna categoria escludendo la categoria non classificato. A partire dai risultati di classificazione della fase precedente si è analizzato il metodo migliore per poter estrarre le informazioni ricercate dalle categorie di contratti, ordini e fatture. Per ciascuna categoria
 utilizzata una funzione \emph{lambda} che tramite \emph{Amazon Textract} estrae le informazioni
 principali dai documenti. Per ciascuna delle informazioni estratte viene riportata
@@ -254,6 +255,41 @@ Per l'estrazione delle informazioni dalle fatture, sono state considerate divers
     \item Amazon Bedrock con il modello Claude-3
     \item Utilizzo di \textit{queries} e \textit{custom queries} (adapters) di Amazon Textract
 \end{itemize}
+
+Nella tabella seguente (\ref{tab:costi-estrazione}) sono riportati i costi stimati per l'estrazione delle informazioni associate a ordini e fatture utilizzando i servizi AWS identificati. 
+Il costo combinato di Amazon Textract e Claude-3 è calcolato come segue:
+\begin{itemize}
+  \item \$15 per 1000 pagine elaborate tramite Amazon Textract.
+  \item Claude-3 ha un costo di \$0,00025 per 1000 token di input, dove un token corrisponde a circa 4 caratteri.
+\end{itemize}
+Il costo per utilizzare Amazon Comprehend per il riconoscimento personalizzato delle entità è calcolato come segue:
+\begin{itemize}
+  \item \$0,0001 per unità (100 caratteri) fino a 10 milioni di unità.
+  \item Dopo 10 milioni di unità, il costo è di \$0,00005 per unità, e dopo 50 milioni di unità, il costo scende a \$0,000025 per unità.
+  \item Un documento ha in media 10.000 caratteri, quindi il costo per 1000 pagine è approssimativamente \$1,00.
+  \item Il costo orario per l'addestramento di un nuovo modello è di \$3, con un massimo di 10 ore, portando il totale a circa \$31.
+\end{itemize}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Servizio} & \textbf{Costo} \\
+    \hline
+    AnalyzeExpense & \$10 per 1000 pagine \\
+    \hline
+    Queries & \$15 per 1000 pagine \\
+    \hline
+    Textract + Claude-3 & \$17 per 1000 pagine \\
+    \hline
+    Comprehend custom entity recognition & \$0,0001 per unità (100 caratteri) \\
+    \hline
+    Textract custom queries & \$1,50 per 1000 pagine \\
+    \hline
+  \end{tabular}
+  \caption{Costi per l'estrazione delle informazioni associate a ordini e fatture}
+    \label{tab:costi-estrazione}
+\end{table}
 
 Per quanto riguarda l'analisi delle fatture tramite la funzione \texttt{analyze\_expense} di Amazon Textract, questa è stata presa in considerazione poiché è specificamente progettata per l'analisi di fatture e ricevute, offrendo un'alta precisione per layout standard. Tuttavia, la sua efficacia è limitata a questi layout predefiniti e potrebbe non essere ottimale per fatture con strutture non convenzionali.
 
@@ -464,7 +500,21 @@ Le informazioni generali degli ordini vengono salvate nella tabella \texttt{Ordi
 Questo approccio assicura che tutti i dati estratti dai documenti siano memorizzati in modo organizzato e facilmente accessibile, sfruttando le potenzialità di DynamoDB per garantire performance elevate e affidabilità nel tempo.
 
 \section{Analisi dei costi}
-TO DO
+
+In questa sezione vengono analizzati i costi stimati per i principali servizi \gls{awsg} utilizzati nel sistema, calcolati tramite il calcolatore dei costi \gls{awsg} e riferiti alla regione di Francoforte (eu-central-1).
+
+Le AWS Step Functions, utilizzate per orchestrare l'esecuzione dei vari servizi, presentano un costo stimato di circa \$0,23 al mese per 1000 richieste, ognuna con 13 transizioni. 
+
+Amazon Comprehend è impiegato per la classificazione dei documenti allegati alle email in diverse categorie (ordini, fatture, contratti, non classificati). Il costo per la classificazione asincrona di 1000 allegati al mese, ciascuno con circa 1000 caratteri per pagina, è stimato a circa \$9 mensili. A ciò si aggiunge il costo per l'addestramento di un modello personalizzato, pari a circa \$3 all'ora, con un costo aggiuntivo di storage di \$0,10 al mese.
+
+Per l'estrazione dei dati strutturati dai documenti, Amazon Textract risulta essere il servizio chiave. L'analisi base del testo su una singola pagina è gratuita, mentre per operazioni più avanzate, i costi variano. Ad esempio, l'analisi delle tabelle all'interno di contratti costa circa \$0,20 per pagina, mentre l'analisi delle firme su 30 pagine comporta un costo di \$0,05. L'elaborazione delle fatture tramite query personalizzate costa circa \$0,08 per 2 pagine, e l'utilizzo di AnalyzeExpense su fatture ha un costo aggiuntivo di \$0,02 per 2 pagine. Similmente, l'analisi degli ordini con query personalizzate ha un costo di \$0,06 per pagina, mentre con AnalyzeExpense il costo è di \$0,01 per pagina. Complessivamente, per l'elaborazione di 1000 allegati con una distribuzione stimata di 50\% contratti, 30\% fatture e 20\% ordini, il costo mensile si attesta attorno a \$0,50.
+
+AWS Lambda viene utilizzato per eseguire funzioni serverless. Considerando che il piano gratuito di AWS Lambda include 1 milione di richieste e 400.000 GB/secondo di tempo di calcolo al mese, e che l'uso stimato del sistema rientra all'interno di queste soglie, non sono previsti costi per questo servizio.
+
+Amazon S3 viene utilizzato per lo storage dei dati. Per un uso mensile di 1 GB di spazio e 1000 richieste PUT e GET, il costo stimato è di circa \$0,30. Amazon DynamoDB, impiegato per gestire i metadati associati ai documenti, ha un costo stimato di \$0,31 al mese per 1000 richieste e 1 GB di storage.
+
+Infine, il costo complessivo stimato per l'intero sistema, basato su un volume di 1000 allegati al mese e una distribuzione bilanciata tra i vari tipi di documenti, è di circa \$10 mensili. Questo rende il sistema non solo efficiente dal punto di vista funzionale, ma anche economico e scalabile per le esigenze di gestione automatizzata dei documenti aziendali.
+
 %\section{Tecnologie e strumenti}
 %\label{sec:tecnologie-strumenti}
 %

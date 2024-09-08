@@ -1,17 +1,17 @@
 \chapter{Sviluppi futuri}
 \label{cap:sviluppi-futuri}
-\emph{In questa sezione vengono proposti alcuni sviluppi futuri del sistema.}
+\emph{In questa sezione vengono proposti alcuni sviluppi futuri del sistema.}\\\\
+Durante lo svolgimento del progetto sono emerse alcune possibili evoluzioni del sistema che potrebbero migliorarne le funzionalità e l'efficienza. Di seguito vengono elencati alcuni sviluppi futuri che potrebbero essere implementati per arricchire il sistema e renderlo più completo e performante. Per quanto riguarda eventuali risorse menzionate si rimanda alla sezione \ref{sec:risorse-servizi-aws}.
 \section{Analisi del contenuto della mail}
-Per poter analizzare il contenuto della mail ed estrarre le informazioni associate si può modificare la funzione lambda \textit{processEmail} in modo tale da estrarre il testo della mail e non solo gli allegati ed eventualmente caricarlo su un altro bucket S3.\\
-Inoltre, si può implementare un modello di classificazione di Comprehend per classificare il testo della mail in base al contenuto analogamente a quanto fatto per gli allegati e successivamente estrarre le informazioni associate. 
+Per poter analizzare il contenuto della mail ed estrarre le informazioni associate si può modificare la funzione lambda \textit{processEmail} in modo tale da estrarre il testo della mail e non solo gli allegati ed eventualmente caricarlo su un altro \emph{bucket S3}.\\
+Inoltre, si può implementare un modello di classificazione di \emph{Amazon Comprehend} per classificare il testo della mail in base al contenuto analogamente a quanto fatto per gli allegati e successivamente estrarne le informazioni associate come ad esempio la data, l'importo, il mittente, il destinatario, oppure informazioni che possono completare alcune informazioni mancanti o non estratte nella fase di estrazione delle informazioni (sezione \ref{sec:estrazione-informazioni}).
 \section{Aggiunta di nuove categorie}
-Si possono aggiungere nuove categorie di classificazione se necessario andando a modificare il modello di classificazione di Comprehend e in particolare il dataset fornito. Inoltre, si possono aggiungere nuove funzioni lambda per l'estrazione delle informazioni associate a ciascuna categoria.
+Si possono aggiungere nuove categorie di classificazione se necessario andando a modificare il modello di classificazione di \emph{Amazon Comprehend} e in particolare il \gls{datasetg} fornito. Inoltre, si possono aggiungere nuove funzioni lambda per l'estrazione delle informazioni associate a ciascuna categoria analogamente a quanto fatto per le funzioni \textit{extractContractInformation}, \textit{extractInvoiceInformation} e \textit{extractOrderInformation}.
 \section{Completamento delle informazioni}
-Si possono completare le informazioni mancanti e non estratte nello step 2: information extraction come ad esempio la data, l'importo, il mittente, il destinatario, ecc interrogando il database DynamoDB. Questo lavoro si può fare prima dello step 3: human review. 
-\subsection{Active learning workflow per migliorare il modello di classificazione}
+Si possono completare le informazioni mancanti e non estratte nella fase di estrazione delle informazioni come ad esempio la data, l'importo, il mittente, il destinatario, ecc interrogando il database \emph{DynamoDB}. Questo lavoro si può fare prima dello storage delle informazioni nel database \emph{DynamoDB}.
+\section{Active learning workflow per migliorare il modello di classificazione}
 
-
-Si può implementare un workflow di active learning per migliorare il modello di classificazione di Comprehend.
+Si può implementare un flusso di \gls{activelearningg} per migliorare il modello di classificazione di \emph{Amazon Comprehend}.
 
 Per avere un riferimento dettagliato si può consultare il seguente link: \href{https://aws.amazon.com/it/blogs/machine-learning/active-learning-workflow-for-amazon-comprehend-custom-classification-part-1/}{Active learning workflow for Amazon Comprehend custom classification}
 La figura \ref{fig:active_learning_workflow} mostra un esempio di active learning workflow che utilizza flywheel per migliorare il modello di classificazione di Comprehend.
@@ -22,20 +22,20 @@ La figura \ref{fig:active_learning_workflow} mostra un esempio di active learnin
   \label{fig:active_learning_workflow}
 \end{figure}
 Le sottosezioni successive hanno lo scopo di fornire una panoramica generale su un esempio di active learning workflow per migliorare il modello di classificazione di Comprehend.
-\subsubsection{StartStepFunction}
+\subsection{StartStepFunction}
 \begin{itemize}
   \item \textbf{Trigger}: L'esecuzione è innescata dalla presenza di un file CSV contenente i dati di training.
   \item Il file CSV viene suddiviso in due file separati: uno per il training e uno per il testing.
   \item Viene avviata la Step Function.
 \end{itemize}
 
-\subsubsection{StartCustomClassification}
+\subsection{StartCustomClassification}
 \begin{itemize}
   \item Viene utilizzata la funzione \texttt{create\_document\_classifier} per creare un classificatore personalizzato.
 \end{itemize}
 Si attende un periodo di 10 secondi per consentire la creazione del classificatore.
 
-\subsubsection{GetStatusClassifier}
+\subsection{GetStatusClassifier}
 \begin{itemize}
   \item Viene utilizzata la funzione \texttt{describe\_document\_classifier} per ottenere lo stato attuale del classificatore. Gli stati possibili includono \texttt{SUBMITTED}, \texttt{TRAINING}, e altri stati come \texttt{IN\_ERROR}, \texttt{TRAINED}, \texttt{DELETING}, e \texttt{CreateEndpoint}.
   \item Se la variabile \texttt{CurrentClassifierSSM} è impostata, viene restituito lo stato corrente del classificatore.
@@ -51,7 +51,7 @@ Nel \textit{choice state}, viene verificato:
   \item In caso contrario, si attende per 10 secondi e si richiama \texttt{GetStatusClassifier}.
 \end{itemize}
 
-\subsubsection{StartValidationTest}
+\subsection{StartValidationTest}
 \begin{itemize}
   \item Viene utilizzato il classificatore passato come evento e quello fornito come parametro.
   \item Viene eseguita la funzione \texttt{start\_document\_classification\_job} su entrambi i modelli per classificare i dati di test.
@@ -60,13 +60,13 @@ Nel \textit{choice state}, viene verificato:
 \end{itemize}
 Si attende un periodo di 10 secondi per consentire la creazione dei job.
 
-\subsubsection{GetStatusValidationTest}
+\subsection{GetStatusValidationTest}
 \begin{itemize}
   \item Viene utilizzata la funzione \texttt{describe\_document\_classification\_job} per ottenere lo stato dei job dei due modelli. Gli stati possibili includono \texttt{COMPLETED}, \texttt{STOP\_REQUESTED}, e altri stati come \texttt{STOPPED}, \texttt{FAILED}.
 \end{itemize}
 Nel \textit{choice state}, si verifica se lo stato di entrambi i job è \texttt{COMPLETED}. In caso affermativo, si passa allo stato successivo; in caso contrario, si attende per 10 secondi e si richiama \texttt{GetStatusValidationTest}.
 
-\subsubsection{ComputeTestResults}
+\subsection{ComputeTestResults}
 \begin{itemize}
   \item Vengono scaricati i risultati dei due job (file .gz).
   \item I risultati vengono salvati nella tabella \texttt{TestResultTable} su DynamoDB.

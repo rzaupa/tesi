@@ -270,17 +270,17 @@
       \field{year}{2010}
       \true{nocite}
     \endentry
-    \entry{site:agile-manifesto}{online}{}{}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+    \entry{site:scrum-wikipedia}{online}{}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labeltitlesource}{title}
-      \field{title}{Manifesto Agile}
+      \field{title}{Scrum - Wikipedia}
       \true{nocite}
       \verb{urlraw}
-      \verb http://agilemanifesto.org/iso/it/
+      \verb https://it.wikipedia.org/wiki/Scrum_(informatica)
       \endverb
       \verb{url}
-      \verb http://agilemanifesto.org/iso/it/
+      \verb https://it.wikipedia.org/wiki/Scrum_(informatica)
       \endverb
     \endentry
   \enddatalist

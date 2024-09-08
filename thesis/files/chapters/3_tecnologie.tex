@@ -3,7 +3,7 @@
 \emph{In questo capitolo verranno descritti i servizi e le tecnologie analizzate e pertinenti per il problema descritto, in quale modo possono essere impiegate e una panoramica finalizzata a chiarirne il contesto e il caso d'uso.}
 
 \section{Amazon Web Services}
-\gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \gls{mlg} e in particolare che possano implementare un flusso di \gls{idpg} automatizzato e adatto agli obiettivi del progetto.\\
+\gls{aws} è una piattaforma di servizi cloud che offre potenza di calcolo, storage di database, distribuzione di contenuti e altre funzionalità per aiutare le aziende a scalare e crescere. AWS offre una vasta gamma di servizi che possono essere utilizzati per implementare soluzioni di \gls{ai} e \gls{machinelearningg} e in particolare che possano implementare un flusso di \gls{idpg} automatizzato e adatto agli obiettivi del progetto.\\
 Per la realizzazione dell'applicazione sono stati individuati diversi servizi che hanno permesso di realizzare un'architettura scalabile e \gls{serverlessg}.
 
 \subsection{Amazon Comprehend}
@@ -23,7 +23,7 @@ Nel presente lavoro, Amazon Comprehend è stato utilizzato per la classificazion
 \end{figure}
 
 \subsection{Amazon Textract}
-Amazon Textract (il logo è riportato in Figura \ref{fig:textract}) è un servizio di riconoscimento ottico dei caratteri (\gls{ocr}) che sfrutta l'apprendimento automatico per identificare e analizzare testo e dati presenti in immagini o documenti. Basato sulla tecnologia di \glsfirstoccur{\gls{deeplearningg}} collaudata e altamente scalabile sviluppata dagli esperti di \glsfirstoccur{\gls{computervisiong}} di Amazon, Textract è in grado di analizzare quotidianamente miliardi di immagini e video. Una delle caratteristiche distintive di questo servizio è la sua accessibilità: non è richiesta alcuna esperienza nel campo del \gls{ml} per utilizzarlo, grazie alla disponibilità di \gls{apig} semplici e intuitive che consentono di analizzare file immagine e PDF con facilità. Inoltre, Amazon Textract apprende continuamente dai nuovi dati e Amazon implementa costantemente nuove funzionalità, garantendo un miglioramento continuo delle sue capacità.
+Amazon Textract (il logo è riportato in Figura \ref{fig:textract}) è un servizio di riconoscimento ottico dei caratteri (\gls{ocr}) che sfrutta l'apprendimento automatico per identificare e analizzare testo e dati presenti in immagini o documenti. Basato sulla tecnologia di \glsfirstoccur{\gls{deeplearningg}} collaudata e altamente scalabile sviluppata dagli esperti di \glsfirstoccur{\gls{computervisiong}} di Amazon, Textract è in grado di analizzare quotidianamente miliardi di immagini e video. Una delle caratteristiche distintive di questo servizio è la sua accessibilità: non è richiesta alcuna esperienza nel campo del \gls{machinelearningg} per utilizzarlo, grazie alla disponibilità di \gls{apig} semplici e intuitive che consentono di analizzare file immagine e PDF con facilità. Inoltre, Amazon Textract apprende continuamente dai nuovi dati e Amazon implementa costantemente nuove funzionalità, garantendo un miglioramento continuo delle sue capacità.
 
 Il servizio non si limita a eseguire il riconoscimento ottico dei caratteri da testo digitato o scritto a mano, ma è anche in grado di estrarre il contenuto del documento, incluse tabelle, campi e relazioni strutturali. Textract fornisce punteggi di confidenza e bounding box (rappresentazioni grafiche dei confini) per ogni parola e riga di testo riconosciuta. Il servizio supporta vari formati di file, tra cui PDF, TXT, DOC, DOCX, JPG e PNG.
 
@@ -110,7 +110,7 @@ Nel contesto del presente progetto, Amazon DynamoDB è stato utilizzato per la m
   \label{fig:dynamodb}
 \end{figure}
 \subsection{AWS Step Functions}
-AWS Step Functions (logo riportato in Figura \ref{fig:stepfunctions}) è un servizio di orchestrazione \gls{serverlessg} che consente di coordinare in modo efficiente i componenti di applicazioni distribuite, microservizi e pipeline di dati o di \gls{mlg} attraverso una logica visuale. Questo servizio si basa sul concetto di macchine a stati (\textit{State machines}) e task, dove una macchina a stati, o workflow, è costituita da una serie di passaggi guidati da eventi. Ogni passaggio nel workflow è chiamato stato, e uno stato di tipo Task rappresenta un'unità di lavoro eseguita da un altro servizio \gls{awsg} o \gls{apig}. Le esecuzioni, ovvero le istanze di workflow in esecuzione, sono gestite direttamente da Step Functions.
+AWS Step Functions (logo riportato in Figura \ref{fig:stepfunctions}) è un servizio di orchestrazione \gls{serverlessg} che consente di coordinare in modo efficiente i componenti di applicazioni distribuite, microservizi e pipeline di dati o di \gls{machinelearningg} attraverso una logica visuale. Questo servizio si basa sul concetto di macchine a stati (\textit{State machines}) e task, dove una macchina a stati, o workflow, è costituita da una serie di passaggi guidati da eventi. Ogni passaggio nel workflow è chiamato stato, e uno stato di tipo Task rappresenta un'unità di lavoro eseguita da un altro servizio \gls{awsg} o \gls{apig}. Le esecuzioni, ovvero le istanze di workflow in esecuzione, sono gestite direttamente da Step Functions.
 
 Le attività all'interno dei task della macchina a stati possono anche essere svolte utilizzando le \textit{Activities}, che sono lavoratori esterni al servizio Step Functions.
 
@@ -125,24 +125,24 @@ Nel contesto del presente progetto, AWS Step Functions è stato utilizzato per o
 \end{figure}
 
 \subsection{Amazon SageMaker}
-Amazon SageMaker (logo riportato in Figura \ref{fig:sagemaker}) è un servizio completamente gestito per il \gls{mlg} che permette a data scientist e sviluppatori di costruire, addestrare e distribuire modelli \gls{mlg} in un ambiente di produzione altamente scalabile e sicuro. SageMaker facilita l'intero processo di sviluppo di modelli \gls{mlg}, fornendo un'interfaccia utente intuitiva che integra strumenti e funzionalità di \gls{mlg} all'interno di diversi ambienti di sviluppo integrato (\glsfirstoccur{\gls{ideg}}).
+Amazon SageMaker (logo riportato in Figura \ref{fig:sagemaker}) è un servizio completamente gestito per il \gls{machinelearningg} che permette a data scientist e sviluppatori di costruire, addestrare e distribuire modelli \gls{machinelearningg} in un ambiente di produzione altamente scalabile e sicuro. SageMaker facilita l'intero processo di sviluppo di modelli \gls{machinelearningg}, fornendo un'interfaccia utente intuitiva che integra strumenti e funzionalità di \gls{machinelearningg} all'interno di diversi ambienti di sviluppo integrato (\glsfirstoccur{\gls{ideg}}).
 
-SageMaker consente di archiviare e condividere i dati senza dover gestire infrastrutture server, permettendo alle organizzazioni di concentrarsi sullo sviluppo collaborativo dei flussi di lavoro \gls{mlg}. Il servizio supporta algoritmi \gls{mlg} gestiti, ottimizzati per elaborare grandi volumi di dati in un ambiente distribuito, e offre la flessibilità di utilizzare algoritmi e framework personalizzati. In pochi passaggi, è possibile distribuire un modello in un ambiente sicuro e scalabile direttamente dalla console di SageMaker.
+SageMaker consente di archiviare e condividere i dati senza dover gestire infrastrutture server, permettendo alle organizzazioni di concentrarsi sullo sviluppo collaborativo dei flussi di lavoro \gls{machinelearningg}. Il servizio supporta algoritmi \gls{machinelearningg} gestiti, ottimizzati per elaborare grandi volumi di dati in un ambiente distribuito, e offre la flessibilità di utilizzare algoritmi e framework personalizzati. In pochi passaggi, è possibile distribuire un modello in un ambiente sicuro e scalabile direttamente dalla console di SageMaker.
 
 Tra gli strumenti offerti da Amazon SageMaker vi sono:
 
 \begin{itemize}
-    \item \textbf{Amazon SageMaker JumpStart}: Un hub di \gls{mlg} che consente di valutare e selezionare modelli fondamentali (\textit{foundation models}) in base a specifici parametri.
-    \item \textbf{Amazon SageMaker Studio}: Un IDE completo per preparare i dati, creare, addestrare e distribuire modelli \gls{mlg}, offrendo strumenti per ogni fase del ciclo di vita del \gls{mlg}.
-    \item \textbf{Amazon SageMaker MLOps}: Fornisce strumenti per automatizzare le operazioni di \gls{mlg} lungo tutto il ciclo di vita del modello, inclusi processi di integrazione e distribuzione continua (CI/CD).
+    \item \textbf{Amazon SageMaker JumpStart}: Un hub di \gls{machinelearningg} che consente di valutare e selezionare modelli fondamentali (\textit{foundation models}) in base a specifici parametri.
+    \item \textbf{Amazon SageMaker Studio}: Un IDE completo per preparare i dati, creare, addestrare e distribuire modelli \gls{machinelearningg}, offrendo strumenti per ogni fase del ciclo di vita del \gls{machinelearningg}.
+    \item \textbf{Amazon SageMaker MLOps}: Fornisce strumenti per automatizzare le operazioni di \gls{machinelearningg} lungo tutto il ciclo di vita del modello, inclusi processi di integrazione e distribuzione continua (CI/CD).
     \item \textbf{Amazon SageMaker BlazingText}: Implementa l'algoritmo Word2Vec per la creazione di vettori di parole, utilizzati nell'elaborazione del linguaggio naturale.
-    \item \textbf{Pipeline di Amazon SageMaker}: Automatizza le diverse fasi del \gls{mlg}, dalla pre-elaborazione dei dati al monitoraggio dei modelli in produzione.
-    \item \textbf{Amazon SageMaker Ground Truth}: Migliora la precisione dei modelli \gls{mlg} sfruttando il feedback umano durante tutto il ciclo di vita del modello, permettendo anche la creazione di etichette per i dati.
-    \item \textbf{Amazon SageMaker Clarify}: Rileva e mitiga i pregiudizi presenti nei dati di addestramento e nelle previsioni dei modelli \gls{mlg}.
-    \item \textbf{Amazon SageMaker Model Monitor}: Monitora i modelli \gls{mlg} in produzione per rilevare eventuali cambiamenti nei dati o nelle prestazioni dei modelli, assicurando un'accuratezza costante nel tempo.
+    \item \textbf{Pipeline di Amazon SageMaker}: Automatizza le diverse fasi del \gls{machinelearningg}, dalla pre-elaborazione dei dati al monitoraggio dei modelli in produzione.
+    \item \textbf{Amazon SageMaker Ground Truth}: Migliora la precisione dei modelli \gls{machinelearningg} sfruttando il feedback umano durante tutto il ciclo di vita del modello, permettendo anche la creazione di etichette per i dati.
+    \item \textbf{Amazon SageMaker Clarify}: Rileva e mitiga i pregiudizi presenti nei dati di addestramento e nelle previsioni dei modelli \gls{machinelearningg}.
+    \item \textbf{Amazon SageMaker Model Monitor}: Monitora i modelli \gls{machinelearningg} in produzione per rilevare eventuali cambiamenti nei dati o nelle prestazioni dei modelli, assicurando un'accuratezza costante nel tempo.
 \end{itemize}
 
-Nel contesto del presente progetto, Amazon SageMaker non è stato utilizzato direttamente, in quanto si è ritenuto l'utilizzo di Amazon Comprehend e Amazon Textract sufficiente per le esigenze di analisi del testo e dei documenti. Tuttavia, SageMaker rappresenta una risorsa fondamentale per lo sviluppo di modelli \gls{mlg} personalizzati e per l'implementazione di soluzioni di \gls{mlg} avanzate.
+Nel contesto del presente progetto, Amazon SageMaker non è stato utilizzato direttamente, in quanto si è ritenuto l'utilizzo di Amazon Comprehend e Amazon Textract sufficiente per le esigenze di analisi del testo e dei documenti. Tuttavia, SageMaker rappresenta una risorsa fondamentale per lo sviluppo di modelli \gls{machinelearningg} personalizzati e per l'implementazione di soluzioni di \gls{machinelearningg} avanzate.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.2\textwidth]{img/tecnologie/sagemaker.png}
@@ -170,7 +170,7 @@ Nel corso del progetto sono stati impiegati diversi strumenti di sviluppo che ha
 
 \subsection{Jupyter Notebook}
 
-Jupyter Notebook (logo riportato in Figura \ref{fig:jupyter}) è un'applicazione web open-source che consente di creare e condividere documenti interattivi contenenti codice eseguibile, testo descrittivo, grafici e altri elementi multimediali. Jupyter supporta una vasta gamma di linguaggi di programmazione, tra cui Python, R e Julia, ed è ampiamente utilizzato in ambiti di ricerca, analisi dati e prototipazione di modelli di machine learning (\gls{mlg}).
+Jupyter Notebook (logo riportato in Figura \ref{fig:jupyter}) è un'applicazione web open-source che consente di creare e condividere documenti interattivi contenenti codice eseguibile, testo descrittivo, grafici e altri elementi multimediali. Jupyter supporta una vasta gamma di linguaggi di programmazione, tra cui Python, R e Julia, ed è ampiamente utilizzato in ambiti di ricerca, analisi dati e prototipazione di modelli di machine learning (\gls{machinelearningg}).
 
 In questo progetto, Jupyter Notebook ha svolto un ruolo centrale nella fase di prototipazione, in quanto è stato utilizzato per eseguire analisi esplorative dei dati, testare le funzionalità di \textit{Amazon Comprehend} e \textit{Amazon Textract}, e sviluppare i modelli di classificazione. Grazie alla sua natura interattiva, Jupyter ha consentito un rapido ciclo di test e iterazione, migliorando l'efficienza complessiva durante lo sviluppo dei modelli.
 
@@ -224,7 +224,7 @@ All'interno del progetto, Bitbucket è stato utilizzato per ospitare il codice s
 
 Python (logo riportato in Figura \ref{fig:python}) è un linguaggio di programmazione ad alto livello, interpretato, noto per la sua semplicità sintattica e la vasta libreria di moduli disponibili, che ne fanno una scelta eccellente per un'ampia gamma di applicazioni, tra cui sviluppo web, desktop, scientifico e \gls{aig}.
 
-Nel presente progetto, Python è stato il linguaggio di riferimento per la realizzazione delle \textit{Lambda functions} utilizzate su \gls{awsg} e per lo sviluppo dei notebook di Jupyter. La sua ampia compatibilità con le librerie di \gls{mlg}, come \textit{TensorFlow}, \textit{scikit-learn} e \textit{Keras}, ha reso Python lo strumento ideale per lo sviluppo e l'addestramento dei modelli di apprendimento automatico impiegati nel progetto.
+Nel presente progetto, Python è stato il linguaggio di riferimento per la realizzazione delle \textit{Lambda functions} utilizzate su \gls{awsg} e per lo sviluppo dei notebook di Jupyter. La sua ampia compatibilità con le librerie di \gls{machinelearningg}, come \textit{TensorFlow}, \textit{scikit-learn} e \textit{Keras}, ha reso Python lo strumento ideale per lo sviluppo e l'addestramento dei modelli di apprendimento automatico impiegati nel progetto.
 
 \begin{figure}[h]
   \centering
