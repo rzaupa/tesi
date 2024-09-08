@@ -23,7 +23,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
-      \field{title}{Active learning worflow for Amazon Comprehend custom models - Part 1}
+      \field{title}{Active learning worflow for Amazon Comprehend custom models - Part 1 - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/active-learning-workflow-for-amazon-comprehend-custom-classification-part-1/
@@ -36,7 +36,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
-      \field{title}{Amazon Comprehend Document Classifier adds layout support for higher accuracy}
+      \field{title}{Amazon Comprehend Document Classifier adds layout support for higher accuracy - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/amazon-comprehend-document-classifier-adds-layout-support-for-higher-accuracy/
@@ -62,7 +62,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
-      \field{title}{Automatically extract text and structured data from documents with Amazon Textract}
+      \field{title}{Automatically extract text and structured data from documents with Amazon Textract - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/automatically-extract-text-and-structured-data-from-documents-with-amazon-textract/
@@ -114,7 +114,7 @@
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labeltitlesource}{title}
-      \field{title}{Build a receipt and invoice processing pipeline with Amazon Textract}
+      \field{title}{Build a receipt and invoice processing pipeline with Amazon Textract - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/build-a-receipt-and-invoice-processing-pipeline-with-amazon-textract/
@@ -169,7 +169,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Intelligent document processing with Amazon Textract, Amazon Bedrock, and Langchain}
+      \field{title}{Intelligent document processing with Amazon Textract, Amazon Bedrock, and Langchain - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/intelligent-document-processing-with-amazon-textract-amazon-bedrock-and-langchain/
@@ -182,7 +182,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Intelligent document processing with AWS AI services: Part 1}
+      \field{title}{Intelligent document processing with AWS AI services: Part 1 - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/part-1-intelligent-document-processing-with-aws-ai-services/
@@ -195,7 +195,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Intelligent document processing with AWS AI services: Part 2}
+      \field{title}{Intelligent document processing with AWS AI services: Part 2 - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/part-2-intelligent-document-processing-with-aws-ai-services/
@@ -208,7 +208,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Introducing one-step classification and entity recognition with Amazon Comprehend for intelligent document processing}
+      \field{title}{Introducing one-step classification and entity recognition with Amazon Comprehend for intelligent document processing - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-one-step-classification-and-entity-recognition-with-amazon-comprehend-for-intelligent-document-processing/
@@ -221,7 +221,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Introducing specialized support for extracting data from invoices and receipts using Amazon Textract}
+      \field{title}{Introducing specialized support for extracting data from invoices and receipts using Amazon Textract - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/announcing-expanded-support-for-extracting-data-from-invoices-and-receipts-using-amazon-textract/
@@ -234,7 +234,7 @@
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Introducing the Amazon Comprehend Flywheel for MLOps}
+      \field{title}{Introducing the Amazon Comprehend Flywheel for MLOps - AWS Machine Learning Blog}
       \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/it/blogs/machine-learning/introducing-the-amazon-comprehend-flywheel-for-mlops/
@@ -281,6 +281,19 @@
       \endverb
       \verb{url}
       \verb https://it.wikipedia.org/wiki/Scrum_(informatica)
+      \endverb
+    \endentry
+    \entry{site:what-is-idp}{online}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Intelligent Document Processing? - AWS}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/it/what-is/intelligent-document-processing/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/it/what-is/intelligent-document-processing/
       \endverb
     \endentry
   \enddatalist
